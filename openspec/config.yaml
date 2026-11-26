@@ -1,0 +1,50 @@
+schema: spec-driven
+
+context: |
+  Language: es
+  All artifacts must be written in es.
+  Keep OpenSpec structural headings and SHALL/MUST keywords in English.
+
+  Proyecto: SutuyWeb, plataforma colaborativa para la gestión y el seguimiento de los trámites
+  financieros de las EPS ante Sunass. Monolito modular en un solo repositorio.
+
+  Partes y límites (cada change indica cuáles toca):
+  - frontend/: Next.js con TypeScript. Solo interfaz, navegación y validación de formularios.
+    Se comunica únicamente con la API del backend; no se conecta a Supabase ni guarda claves.
+  - backend/: Node.js con JavaScript y Express, organizado por módulos. Única fuente de la lógica
+    de negocio (flujos, plazos, permisos, avisos, documentos, indicadores). Valida entradas con Zod.
+    Usa Supabase Auth (sesiones; el login pasa por la API) y Supabase Storage privado.
+    Es el único que llama al copiloto.
+  - copiloto/: servicio RAG en Python con FastAPI, sin marco RAG adicional, vectores en pgvector
+    (Supabase) y modelo de lenguaje abierto local. Sugiere y cita; nunca decide ni firma.
+  - bd/: PostgreSQL en Supabase. Migraciones, políticas RLS, scripts y datos sintéticos de prueba.
+    Nunca una copia de la base ni datos reales.
+
+  Reglas:
+  - No duplicar lógica de negocio entre frontend, backend y base de datos.
+  - Plazos en días hábiles según el TUO de la Ley 27444 (DS 004-2019-JUS), art. 145.1.
+  - El repositorio es público: sin secretos, claves service_role, datos personales ni expedientes reales.
+    Los .env.example llevan solo valores ficticios.
+  - Commits: tipo (feat, fix, chore, docs, test, refactor) + ": " + descripción en español en infinitivo.
+
+# Per-artifact rules (optional)
+# Add custom rules for specific artifacts.
+# Example:
+#   rules:
+#     proposal:
+#       - Keep proposals under 500 words
+#       - Always include a "Non-goals" section
+#     tasks:
+#       - Break tasks into chunks of max 2 hours
+
+# Per-operation guidance (optional)
+# Add advisory guidance for how apply and archive work should be conducted.
+# This is separate from artifact rules above.
+# Example:
+#   operations:
+#     apply:
+#       guidance:
+#         - Keep test summaries concise
+#     archive:
+#       guidance:
+#         - Summarize the archive outcome before finishing

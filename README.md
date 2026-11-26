@@ -11,7 +11,8 @@ SutuyWeb-SUNASS/
 ├── frontend/   Interfaz web (Next.js con TypeScript)
 ├── backend/    API y lógica de negocio (Node.js con JavaScript y Express), organizada por módulos
 ├── copiloto/   Servicio RAG para consultar expedientes (Python con FastAPI)
-└── bd/         Migraciones, políticas de acceso y scripts de la base de datos (no contiene datos)
+├── bd/         Migraciones, políticas de acceso y scripts de la base de datos (no contiene datos)
+└── openspec/   Especificaciones y cambios planificados con OpenSpec
 ```
 
 ## Arquitectura
@@ -28,6 +29,19 @@ Navegador ──> frontend ──> backend (API) ──> Supabase (PostgreSQL, A
                                 │
                                 └──> copiloto ──> pgvector y modelo local
 ```
+
+## Proceso de desarrollo con OpenSpec
+
+Cada cambio se planifica antes de programarlo con [OpenSpec](https://github.com/Fission-AI/OpenSpec), en una sola carpeta para todo el repositorio:
+
+```
+openspec/
+├── config.yaml   Contexto del proyecto y reglas que siguen todas las propuestas
+├── specs/        Requisitos vigentes por capacidad (por ejemplo, expedientes o plazos)
+└── changes/      Cambios en curso: propuesta, diseño, specs y tareas; los terminados van a archive/
+```
+
+Un mismo cambio puede tocar frontend, backend, copiloto y bd; su propuesta indica qué partes afecta. Flujo: `/opsx:propose` (planificar), `/opsx:apply` (implementar tareas), `/opsx:archive` (cerrar y actualizar las specs). Los comandos están configurados para Claude Code (`.claude/`) y Codex (`.agents/`).
 
 ## Plazos
 
