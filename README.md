@@ -1,63 +1,50 @@
 # SutuyWeb
 
-Plataforma colaborativa para la gestión y el seguimiento de los trámites financieros de las empresas prestadoras (EPS) ante Sunass: solicitudes, plazos en días hábiles, documentos, alertas y un copiloto que ayuda a revisar expedientes. La persona siempre decide y firma.
+SutuyWeb es una plataforma colaborativa para la gestión y el seguimiento de trámites financieros de las empresas prestadoras de servicios de saneamiento (EPS) en SUNASS.
 
-> Estado: estructura inicial. Todavía no hay código ni aplicaciones instaladas.
+Su objetivo es facilitar el seguimiento de cada expediente: conocer quién lo tiene a cargo, en qué etapa se encuentra, cuáles son los plazos y qué documentos están pendientes. También contará con un copiloto para consultar información de los expedientes y apoyar su revisión, con referencias a los documentos utilizados. Las decisiones y aprobaciones seguirán a cargo de las personas responsables.
 
-## Estructura
+El MVP está en su etapa inicial. Este repositorio contiene la estructura del proyecto y las herramientas para organizar su desarrollo; las funcionalidades se incorporarán progresivamente.
 
-```
+## Organización del proyecto
+
+El proyecto reúne en un único repositorio la aplicación web, el backend, el copiloto y los archivos que definirán la base de datos.
+
+```text
 SutuyWeb-SUNASS/
-├── frontend/   Interfaz web (Next.js con TypeScript)
-├── backend/    API y lógica de negocio (Node.js con JavaScript y Express), organizada por módulos
-├── copiloto/   Servicio RAG para consultar expedientes (Python con FastAPI)
-├── bd/         Migraciones, políticas de acceso y scripts de la base de datos (no contiene datos)
-└── openspec/   Especificaciones y cambios planificados con OpenSpec
+├── frontend/   Aplicación web con Next.js y TypeScript
+├── backend/    API con Node.js, JavaScript y Express
+├── copiloto/   Servicio de consulta documental con Python y FastAPI
+├── bd/         Migraciones, scripts y políticas de acceso para Supabase
+└── openspec/   Especificaciones y propuestas de cambios
 ```
 
-## Arquitectura
+## Arquitectura prevista
 
-Monolito modular en un solo repositorio:
+El backend seguirá una arquitectura de monolito modular: las funciones del sistema se organizarán en módulos dentro de una misma aplicación. El copiloto funcionará como un servicio separado al que solo podrá acceder el backend.
 
-- **frontend**: solo interfaz, navegación y validación de formularios. Se comunica únicamente con la API del backend; no se conecta a Supabase ni guarda claves.
-- **backend**: única fuente de la lógica de negocio (flujos, plazos, permisos, avisos, documentos, indicadores). Valida las entradas con Zod. Usa Supabase Auth para las sesiones y Supabase Storage (privado) para los archivos. Es el único que llama al copiloto.
-- **copiloto**: servicio interno de recuperación y respuesta (RAG) sin marco adicional, con un modelo de lenguaje abierto que corre localmente y vectores en PostgreSQL con pgvector. Sugiere y cita; no decide ni firma.
-- **bd**: PostgreSQL alojado en Supabase. Aquí se versionan el esquema, las migraciones, las políticas RLS y los datos sintéticos de prueba, nunca una copia de la base.
+La aplicación web se comunicará con el backend para consultar información y realizar operaciones, incluido el inicio de sesión. El backend centralizará las reglas de negocio, los permisos, los plazos y las etapas de los trámites, y validará los datos con Zod.
 
-```
-Navegador ──> frontend ──> backend (API) ──> Supabase (PostgreSQL, Auth, Storage)
-                                │
-                                └──> copiloto ──> pgvector y modelo local
-```
+Usaremos PostgreSQL alojado en Supabase, junto con sus servicios de autenticación y almacenamiento privado de archivos. La carpeta `bd/` contendrá los archivos necesarios para definir y mantener la base de datos.
 
-## Proceso de desarrollo con OpenSpec
+El copiloto buscará información en los documentos mediante RAG —generación de respuestas apoyada en información recuperada— y utilizará un modelo de lenguaje abierto ejecutado localmente. Los vectores para la búsqueda se almacenarán en Supabase con pgvector.
 
-Cada cambio se planifica antes de programarlo con [OpenSpec](https://github.com/Fission-AI/OpenSpec), en una sola carpeta para todo el repositorio:
-
-```
-openspec/
-├── config.yaml   Contexto del proyecto y reglas que siguen todas las propuestas
-├── specs/        Requisitos vigentes por capacidad (por ejemplo, expedientes o plazos)
-└── changes/      Cambios en curso: propuesta, diseño, specs y tareas; los terminados van a archive/
+```text
+Aplicación web → Backend → Supabase
+                   ↓
+                Copiloto → Modelo local
 ```
 
-Un mismo cambio puede tocar frontend, backend, copiloto y bd; su propuesta indica qué partes afecta. Flujo: `/opsx:propose` (planificar), `/opsx:apply` (implementar tareas), `/opsx:archive` (cerrar y actualizar las specs). Los comandos están configurados para Claude Code (`.claude/`) y Codex (`.agents/`).
+## Forma de trabajo
 
-## Plazos
+El desarrollo se organizará con OpenSpec. Antes de implementar un cambio, describiremos su propósito, los requisitos y las tareas necesarias en `openspec/changes/`.
 
-Los plazos se cuentan en días hábiles según el TUO de la Ley 27444 (DS 004-2019-JUS), art. 145.1: días hábiles consecutivos, sin sábados, domingos ni feriados. Un día hábil no equivale a 24 horas.
+Cada propuesta podrá abarcar una o varias partes del proyecto. Una vez implementada y verificada, se archivará el cambio y se actualizarán las especificaciones correspondientes en `openspec/specs/`.
 
-## Seguridad y datos
+Las propuestas y especificaciones se redactarán en español.
 
-Este repositorio es **público**. Nunca se suben:
+## Información que no debe publicarse
 
-- Archivos `.env` con secretos, credenciales, tokens, contraseñas o cadenas de conexión. Los ejemplos de configuración (`.env.example`) llevan solo valores ficticios.
-- Claves privilegiadas de Supabase (`service_role`): solo en el backend y el copiloto, por variables de entorno, nunca en el frontend.
-- Datos personales, expedientes reales o confidenciales, volcados de producción ni documentos sin autorización para publicarse.
-- Dependencias instaladas, compilaciones, cachés, registros, pesos de modelos ni archivos temporales.
+Este repositorio es público. No se deben subir credenciales, archivos `.env` con secretos, datos personales, expedientes reales ni documentos confidenciales.
 
-## Pendiente de definir
-
-- Modelo abierto local, modelo de embeddings y forma de ejecutarlos (por ejemplo, Ollama).
-- Versiones de Node.js y Python, y gestores de paquetes.
-- Feriados y calendario oficial que usará el cálculo de plazos.
+Los ejemplos de configuración usarán valores ficticios y las pruebas utilizarán datos sintéticos. Las dependencias instaladas, los archivos generados y los modelos locales también quedarán fuera del control de versiones.
