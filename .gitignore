@@ -1,0 +1,77 @@
+# SutuyWeb-SUNASS: archivos que nunca se suben al repositorio (es público).
+
+# ---------- Secretos y configuración local ----------
+# Variables de entorno con credenciales, tokens, contraseñas o cadenas de conexión.
+.env
+.env.*
+!.env.example
+!**/.env.example
+# Claves y certificados
+*.pem
+*.key
+*.p12
+*.pfx
+# Claves privilegiadas de Supabase (service_role) o volcados de configuración local
+supabase/.temp/
+supabase/.branches/
+**/secrets/
+
+# ---------- Datos sensibles ----------
+# Expedientes reales o confidenciales, datos personales y volcados de producción.
+# Los datos de prueba deben ser sintéticos y revisados antes de subirse.
+*.dump
+*.backup
+**/volcados/
+**/datos-privados/
+**/expedientes-reales/
+
+# ---------- Node.js (frontend y backend) ----------
+node_modules/
+.next/
+out/
+dist/
+build/
+coverage/
+.turbo/
+.vercel/
+*.tsbuildinfo
+next-env.d.ts
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ---------- Python (copiloto) ----------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+.ipynb_checkpoints/
+
+# ---------- Modelos locales e índices del copiloto ----------
+# Pesos de modelos abiertos y archivos generados al indexar documentos.
+*.gguf
+*.safetensors
+*.bin
+**/modelos/
+**/indices/
+
+# ---------- Cachés, registros y temporales ----------
+.cache/
+*.log
+logs/
+tmp/
+temp/
+*.tmp
+
+# ---------- Sistema y editores ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/*
+!.vscode/extensions.json
