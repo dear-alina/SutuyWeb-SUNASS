@@ -166,3 +166,14 @@
 .requisitos-tupa li small { font: var(--text-body-small); }
 .requisitos-tupa .ms { font-size: 20px; }
 .banda-demo__boton { min-height: 32px; padding: 0 var(--space-1); border: 0; background: none; color: inherit; font: inherit; font-weight: 700; text-decoration: underline; cursor: pointer; }
+
+/* Formar equipo (SRT) */
+.equipo { margin: 0; padding: 0; border: 0; display: grid; gap: var(--space-2); }
+.equipo legend { padding: 0 0 var(--space-2); font: var(--text-label-large); }
+.equipo__opcion { display: flex; gap: var(--space-3); align-items: flex-start; padding: var(--space-3); border: 1px solid var(--outline); border-radius: var(--shape-corner-medium); background: var(--surface-container-lowest); color: var(--on-surface); cursor: pointer; }
+.equipo__opcion--marcada { border: 2px solid var(--primary); }
+.equipo__opcion input { width: 20px; height: 20px; margin-top: 2px; accent-color: var(--primary); flex: none; }
+.equipo__opcion span { display: grid; gap: 2px; }
+.equipo__opcion b { display: flex; flex-wrap: wrap; gap: var(--space-2); align-items: center; }
+.equipo__opcion small { color: var(--on-surface-variant); font: var(--text-body-small); }
+.equipo-asignado { display: flex; gap: var(--space-2); align-items: flex-start; margin: 0; padding: var(--space-2) var(--space-3); border-radius: var(--shape-corner-small); background: var(--surface-container-low); font: var(--text-body-medium); }

@@ -40,6 +40,7 @@ export type ExpedienteFi = {
   hitos: Hito[];
   documentos: Documento[];
   fechaNotificacion?: string | null; // notificación de la resolución a la EP (LPAG 24.1)
+  equipoAsignado?: { codigo: string; nombre: string; rol: "verifica_tupa" | "evalua_informa" }[]; // lo forma la SRT al asignar
 };
 
 const h = (

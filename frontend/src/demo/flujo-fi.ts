@@ -17,7 +17,7 @@ export type PasoFi = {
 export const PASOS_FI: PasoFi[] = [
   { codigoHito: "solicitud", area: "EP", accion: "Presentar la solicitud con los requisitos del TUPA", boton: "", base: "RGT 89.1 y 89.2; TUPA PA9000ED96" },
   { codigoHito: "derivacion", area: "DRE", accion: "Derivar la solicitud a la Subdirección de Regulación Tarifaria (1 día hábil)", boton: "Derivar a la SRT", base: "Flujograma del FI; hoja Hitos" },
-  { codigoHito: "asignacion", area: "SRT", accion: "Asignar el expediente a un especialista del equipo", boton: "Asignar al equipo", base: "Flujograma del FI" },
+  { codigoHito: "asignacion", area: "SRT", accion: "Formar el equipo de especialistas que verificará y evaluará el expediente", boton: "Formar equipo", base: "Flujograma del FI" },
   { codigoHito: "verificacion_tupa", area: "equipo_srt", accion: "Verificar los requisitos del TUPA", boton: "Requisitos conformes", base: "TUPA de la Sunass; TUO LPAG art. 125" },
   { codigoHito: "evaluacion", area: "equipo_srt", accion: "Evaluar el caso fortuito o de fuerza mayor y el uso propuesto", boton: "Evaluación concluida", base: "RGT 89.1 y 89.6" },
   { codigoHito: "informe", area: "equipo_srt", accion: "Elaborar el informe técnico-legal y el proyecto de resolución", boton: "Informe elaborado", base: "RGT 89.3" },
@@ -59,6 +59,11 @@ export function completarPaso(expediente: ExpedienteFi, fecha: string): Expedien
     hitos.push(nuevo);
   }
   return { ...expediente, hitos };
+}
+
+/** La SRT forma el equipo de especialistas: completa el paso de asignación y lo deja registrado. */
+export function asignarEquipo(expediente: ExpedienteFi, fecha: string, equipo: NonNullable<ExpedienteFi["equipoAsignado"]>): ExpedienteFi {
+  return { ...completarPaso(expediente, fecha), equipoAsignado: equipo };
 }
 
 /** El Consejo Directivo emite la resolución (RGT 89.5). La notificación es un paso aparte de la DRE (LPAG 24.1). */
