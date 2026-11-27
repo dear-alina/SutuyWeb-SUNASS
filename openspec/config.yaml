@@ -35,11 +35,22 @@ context: |
     restringido_partes); solo se mapean los nombres de columna.
   - Contratos acordados: contrato-api (backend → frontend) y contrato-copiloto (backend → copiloto).
 
+  Construcción de pantallas (detalle en CONTRIBUTING.md):
+  - Se parte de la estructura de la pantalla en la rama frontend.
+  - Se verifican sus funcionalidades mínimas (specs y contratos), aunque la pantalla ya exista, y se confirman antes de implementar.
+  - Lo que falte en el frontend se agrega en la rama frontend; si la pantalla está completa, solo se construye su backend.
+  - El backend siempre se conecta a la base de datos: nada de datos simulados (frontend/src/demo/ es solo para demostraciones).
+
 rules:
+  proposal:
+    - Indicar qué pantallas toca el cambio y si el frontend necesita ajustes o solo falta el backend
   design:
     - Usar los nombres de docs/convenciones.md
+    - Incluir la tabla «Funcionalidades mínimas por pantalla» (funcionalidad | existe en frontend | acción), confirmada con la usuaria
   tasks:
     - Incluir pruebas de contrato si cambia una interfaz (contrato-api o contrato-copiloto)
+    - Las tareas de backend usan la base de datos real (migración en bd/ si hace falta y pruebas contra Supabase local)
+    - Las tareas de frontend van en la rama frontend y solo cubren lo que falta
 
 # Per-operation guidance (optional)
 # Add advisory guidance for how apply and archive work should be conducted.
