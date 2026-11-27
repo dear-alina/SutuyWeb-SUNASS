@@ -9,6 +9,7 @@ import { generarNumeroDocumento, obtenerTareaArea } from "@/demo/reglas-sunass";
 import { revisarRequisitos } from "@/demo/requisitos-tupa";
 import { ESPECIALISTAS_DEMO, TEXTO_ROL, calcularCarga, sugerirEquipo } from "@/demo/especialistas-demo";
 import { contarDiasHabiles } from "@/demo/calendario-demo";
+import { EvaluarCaso, FirmarOficioPedido, VerificarRequisitos } from "./DecisionesEquipo";
 import { formatearFecha, textoDiasHabiles } from "@/utilidades/formatear-fecha";
 
 const TIPO_DOCUMENTO: Record<string, string> = {
@@ -104,6 +105,11 @@ function BloqueAccion({ expediente, area, todos }: { expediente: ExpedienteFi; a
   const paso = obtenerPaso(tarea.hito.codigoHito)!;
   if (paso.codigoHito === "asignacion") {
     return <FormarEquipo expediente={expediente} todos={todos} alTerminar={setHecho} />;
+  }
+  if (paso.codigoHito === "verificacion_tupa") return <VerificarRequisitos expediente={expediente} alTerminar={setHecho} />;
+  if (paso.codigoHito === "evaluacion") return <EvaluarCaso expediente={expediente} alTerminar={setHecho} />;
+  if (paso.codigoHito === "oficio_subsanacion" || paso.codigoHito === "oficio_informacion") {
+    return <FirmarOficioPedido expediente={expediente} alTerminar={setHecho} />;
   }
   const esCoautoria = paso.codigoHito === "firma_informe_dre" || paso.codigoHito === "firma_informe_oaj";
   return (

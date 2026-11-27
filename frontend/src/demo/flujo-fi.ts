@@ -38,27 +38,89 @@ export const NOMBRE_AREA: Record<string, string> = {
 export const esMismaArea = (areaHito: string, areaPerfil: string | null | undefined) =>
   !!areaPerfil && areaHito.toLowerCase() === areaPerfil.toLowerCase();
 
+/**
+ * Pasos de las excepciones del flujo (hoja Hitos y flujograma del FI):
+ * - Subsanación: verificacion_tupa → oficio_subsanacion (SRT) → subsanacion_ep (EP, 2 d.h.) → evaluacion.
+ * - Información adicional: evaluacion → oficio_informacion (SRT) → informacion_ep (EP, hasta 10 d.h.) → informe.
+ * Los días de la EP no cuentan para el plazo de la Sunass (TUO LPAG arts. 125.3.1 y 125.5).
+ */
+export const PASOS_EXCEPCION: PasoFi[] = [
+  { codigoHito: "oficio_subsanacion", area: "SRT", accion: "Revisar y firmar el oficio de subsanación de requisitos", boton: "Firmar oficio de subsanación", base: "TUO LPAG art. 125.1; flujograma del FI" },
+  { codigoHito: "subsanacion_ep", area: "EP", accion: "Subsanar los requisitos observados (2 días hábiles)", boton: "", base: "TUO LPAG art. 125.1" },
+  { codigoHito: "oficio_informacion", area: "SRT", accion: "Revisar y firmar el oficio de información adicional", boton: "Firmar oficio de información", base: "RGT art. 89.6; flujograma del FI" },
+  { codigoHito: "informacion_ep", area: "EP", accion: "Enviar la información adicional (hasta 10 días hábiles)", boton: "", base: "RGT art. 89.6" },
+];
+
+const SIGUIENTE_EXCEPCION: Record<string, string> = {
+  oficio_subsanacion: "subsanacion_ep", subsanacion_ep: "evaluacion",
+  oficio_informacion: "informacion_ep", informacion_ep: "informe",
+};
+
 export function obtenerPaso(codigoHito: string): PasoFi | undefined {
-  return PASOS_FI.find((p) => p.codigoHito === codigoHito);
+  return [...PASOS_FI, ...PASOS_EXCEPCION].find((p) => p.codigoHito === codigoHito);
 }
 
-/** Completa el paso pendiente en `fecha` y abre el siguiente del flujo normal. */
-export function completarPaso(expediente: ExpedienteFi, fecha: string): ExpedienteFi {
+/** Completa el paso pendiente en `fecha` y abre el siguiente (del flujo normal, de la excepción o el indicado). */
+export function completarPaso(expediente: ExpedienteFi, fecha: string, opciones: { siguiente?: string; plazo?: number; numeroDocumento?: string } = {}): ExpedienteFi {
   const hitos = expediente.hitos.map((h) => ({ ...h }));
   const pendiente = [...hitos].reverse().find((h) => !h.finalizadoEn);
   if (!pendiente) return expediente;
   pendiente.finalizadoEn = fecha;
-  const indice = PASOS_FI.findIndex((p) => p.codigoHito === pendiente.codigoHito);
-  const siguiente = PASOS_FI[indice + 1];
+  if (opciones.numeroDocumento) pendiente.numeroDocumento = opciones.numeroDocumento;
+  const codigoSiguiente = opciones.siguiente ?? SIGUIENTE_EXCEPCION[pendiente.codigoHito]
+    ?? PASOS_FI[PASOS_FI.findIndex((p) => p.codigoHito === pendiente.codigoHito) + 1]?.codigoHito;
+  const siguiente = codigoSiguiente ? obtenerPaso(codigoSiguiente) : undefined;
   if (siguiente) {
-    const nuevo: Hito = {
+    const plazoPorDefecto: Record<string, number> = { derivacion: 1, subsanacion_ep: 2, informacion_ep: 10 };
+    hitos.push({
       numero: Math.max(...hitos.map((h) => h.numero)) + 1, codigoHito: siguiente.codigoHito, area: siguiente.area,
-      iniciadoEn: fecha, finalizadoEn: null, plazoReferencialDiasHabiles: siguiente.codigoHito === "derivacion" ? 1 : null,
-      cuentaPlazo: true, numeroDocumento: null,
-    };
-    hitos.push(nuevo);
+      iniciadoEn: fecha, finalizadoEn: null, plazoReferencialDiasHabiles: opciones.plazo ?? plazoPorDefecto[siguiente.codigoHito] ?? null,
+      cuentaPlazo: siguiente.area !== "EP", numeroDocumento: null,
+    });
   }
   return { ...expediente, hitos };
+}
+
+export type TipoPedido = "subsanacion" | "informacion";
+
+/** El equipo SRT registra que falta algo: abre el oficio que revisa y firma la SRT. */
+export function registrarPedido(expediente: ExpedienteFi, fecha: string, pedido: { tipo: TipoPedido; requisitos: string[]; detalle: string; plazoDiasHabiles: number }): ExpedienteFi {
+  const avanzado = completarPaso(expediente, fecha, { siguiente: pedido.tipo === "subsanacion" ? "oficio_subsanacion" : "oficio_informacion" });
+  return { ...avanzado, pedidos: [...(expediente.pedidos ?? []), { ...pedido, registradoEn: fecha, numeroOficio: null, respondidoEn: null }] };
+}
+
+/** La SRT firma el oficio: se notifica a la EP y empieza su plazo (2 d.h. subsanación; hasta 10 d.h. información). */
+export function firmarOficioPedido(expediente: ExpedienteFi, fecha: string, numeroOficio: string): ExpedienteFi {
+  const pedidos = [...(expediente.pedidos ?? [])];
+  const ultimo = pedidos[pedidos.length - 1];
+  if (!ultimo) return expediente;
+  pedidos[pedidos.length - 1] = { ...ultimo, numeroOficio };
+  const avanzado = completarPaso(expediente, fecha, { numeroDocumento: numeroOficio, plazo: ultimo.plazoDiasHabiles });
+  return {
+    ...avanzado, pedidos,
+    documentos: [...expediente.documentos, {
+      codigoDocumento: `${expediente.codigoExpediente}-of-${pedidos.length}`, tipoDocumento: "oficio", numeroDocumento: numeroOficio, fechaDocumento: fecha,
+      asunto: ultimo.tipo === "subsanacion" ? "Observaciones a los requisitos del TUPA" : "Requerimiento de información adicional",
+      nivelAcceso: "restringido_partes",
+    }],
+  };
+}
+
+/** La EP responde desde su panel: se registran sus documentos y el expediente vuelve al equipo SRT. */
+export function responderPedido(expediente: ExpedienteFi, fecha: string, archivos: { nombre: string; codigoRequisito?: string; descripcion: string }[]): ExpedienteFi {
+  const pedidos = [...(expediente.pedidos ?? [])];
+  const ultimo = pedidos[pedidos.length - 1];
+  if (ultimo) pedidos[pedidos.length - 1] = { ...ultimo, respondidoEn: fecha };
+  const avanzado = completarPaso(expediente, fecha);
+  const base = expediente.documentos.length;
+  return {
+    ...avanzado, pedidos,
+    documentos: [...expediente.documentos, ...archivos.map((a, i) => ({
+      codigoDocumento: `${expediente.codigoExpediente}-r-${base + i + 1}`, tipoDocumento: "anexo" as const,
+      numeroDocumento: ultimo?.tipo === "subsanacion" ? `Subsanación ${i + 1}` : `Información ${i + 1}`, fechaDocumento: fecha,
+      asunto: `${a.descripcion} (${a.nombre})`, nivelAcceso: "restringido_partes" as const, codigoRequisito: a.codigoRequisito,
+    }))],
+  };
 }
 
 /** La SRT forma el equipo de especialistas: completa el paso de asignación y lo deja registrado. */

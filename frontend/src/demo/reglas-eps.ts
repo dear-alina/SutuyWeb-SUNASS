@@ -89,14 +89,14 @@ export function obtenerHitoPendiente(expediente: ExpedienteFi): Hito | null {
 }
 
 /** Días que la EP tardó en subsanar o responder: no corren para la Sunass (LPAG 125.3.1 y 125.5). */
-function calcularDiasHabilesSuspension(expediente: ExpedienteFi): number {
+function calcularDiasHabilesSuspension(expediente: ExpedienteFi, fechaReferencia?: string): number {
   return expediente.hitos
-    .filter((h) => !h.cuentaPlazo && h.finalizadoEn)
-    .reduce((total, h) => total + contarDiasHabiles(h.iniciadoEn, h.finalizadoEn as string), 0);
+    .filter((h) => !h.cuentaPlazo && (h.finalizadoEn || fechaReferencia))
+    .reduce((total, h) => total + Math.max(0, contarDiasHabiles(h.iniciadoEn, (h.finalizadoEn ?? fechaReferencia) as string)), 0);
 }
 
 export function calcularPlazoSunass(expediente: ExpedienteFi, fechaReferencia: string): PlazoSunass {
-  const fechaLimite = sumarDiasHabiles(expediente.fechaInicio, expediente.plazoMaximoDiasHabiles + calcularDiasHabilesSuspension(expediente));
+  const fechaLimite = sumarDiasHabiles(expediente.fechaInicio, expediente.plazoMaximoDiasHabiles + calcularDiasHabilesSuspension(expediente, fechaReferencia));
   const fechaLimiteNotificacion = sumarDiasHabiles(fechaLimite, PLAZO_NOTIFICACION_DIAS);
   let situacion: PlazoSunass["situacion"];
   if (expediente.fechaConclusion) {
@@ -110,7 +110,7 @@ export function calcularPlazoSunass(expediente: ExpedienteFi, fechaReferencia: s
 /** Días hábiles que lleva la Sunass, sin contar los que la EP tardó en subsanar o responder. */
 export function calcularDiaDelPlazo(expediente: ExpedienteFi, fechaReferencia: string): number {
   const hasta = expediente.fechaConclusion && expediente.fechaConclusion < fechaReferencia ? expediente.fechaConclusion : fechaReferencia;
-  return Math.max(0, contarDiasHabiles(expediente.fechaInicio, hasta) - calcularDiasHabilesSuspension(expediente));
+  return Math.max(0, contarDiasHabiles(expediente.fechaInicio, hasta) - calcularDiasHabilesSuspension(expediente, hasta));
 }
 
 /** Fecha del último movimiento del expediente. */

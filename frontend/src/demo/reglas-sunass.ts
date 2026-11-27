@@ -50,7 +50,7 @@ export function obtenerPlazoPaso(expediente: ExpedienteFi, fechaReferencia: stri
 }
 
 /** Numeración ficticia de documentos de la demo (no corresponde a documentos reales). */
-export function generarNumeroDocumento(expediente: ExpedienteFi, tipo: "oficio" | "rcd"): string {
+export function generarNumeroDocumento(expediente: ExpedienteFi, tipo: "oficio" | "rcd", area: "DRE" | "SRT" = "DRE"): string {
   const correlativo = String(100 + expediente.documentos.length).padStart(3, "0");
-  return tipo === "oficio" ? `N.° D${correlativo}-2026-SUNASS-DRE (demo)` : `RCD N.° D${correlativo}-2026-SUNASS-CD (demo)`;
+  return tipo === "oficio" ? `N.° D${correlativo}-2026-SUNASS-${area} (demo)` : `RCD N.° D${correlativo}-2026-SUNASS-CD (demo)`;
 }

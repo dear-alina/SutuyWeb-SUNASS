@@ -40,6 +40,10 @@ export type ExpedienteFi = {
   hitos: Hito[];
   documentos: Documento[];
   fechaNotificacion?: string | null; // notificación de la resolución a la EP (LPAG 24.1)
+  pedidos?: {
+    tipo: "subsanacion" | "informacion"; registradoEn: string; requisitos: string[]; detalle: string;
+    plazoDiasHabiles: number; numeroOficio: string | null; respondidoEn: string | null;
+  }[]; // subsanación (LPAG 125.1) o información adicional (RGT 89.6)
   equipoAsignado?: { codigo: string; nombre: string; rol: "verifica_tupa" | "evalua_informa" }[]; // lo forma la SRT al asignar
 };
 
