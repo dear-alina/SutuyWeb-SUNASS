@@ -16,7 +16,7 @@ Vamos a empezar el backend en un repositorio que comparte con un frontend, el co
   - Fechas e instantes en ISO 8601 y montos como cadena decimal.
   - Errores en formato RFC 9457 y paginación.
   - Sesión por cookie httpOnly, con correo y clave, y con Microsoft Entra ID reservado.
-- Se define el contrato backend → copiloto: consulta, respuesta con citas, caso sin evidencia, fallos y conversión explícita entre camelCase y snake_case.
+- Se define el contrato backend → copiloto: indexación de los documentos de un expediente, evaluación de requisitos y preguntas con citas verificadas a documentos autorizados, caso sin evidencia, registro de decisiones, fallos y conversión explícita entre camelCase y snake_case.
 - Se establece que el código es la fuente de cada esquema: Zod en el backend y Pydantic en el copiloto. Cada lado genera su `openapi.json`, y las specs describen el comportamiento sin copiar esquemas.
 - Se documentan:
   - Responsabilidades y aprobación de cambios compartidos: `CONTRIBUTING.md` y `.github/CODEOWNERS`.
@@ -28,7 +28,7 @@ Vamos a empezar el backend en un repositorio que comparte con un frontend, el co
 
 ### New Capabilities
 - `contrato-api`: comportamiento observable de la API HTTP del backend para el frontend. Cubre forma de datos, validación, errores, listados, sesión y permisos.
-- `contrato-copiloto`: comportamiento observable de la interfaz interna del copiloto para el backend. Cubre consulta, citas, caso sin evidencia, fallos, acceso y formato de los campos.
+- `contrato-copiloto`: comportamiento observable de la interfaz interna del copiloto para el backend. Cubre indexación, evaluación de requisitos, preguntas, citas, caso sin evidencia, decisiones, fallos, acceso y formato de los campos.
 
 ### Modified Capabilities
 <!-- Ninguna: openspec/specs/ está vacío. -->
