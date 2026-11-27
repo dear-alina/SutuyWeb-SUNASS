@@ -1,0 +1,55 @@
+id_actuacion,id_expediente,nro_hito,etapa,tipo_actuacion,descripcion,area,responsable,fecha_inicio,fecha_actuacion,estado_actuacion,fecha_registro_sistema
+ACT-000090,CPI-2026-0004,11,unica,elevacion_cd,GG eleva el expediente al Consejo Directivo,Gerencia General,Gerente(a) General,2026-09-11,2026-10-07,realizada,2026-10-08
+ACT-001827,CPI-2026-0004,12,unica,resolucion_cd,Consejo Directivo emite la resolución,Consejo Directivo,Consejo Directivo,2026-10-07,2026-10-14,realizada,2026-10-15
+ACT-000427,RP-2025-0001,19,4_aprobacion,evaluacion_comentarios,"Equipo SRT evalúa comentarios y elabora informe, estudio final y proyecto de resolución final",Subdirección de Regulación Tarifaria,Especialista SRT-04,2026-06-01,2026-10-06,realizada,2026-10-07
+ACT-001829,RP-2025-0001,20,4_aprobacion,firma_informe_final,SRT revisa y firma el informe,Subdirección de Regulación Tarifaria,Subdirector(a) SRT,2026-10-06,2026-10-08,realizada,2026-10-09
+ACT-001830,RP-2025-0001,21,4_aprobacion,memo_gg_final,DRE revisa y firma el memorándum a la GG,Dirección de Regulación Económica,Director(a) DRE,2026-10-08,2026-10-09,realizada,2026-10-09
+ACT-001831,RP-2025-0001,22,4_aprobacion,elevacion_cd_final,GG eleva el expediente al Consejo Directivo,Gerencia General,Gerente(a) General,2026-10-09,2026-10-14,realizada,2026-10-17
+ACT-001832,RP-2025-0001,23,4_aprobacion,resolucion_tarifaria,Consejo Directivo aprueba la resolución tarifaria,Consejo Directivo,Consejo Directivo,2026-10-14,2026-10-20,realizada,2026-10-23
+ACT-000511,RP-2026-0001,15,2_evaluacion,resolucion_difusion,Consejo Directivo dispone la difusión del proyecto,Consejo Directivo,Consejo Directivo,2026-09-25,2026-10-07,realizada,2026-10-07
+ACT-001834,RP-2026-0001,16,3_difusion,publicacion,Publicación del proyecto en el diario oficial El Peruano,Gerencia General,Gerente(a) General,2026-10-07,2026-10-13,realizada,2026-10-13
+ACT-001835,RP-2026-0001,17,3_difusion,audiencia_publica,DU fija fecha y realiza la audiencia pública (máx. 30 DH),Dirección de Usuarios,Especialista DU-04,2026-10-13,2026-11-12,realizada,2026-11-12
+ACT-001836,RP-2026-0001,18,3_difusion,comentarios,EP e interesados formulan comentarios (hasta 15 DH tras la audiencia),Empresa prestadora y ciudadanía,EPS01 y participantes,2026-11-12,,en_curso,
+ACT-001286,RPI-2026-0024,2,unica,revision,Equipo SRT revisa la consistencia del reporte,Subdirección de Regulación Tarifaria,Especialista SRT-07,2026-09-14,2026-10-02,realizada,2026-10-03
+ACT-001838,RPI-2026-0024,3,unica,observaciones,SRT comunica observaciones al reporte,Subdirección de Regulación Tarifaria,Subdirector(a) SRT,2026-10-02,2026-10-06,realizada,2026-10-07
+ACT-001839,RPI-2026-0024,4,unica,subsanacion_ep,EP subsana las observaciones,Empresa prestadora,Gerencia General EPS08,2026-10-06,2026-10-13,realizada,2026-10-13
+ACT-001840,RPI-2026-0061,1,unica,presentacion,EP presenta el reporte trimestral,Empresa prestadora,Gerencia General EPS01,2026-10-30,,en_curso,
+ACT-001841,RPI-2026-0062,1,unica,presentacion,EP presenta el reporte trimestral,Empresa prestadora,Gerencia General EPS02,2026-10-23,2026-10-23,realizada,2026-10-24
+ACT-001842,RPI-2026-0062,2,unica,revision,Equipo SRT revisa la consistencia del reporte,Subdirección de Regulación Tarifaria,Especialista SRT-05,2026-10-23,2026-11-12,realizada,2026-11-13
+ACT-001843,RPI-2026-0063,1,unica,presentacion,EP presenta el reporte trimestral,Empresa prestadora,Gerencia General EPS03,2026-10-16,2026-10-16,realizada,2026-10-16
+ACT-001844,RPI-2026-0063,2,unica,revision,Equipo SRT revisa la consistencia del reporte,Subdirección de Regulación Tarifaria,Especialista SRT-04,2026-10-16,2026-11-03,realizada,2026-11-03
+ACT-001845,RPI-2026-0064,1,unica,presentacion,EP presenta el reporte trimestral,Empresa prestadora,Gerencia General EPS04,2026-10-30,2026-10-30,realizada,2026-11-02
+ACT-001846,RPI-2026-0064,2,unica,revision,Equipo SRT revisa la consistencia del reporte,Subdirección de Regulación Tarifaria,Especialista SRT-08,2026-10-30,2026-11-18,realizada,2026-11-19
+ACT-001847,RPI-2026-0065,1,unica,presentacion,EP presenta el reporte trimestral,Empresa prestadora,Gerencia General EPS05,2026-10-26,2026-10-26,realizada,2026-10-28
+ACT-001848,RPI-2026-0065,2,unica,revision,Equipo SRT revisa la consistencia del reporte,Subdirección de Regulación Tarifaria,Especialista SRT-01,2026-10-26,2026-11-10,realizada,2026-11-10
+ACT-001849,RPI-2026-0066,1,unica,presentacion,EP presenta el reporte trimestral,Empresa prestadora,Gerencia General EPS06,2026-10-19,2026-10-19,realizada,2026-10-19
+ACT-001850,RPI-2026-0066,2,unica,revision,Equipo SRT revisa la consistencia del reporte,Subdirección de Regulación Tarifaria,Especialista SRT-02,2026-10-19,2026-11-09,realizada,2026-11-09
+ACT-001851,RPI-2026-0067,1,unica,presentacion,EP presenta el reporte trimestral,Empresa prestadora,Gerencia General EPS07,2026-10-26,2026-10-26,realizada,2026-10-26
+ACT-001852,RPI-2026-0067,2,unica,revision,Equipo SRT revisa la consistencia del reporte,Subdirección de Regulación Tarifaria,Especialista SRT-04,2026-10-26,2026-11-10,realizada,2026-11-11
+ACT-001853,RPI-2026-0068,1,unica,presentacion,EP presenta el reporte trimestral,Empresa prestadora,Gerencia General EPS08,2026-10-21,2026-10-21,realizada,2026-10-21
+ACT-001854,RPI-2026-0068,2,unica,revision,Equipo SRT revisa la consistencia del reporte,Subdirección de Regulación Tarifaria,Especialista SRT-07,2026-10-21,2026-11-02,realizada,2026-11-02
+ACT-001855,RPI-2026-0069,1,unica,presentacion,EP presenta el reporte trimestral,Empresa prestadora,Gerencia General EPS09,2026-10-29,2026-10-29,realizada,2026-10-31
+ACT-001856,RPI-2026-0069,2,unica,revision,Equipo SRT revisa la consistencia del reporte,Subdirección de Regulación Tarifaria,Especialista SRT-08,2026-10-29,2026-11-13,realizada,2026-11-16
+ACT-001857,RPI-2026-0070,1,unica,presentacion,EP presenta el reporte trimestral,Empresa prestadora,Gerencia General EPS10,2026-11-03,2026-11-03,realizada,2026-11-08
+ACT-001858,RPI-2026-0070,2,unica,revision,Equipo SRT revisa la consistencia del reporte,Subdirección de Regulación Tarifaria,Especialista SRT-10,2026-11-03,2026-11-17,realizada,2026-11-18
+ACT-001859,RPI-2026-0071,1,unica,presentacion,EP presenta el reporte trimestral,Empresa prestadora,Gerencia General EPS11,2026-11-10,2026-11-10,realizada,2026-11-10
+ACT-001860,RPI-2026-0071,2,unica,revision,Equipo SRT revisa la consistencia del reporte,Subdirección de Regulación Tarifaria,Especialista SRT-08,2026-11-10,,en_curso,
+ACT-001861,RPI-2026-0072,1,unica,presentacion,EP presenta el reporte trimestral,Empresa prestadora,Gerencia General EPS12,2026-10-30,,en_curso,
+ACT-001862,RPI-2026-0073,1,unica,presentacion,EP presenta el reporte trimestral,Empresa prestadora,Gerencia General EPS13,2026-10-30,,en_curso,
+ACT-001863,RPI-2026-0074,1,unica,presentacion,EP presenta el reporte trimestral,Empresa prestadora,Gerencia General EPS14,2026-10-26,2026-10-26,realizada,2026-10-26
+ACT-001864,RPI-2026-0074,2,unica,revision,Equipo SRT revisa la consistencia del reporte,Subdirección de Regulación Tarifaria,Especialista SRT-10,2026-10-26,2026-11-13,realizada,2026-11-15
+ACT-001865,RPI-2026-0075,1,unica,presentacion,EP presenta el reporte trimestral,Empresa prestadora,Gerencia General EPS15,2026-11-16,2026-11-16,realizada,2026-11-18
+ACT-001866,RPI-2026-0075,2,unica,revision,Equipo SRT revisa la consistencia del reporte,Subdirección de Regulación Tarifaria,Especialista SRT-07,2026-11-16,,en_curso,
+ACT-001867,RPI-2026-0076,1,unica,presentacion,EP presenta el reporte trimestral,Empresa prestadora,Gerencia General EPS16,2026-10-26,2026-10-26,realizada,2026-10-27
+ACT-001868,RPI-2026-0076,2,unica,revision,Equipo SRT revisa la consistencia del reporte,Subdirección de Regulación Tarifaria,Especialista SRT-12,2026-10-26,2026-11-13,realizada,2026-11-15
+ACT-001869,RPI-2026-0077,1,unica,presentacion,EP presenta el reporte trimestral,Empresa prestadora,Gerencia General EPS17,2026-10-19,2026-10-19,realizada,2026-10-19
+ACT-001870,RPI-2026-0077,2,unica,revision,Equipo SRT revisa la consistencia del reporte,Subdirección de Regulación Tarifaria,Especialista SRT-11,2026-10-19,2026-10-30,realizada,2026-10-30
+ACT-001871,RPI-2026-0078,1,unica,presentacion,EP presenta el reporte trimestral,Empresa prestadora,Gerencia General EPS18,2026-10-19,2026-10-19,realizada,2026-10-20
+ACT-001872,RPI-2026-0078,2,unica,revision,Equipo SRT revisa la consistencia del reporte,Subdirección de Regulación Tarifaria,Especialista SRT-01,2026-10-19,2026-11-06,realizada,2026-11-07
+ACT-001873,RPI-2026-0079,1,unica,presentacion,EP presenta el reporte trimestral,Empresa prestadora,Gerencia General EPS19,2026-10-28,2026-10-28,realizada,2026-10-30
+ACT-001874,RPI-2026-0079,2,unica,revision,Equipo SRT revisa la consistencia del reporte,Subdirección de Regulación Tarifaria,Especialista SRT-06,2026-10-28,2026-11-17,realizada,2026-11-19
+ACT-001875,RPI-2026-0080,1,unica,presentacion,EP presenta el reporte trimestral,Empresa prestadora,Gerencia General EPS20,2026-10-27,2026-10-27,realizada,2026-10-27
+ACT-001876,RPI-2026-0080,2,unica,revision,Equipo SRT revisa la consistencia del reporte,Subdirección de Regulación Tarifaria,Especialista SRT-08,2026-10-27,2026-11-13,realizada,2026-11-14
+ACT-001633,UFI-2026-0001,10,unica,memo_gg,DRE firma el memorándum a la GG,Dirección de Regulación Económica,Director(a) DRE,2026-09-30,2026-10-01,realizada,2026-10-03
+ACT-001878,UFI-2026-0001,11,unica,elevacion_cd,GG eleva el expediente al Consejo Directivo,Gerencia General,Gerente(a) General,2026-10-01,2026-10-06,realizada,2026-10-06
+ACT-001879,UFI-2026-0001,12,unica,resolucion_cd,Consejo Directivo emite la resolución,Consejo Directivo,Consejo Directivo,2026-10-06,2026-10-12,realizada,2026-10-12

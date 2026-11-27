@@ -1,0 +1,11 @@
+Actualización de datos con corte al 20 de noviembre de 2026 (Desafío 3, datos para demostración).
+
+Mismas columnas que los datasets entregados. Cómo incorporarla:
+- ds02_procedimientos_actualizados: reemplaza la fila de cada id_expediente que ya existía y agrega los nuevos (reportes del 2026-T3).
+- ds02_hitos_nuevos_o_actualizados: reemplaza la fila (id_expediente, nro_hito) si ya existía y agrega las nuevas.
+- ds04_ejecucion_2026T3: nuevo trimestre de ejecución de inversiones (solo de las EPS que presentaron su reporte).
+- ds05_fondos_hasta_2026-10: meses nuevos de los fondos, hasta octubre de 2026 (solo los reportados al corte).
+- ds10_actuaciones_nuevas_o_actualizadas: reemplaza por id_actuacion si ya existía y agrega las nuevas.
+- ds11_documentos_nuevos: documentos nuevos.
+
+Uso opcional, no se entrega nada: procesen la actualización con su solución y muestren en el pitch las alertas que genera al 20/11/2026.

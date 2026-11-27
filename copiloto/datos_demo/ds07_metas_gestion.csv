@@ -1,0 +1,1331 @@
+cod_eps,periodo_regulatorio,cod_meta,nombre_meta,nivel,localidad,ubigeo,unidad,sentido,condiciona_incremento,anio_regulatorio,anio,valor_base,valor_meta,valor_alcanzado,cumplimiento_pct,fuente
+EPS01,2022-2026,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,1,2022,0.0,108.0,58.0,53.7,informe_supervision_sunass
+EPS01,2022-2026,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,1,2022,0.0,72.0,50.0,69.4,informe_supervision_sunass
+EPS01,2022-2026,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,1,2022,0.0,169.0,111.0,65.7,informe_supervision_sunass
+EPS01,2022-2026,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,1,2022,37.4,36.3,36.8,54.5,informe_supervision_sunass
+EPS01,2022-2026,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,1,2022,79.9,80.9,80.5,60.0,informe_supervision_sunass
+EPS01,2022-2026,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,1,2022,107.2,105.7,109.1,0.0,informe_supervision_sunass
+EPS01,2022-2026,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,1,2022,51.8,59.8,53.8,25.0,informe_supervision_sunass
+EPS01,2022-2026,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,1,2022,60.8,63.8,61.9,36.7,informe_supervision_sunass
+EPS01,2022-2026,MG05,Continuidad promedio del servicio,localidad,Juanjuí,220601,horas/día,mayor_es_mejor,False,1,2022,15.8,16.3,15.9,20.0,informe_supervision_sunass
+EPS01,2022-2026,MG06,Presión promedio del servicio,localidad,Juanjuí,220601,m.c.a.,mayor_es_mejor,False,1,2022,11.3,12.1,11.5,25.0,informe_supervision_sunass
+EPS01,2022-2026,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,2,2023,0.0,217.0,121.0,55.8,informe_supervision_sunass
+EPS01,2022-2026,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,2,2023,0.0,145.0,100.0,69.0,informe_supervision_sunass
+EPS01,2022-2026,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,2,2023,0.0,338.0,267.0,79.0,informe_supervision_sunass
+EPS01,2022-2026,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,2,2023,37.4,35.2,36.2,54.5,informe_supervision_sunass
+EPS01,2022-2026,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,2,2023,79.9,81.9,81.3,70.0,informe_supervision_sunass
+EPS01,2022-2026,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,2,2023,107.2,104.2,109.7,0.0,informe_supervision_sunass
+EPS01,2022-2026,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,2,2023,51.8,67.8,52.4,3.8,informe_supervision_sunass
+EPS01,2022-2026,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,2,2023,60.8,66.8,62.9,35.0,informe_supervision_sunass
+EPS01,2022-2026,MG05,Continuidad promedio del servicio,localidad,Juanjuí,220601,horas/día,mayor_es_mejor,False,2,2023,15.8,16.8,15.9,10.0,informe_supervision_sunass
+EPS01,2022-2026,MG06,Presión promedio del servicio,localidad,Juanjuí,220601,m.c.a.,mayor_es_mejor,False,2,2023,11.3,12.9,11.8,31.3,informe_supervision_sunass
+EPS01,2022-2026,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,3,2024,0.0,325.0,198.0,60.9,informe_supervision_sunass
+EPS01,2022-2026,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,3,2024,0.0,217.0,158.0,72.8,informe_supervision_sunass
+EPS01,2022-2026,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,3,2024,0.0,507.0,367.0,72.4,informe_supervision_sunass
+EPS01,2022-2026,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,3,2024,37.4,34.1,35.2,66.7,informe_supervision_sunass
+EPS01,2022-2026,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,3,2024,79.9,82.9,81.9,66.7,informe_supervision_sunass
+EPS01,2022-2026,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,3,2024,107.2,102.7,114.0,0.0,informe_supervision_sunass
+EPS01,2022-2026,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,3,2024,51.8,75.8,75.9,100.0,informe_supervision_sunass
+EPS01,2022-2026,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,3,2024,60.8,69.8,63.6,31.1,informe_supervision_sunass
+EPS01,2022-2026,MG05,Continuidad promedio del servicio,localidad,Juanjuí,220601,horas/día,mayor_es_mejor,False,3,2024,15.8,17.3,16.1,20.0,informe_supervision_sunass
+EPS01,2022-2026,MG06,Presión promedio del servicio,localidad,Juanjuí,220601,m.c.a.,mayor_es_mejor,False,3,2024,11.3,13.7,12.5,50.0,informe_supervision_sunass
+EPS01,2022-2026,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,4,2025,0.0,433.0,303.0,70.0,informe_supervision_sunass
+EPS01,2022-2026,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,4,2025,0.0,289.0,230.0,79.6,informe_supervision_sunass
+EPS01,2022-2026,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,4,2025,0.0,676.0,490.0,72.5,informe_supervision_sunass
+EPS01,2022-2026,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,4,2025,37.4,33.0,35.4,45.5,informe_supervision_sunass
+EPS01,2022-2026,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,4,2025,79.9,83.9,82.5,65.0,informe_supervision_sunass
+EPS01,2022-2026,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,4,2025,107.2,101.2,116.8,0.0,informe_supervision_sunass
+EPS01,2022-2026,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,4,2025,51.8,83.8,87.0,100.0,informe_supervision_sunass
+EPS01,2022-2026,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,4,2025,60.8,72.8,64.9,34.2,informe_supervision_sunass
+EPS01,2022-2026,MG05,Continuidad promedio del servicio,localidad,Juanjuí,220601,horas/día,mayor_es_mejor,False,4,2025,15.8,17.9,16.5,33.3,informe_supervision_sunass
+EPS01,2022-2026,MG06,Presión promedio del servicio,localidad,Juanjuí,220601,m.c.a.,mayor_es_mejor,False,4,2025,11.3,14.5,12.5,37.5,informe_supervision_sunass
+EPS01,2022-2026,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,5,2026,0.0,541.0,,,
+EPS01,2022-2026,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,5,2026,0.0,362.0,,,
+EPS01,2022-2026,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,5,2026,0.0,845.0,,,
+EPS01,2022-2026,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,5,2026,37.4,31.9,,,
+EPS01,2022-2026,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,5,2026,79.9,98.0,,,
+EPS01,2022-2026,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,5,2026,107.2,99.7,,,
+EPS01,2022-2026,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,5,2026,51.8,91.8,,,
+EPS01,2022-2026,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,5,2026,60.8,75.8,,,
+EPS01,2022-2026,MG05,Continuidad promedio del servicio,localidad,Juanjuí,220601,horas/día,mayor_es_mejor,False,5,2026,15.8,18.4,,,
+EPS01,2022-2026,MG06,Presión promedio del servicio,localidad,Juanjuí,220601,m.c.a.,mayor_es_mejor,False,5,2026,11.3,15.3,,,
+EPS02,2020-2024,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,3,2022,0.0,224.0,223.0,99.6,informe_supervision_sunass
+EPS02,2020-2024,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,3,2022,0.0,282.0,291.0,100.0,informe_supervision_sunass
+EPS02,2020-2024,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,3,2022,0.0,738.0,636.0,86.2,informe_supervision_sunass
+EPS02,2020-2024,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,3,2022,30.1,27.4,27.8,85.2,informe_supervision_sunass
+EPS02,2020-2024,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,3,2022,61.3,64.3,63.8,83.3,informe_supervision_sunass
+EPS02,2020-2024,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,3,2022,80.8,76.3,83.6,0.0,informe_supervision_sunass
+EPS02,2020-2024,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,3,2022,63.6,87.6,78.0,60.0,informe_supervision_sunass
+EPS02,2020-2024,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,3,2022,64.8,73.8,0.7,57.8,informe_supervision_sunass
+EPS02,2020-2024,MG05,Continuidad promedio del servicio,localidad,Tingo María,100601,horas/día,mayor_es_mejor,False,3,2022,15.8,18.7,17.5,58.6,informe_supervision_sunass
+EPS02,2020-2024,MG06,Presión promedio del servicio,localidad,Tingo María,100601,m.c.a.,mayor_es_mejor,False,3,2022,19.8,21.8,20.8,50.0,informe_supervision_sunass
+EPS02,2020-2024,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,4,2023,0.0,299.0,316.0,100.0,informe_supervision_sunass
+EPS02,2020-2024,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,4,2023,0.0,376.0,387.0,100.0,informe_supervision_sunass
+EPS02,2020-2024,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,4,2023,0.0,984.0,744.0,75.6,informe_supervision_sunass
+EPS02,2020-2024,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,4,2023,30.1,26.5,26.0,100.0,informe_supervision_sunass
+EPS02,2020-2024,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,4,2023,61.3,65.3,63.2,47.5,informe_supervision_sunass
+EPS02,2020-2024,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,4,2023,80.8,74.8,89.2,0.0,informe_supervision_sunass
+EPS02,2020-2024,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,4,2023,63.6,95.6,84.6,65.6,informe_supervision_sunass
+EPS02,2020-2024,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,4,2023,64.8,76.8,68.6,31.7,informe_supervision_sunass
+EPS02,2020-2024,MG05,Continuidad promedio del servicio,localidad,Tingo María,100601,horas/día,mayor_es_mejor,False,4,2023,15.8,19.7,18.6,71.8,informe_supervision_sunass
+EPS02,2020-2024,MG06,Presión promedio del servicio,localidad,Tingo María,100601,m.c.a.,mayor_es_mejor,False,4,2023,19.8,22.4,20.4,23.1,informe_supervision_sunass
+EPS02,2020-2024,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,5,2024,0.0,373.0,373.0,100.0,informe_supervision_sunass
+EPS02,2020-2024,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,5,2024,0.0,470.0,473.0,100.0,informe_supervision_sunass
+EPS02,2020-2024,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,5,2024,0.0,1230.0,1112.0,90.4,informe_supervision_sunass
+EPS02,2020-2024,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,5,2024,30.1,25.6,26.0,91.1,informe_supervision_sunass
+EPS02,2020-2024,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,5,2024,61.3,66.3,66.1,96.0,informe_supervision_sunass
+EPS02,2020-2024,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,5,2024,80.8,73.3,96.6,0.0,informe_supervision_sunass
+EPS02,2020-2024,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,5,2024,63.6,100.0,89.4,70.9,informe_supervision_sunass
+EPS02,2020-2024,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,5,2024,64.8,79.8,76.3,76.7,informe_supervision_sunass
+EPS02,2020-2024,MG05,Continuidad promedio del servicio,localidad,Tingo María,100601,horas/día,mayor_es_mejor,False,5,2024,15.8,20.6,18.0,45.8,informe_supervision_sunass
+EPS02,2020-2024,MG06,Presión promedio del servicio,localidad,Tingo María,100601,m.c.a.,mayor_es_mejor,False,5,2024,19.8,23.1,21.7,57.6,informe_supervision_sunass
+EPS02,2025-2029,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,1,2025,0.0,159.0,135.0,84.9,informe_supervision_sunass
+EPS02,2025-2029,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,1,2025,0.0,112.0,98.0,87.5,informe_supervision_sunass
+EPS02,2025-2029,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,1,2025,0.0,176.0,141.0,80.1,informe_supervision_sunass
+EPS02,2025-2029,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,1,2025,31.3,30.3,30.3,100.0,informe_supervision_sunass
+EPS02,2025-2029,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,1,2025,42.6,43.6,43.4,80.0,informe_supervision_sunass
+EPS02,2025-2029,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,1,2025,96.6,95.1,101.4,0.0,informe_supervision_sunass
+EPS02,2025-2029,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,1,2025,79.4,87.4,84.1,58.7,informe_supervision_sunass
+EPS02,2025-2029,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,1,2025,69.0,72.0,70.5,50.0,informe_supervision_sunass
+EPS02,2025-2029,MG05,Continuidad promedio del servicio,localidad,Tingo María,100601,horas/día,mayor_es_mejor,False,1,2025,12.6,13.1,12.9,60.0,informe_supervision_sunass
+EPS02,2025-2029,MG06,Presión promedio del servicio,localidad,Tingo María,100601,m.c.a.,mayor_es_mejor,False,1,2025,16.7,17.1,16.9,50.0,informe_supervision_sunass
+EPS02,2025-2029,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,2,2026,0.0,319.0,,,
+EPS02,2025-2029,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,2,2026,0.0,225.0,,,
+EPS02,2025-2029,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,2,2026,0.0,352.0,,,
+EPS02,2025-2029,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,2,2026,31.3,29.4,,,
+EPS02,2025-2029,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,2,2026,42.6,44.6,,,
+EPS02,2025-2029,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,2,2026,96.6,93.6,,,
+EPS02,2025-2029,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,2,2026,79.4,95.4,,,
+EPS02,2025-2029,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,2,2026,69.0,75.0,,,
+EPS02,2025-2029,MG05,Continuidad promedio del servicio,localidad,Tingo María,100601,horas/día,mayor_es_mejor,False,2,2026,12.6,13.7,,,
+EPS02,2025-2029,MG06,Presión promedio del servicio,localidad,Tingo María,100601,m.c.a.,mayor_es_mejor,False,2,2026,16.7,17.4,,,
+EPS03,2018-2022,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,5,2022,0.0,5840.0,6401.0,100.0,informe_supervision_sunass
+EPS03,2018-2022,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,5,2022,0.0,4957.0,5127.0,100.0,informe_supervision_sunass
+EPS03,2018-2022,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,5,2022,0.0,14200.0,15323.0,100.0,informe_supervision_sunass
+EPS03,2018-2022,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,5,2022,33.7,26.6,27.3,90.1,informe_supervision_sunass
+EPS03,2018-2022,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,5,2022,59.5,92.8,98.0,100.0,informe_supervision_sunass
+EPS03,2018-2022,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,5,2022,59.5,55.0,60.7,0.0,informe_supervision_sunass
+EPS03,2018-2022,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,5,2022,47.8,87.8,74.4,66.5,informe_supervision_sunass
+EPS03,2018-2022,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,5,2022,64.4,79.4,74.4,66.7,informe_supervision_sunass
+EPS03,2018-2022,MG05,Continuidad promedio del servicio,localidad,Arequipa,040101,horas/día,mayor_es_mejor,False,5,2022,17.2,19.6,19.2,83.3,informe_supervision_sunass
+EPS03,2018-2022,MG06,Presión promedio del servicio,localidad,Arequipa,040101,m.c.a.,mayor_es_mejor,False,5,2022,9.4,12.9,12.1,77.1,informe_supervision_sunass
+EPS03,2018-2022,MG05,Continuidad promedio del servicio,localidad,La Libertad,040104,horas/día,mayor_es_mejor,False,5,2022,17.7,22.4,22.6,100.0,informe_supervision_sunass
+EPS03,2018-2022,MG06,Presión promedio del servicio,localidad,La Libertad,040104,m.c.a.,mayor_es_mejor,False,5,2022,13.9,16.6,16.6,100.0,informe_supervision_sunass
+EPS03,2018-2022,MG05,Continuidad promedio del servicio,localidad,Paucarpata,040112,horas/día,mayor_es_mejor,False,5,2022,20.0,24.0,23.2,80.0,informe_supervision_sunass
+EPS03,2018-2022,MG06,Presión promedio del servicio,localidad,Paucarpata,040112,m.c.a.,mayor_es_mejor,False,5,2022,13.8,16.6,16.3,89.3,informe_supervision_sunass
+EPS03,2018-2022,MG05,Continuidad promedio del servicio,localidad,Cayma,040103,horas/día,mayor_es_mejor,False,5,2022,18.4,21.8,21.1,79.4,informe_supervision_sunass
+EPS03,2018-2022,MG06,Presión promedio del servicio,localidad,Cayma,040103,m.c.a.,mayor_es_mejor,False,5,2022,16.1,18.9,19.4,100.0,informe_supervision_sunass
+EPS03,2023-2027,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,1,2023,0.0,1756.0,1229.0,70.0,informe_supervision_sunass
+EPS03,2023-2027,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,1,2023,0.0,1652.0,1212.0,73.4,informe_supervision_sunass
+EPS03,2023-2027,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,1,2023,0.0,4479.0,3256.0,72.7,informe_supervision_sunass
+EPS03,2023-2027,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,1,2023,37.8,36.5,36.7,84.6,informe_supervision_sunass
+EPS03,2023-2027,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,1,2023,22.1,23.1,23.1,100.0,informe_supervision_sunass
+EPS03,2023-2027,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,1,2023,60.7,59.2,60.7,0.0,informe_supervision_sunass
+EPS03,2023-2027,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,1,2023,56.0,64.0,60.8,60.0,informe_supervision_sunass
+EPS03,2023-2027,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,1,2023,84.0,87.0,84.8,26.7,informe_supervision_sunass
+EPS03,2023-2027,MG05,Continuidad promedio del servicio,localidad,Arequipa,040101,horas/día,mayor_es_mejor,False,1,2023,20.6,21.0,20.9,75.0,informe_supervision_sunass
+EPS03,2023-2027,MG06,Presión promedio del servicio,localidad,Arequipa,040101,m.c.a.,mayor_es_mejor,False,1,2023,11.6,12.4,12.5,100.0,informe_supervision_sunass
+EPS03,2023-2027,MG05,Continuidad promedio del servicio,localidad,La Libertad,040104,horas/día,mayor_es_mejor,False,1,2023,16.1,17.0,16.7,66.7,informe_supervision_sunass
+EPS03,2023-2027,MG06,Presión promedio del servicio,localidad,La Libertad,040104,m.c.a.,mayor_es_mejor,False,1,2023,13.8,14.2,14.1,75.0,informe_supervision_sunass
+EPS03,2023-2027,MG05,Continuidad promedio del servicio,localidad,Paucarpata,040112,horas/día,mayor_es_mejor,False,1,2023,18.1,18.8,18.8,100.0,informe_supervision_sunass
+EPS03,2023-2027,MG06,Presión promedio del servicio,localidad,Paucarpata,040112,m.c.a.,mayor_es_mejor,False,1,2023,19.6,20.2,20.3,100.0,informe_supervision_sunass
+EPS03,2023-2027,MG05,Continuidad promedio del servicio,localidad,Cayma,040103,horas/día,mayor_es_mejor,False,1,2023,10.7,11.5,11.6,100.0,informe_supervision_sunass
+EPS03,2023-2027,MG06,Presión promedio del servicio,localidad,Cayma,040103,m.c.a.,mayor_es_mejor,False,1,2023,10.7,11.1,11.1,100.0,informe_supervision_sunass
+EPS03,2023-2027,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,2,2024,0.0,3513.0,2492.0,70.9,informe_supervision_sunass
+EPS03,2023-2027,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,2,2024,0.0,3305.0,2801.0,84.8,informe_supervision_sunass
+EPS03,2023-2027,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,2,2024,0.0,8958.0,8307.0,92.7,informe_supervision_sunass
+EPS03,2023-2027,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,2,2024,37.8,35.1,34.3,100.0,informe_supervision_sunass
+EPS03,2023-2027,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,2,2024,22.1,24.1,24.1,100.0,informe_supervision_sunass
+EPS03,2023-2027,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,2,2024,60.7,57.7,63.1,0.0,informe_supervision_sunass
+EPS03,2023-2027,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,2,2024,56.0,72.0,57.6,10.0,informe_supervision_sunass
+EPS03,2023-2027,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,2,2024,84.0,90.0,88.4,73.3,informe_supervision_sunass
+EPS03,2023-2027,MG05,Continuidad promedio del servicio,localidad,Arequipa,040101,horas/día,mayor_es_mejor,False,2,2024,20.6,21.4,20.9,37.5,informe_supervision_sunass
+EPS03,2023-2027,MG06,Presión promedio del servicio,localidad,Arequipa,040101,m.c.a.,mayor_es_mejor,False,2,2024,11.6,13.1,12.8,80.0,informe_supervision_sunass
+EPS03,2023-2027,MG05,Continuidad promedio del servicio,localidad,La Libertad,040104,horas/día,mayor_es_mejor,False,2,2024,16.1,18.0,17.4,68.4,informe_supervision_sunass
+EPS03,2023-2027,MG06,Presión promedio del servicio,localidad,La Libertad,040104,m.c.a.,mayor_es_mejor,False,2,2024,13.8,14.6,14.6,100.0,informe_supervision_sunass
+EPS03,2023-2027,MG05,Continuidad promedio del servicio,localidad,Paucarpata,040112,horas/día,mayor_es_mejor,False,2,2024,18.1,19.5,19.0,64.3,informe_supervision_sunass
+EPS03,2023-2027,MG06,Presión promedio del servicio,localidad,Paucarpata,040112,m.c.a.,mayor_es_mejor,False,2,2024,19.6,20.9,21.0,100.0,informe_supervision_sunass
+EPS03,2023-2027,MG05,Continuidad promedio del servicio,localidad,Cayma,040103,horas/día,mayor_es_mejor,False,2,2024,10.7,12.4,12.1,82.4,informe_supervision_sunass
+EPS03,2023-2027,MG06,Presión promedio del servicio,localidad,Cayma,040103,m.c.a.,mayor_es_mejor,False,2,2024,10.7,11.5,11.4,87.5,informe_supervision_sunass
+EPS03,2023-2027,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,3,2025,0.0,5269.0,5893.0,100.0,informe_supervision_sunass
+EPS03,2023-2027,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,3,2025,0.0,4957.0,5705.0,100.0,informe_supervision_sunass
+EPS03,2023-2027,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,3,2025,0.0,13438.0,11348.0,84.4,informe_supervision_sunass
+EPS03,2023-2027,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,3,2025,37.8,33.8,34.7,77.5,informe_supervision_sunass
+EPS03,2023-2027,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,3,2025,22.1,55.7,25.5,10.1,informe_supervision_sunass
+EPS03,2023-2027,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,3,2025,60.7,56.2,62.8,0.0,informe_supervision_sunass
+EPS03,2023-2027,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,3,2025,56.0,80.0,76.9,87.1,informe_supervision_sunass
+EPS03,2023-2027,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,3,2025,84.0,93.0,89.4,60.0,informe_supervision_sunass
+EPS03,2023-2027,MG05,Continuidad promedio del servicio,localidad,Arequipa,040101,horas/día,mayor_es_mejor,False,3,2025,20.6,21.8,21.9,100.0,informe_supervision_sunass
+EPS03,2023-2027,MG06,Presión promedio del servicio,localidad,Arequipa,040101,m.c.a.,mayor_es_mejor,False,3,2025,11.6,13.9,13.5,82.6,informe_supervision_sunass
+EPS03,2023-2027,MG05,Continuidad promedio del servicio,localidad,La Libertad,040104,horas/día,mayor_es_mejor,False,3,2025,16.1,18.9,17.8,60.7,informe_supervision_sunass
+EPS03,2023-2027,MG06,Presión promedio del servicio,localidad,La Libertad,040104,m.c.a.,mayor_es_mejor,False,3,2025,13.8,15.1,15.1,100.0,informe_supervision_sunass
+EPS03,2023-2027,MG05,Continuidad promedio del servicio,localidad,Paucarpata,040112,horas/día,mayor_es_mejor,False,3,2025,18.1,20.2,19.3,57.1,informe_supervision_sunass
+EPS03,2023-2027,MG06,Presión promedio del servicio,localidad,Paucarpata,040112,m.c.a.,mayor_es_mejor,False,3,2025,19.6,21.5,20.9,68.4,informe_supervision_sunass
+EPS03,2023-2027,MG05,Continuidad promedio del servicio,localidad,Cayma,040103,horas/día,mayor_es_mejor,False,3,2025,10.7,13.2,13.2,100.0,informe_supervision_sunass
+EPS03,2023-2027,MG06,Presión promedio del servicio,localidad,Cayma,040103,m.c.a.,mayor_es_mejor,False,3,2025,10.7,12.0,11.7,76.9,informe_supervision_sunass
+EPS03,2023-2027,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,4,2026,0.0,7025.0,,,
+EPS03,2023-2027,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,4,2026,0.0,6609.0,,,
+EPS03,2023-2027,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,4,2026,0.0,17917.0,,,
+EPS03,2023-2027,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,4,2026,37.8,32.4,,,
+EPS03,2023-2027,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,4,2026,22.1,55.7,,,
+EPS03,2023-2027,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,4,2026,60.7,55.0,,,
+EPS03,2023-2027,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,4,2026,56.0,88.0,,,
+EPS03,2023-2027,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,4,2026,84.0,96.0,,,
+EPS03,2023-2027,MG05,Continuidad promedio del servicio,localidad,Arequipa,040101,horas/día,mayor_es_mejor,False,4,2026,20.6,22.2,,,
+EPS03,2023-2027,MG06,Presión promedio del servicio,localidad,Arequipa,040101,m.c.a.,mayor_es_mejor,False,4,2026,11.6,14.6,,,
+EPS03,2023-2027,MG05,Continuidad promedio del servicio,localidad,La Libertad,040104,horas/día,mayor_es_mejor,False,4,2026,16.1,19.8,,,
+EPS03,2023-2027,MG06,Presión promedio del servicio,localidad,La Libertad,040104,m.c.a.,mayor_es_mejor,False,4,2026,13.8,15.5,,,
+EPS03,2023-2027,MG05,Continuidad promedio del servicio,localidad,Paucarpata,040112,horas/día,mayor_es_mejor,False,4,2026,18.1,20.9,,,
+EPS03,2023-2027,MG06,Presión promedio del servicio,localidad,Paucarpata,040112,m.c.a.,mayor_es_mejor,False,4,2026,19.6,22.2,,,
+EPS03,2023-2027,MG05,Continuidad promedio del servicio,localidad,Cayma,040103,horas/día,mayor_es_mejor,False,4,2026,10.7,14.0,,,
+EPS03,2023-2027,MG06,Presión promedio del servicio,localidad,Cayma,040103,m.c.a.,mayor_es_mejor,False,4,2026,10.7,12.4,,,
+EPS04,2022-2026,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,1,2022,0.0,551.0,322.0,58.4,informe_supervision_sunass
+EPS04,2022-2026,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,1,2022,0.0,165.0,140.0,84.8,informe_supervision_sunass
+EPS04,2022-2026,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,1,2022,0.0,675.0,369.0,54.7,informe_supervision_sunass
+EPS04,2022-2026,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,1,2022,30.5,29.1,29.3,85.7,informe_supervision_sunass
+EPS04,2022-2026,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,1,2022,20.7,21.7,21.5,80.0,informe_supervision_sunass
+EPS04,2022-2026,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,1,2022,76.2,74.7,78.5,0.0,informe_supervision_sunass
+EPS04,2022-2026,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,1,2022,48.7,56.7,53.2,56.2,informe_supervision_sunass
+EPS04,2022-2026,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,1,2022,72.4,75.4,72.5,3.3,informe_supervision_sunass
+EPS04,2022-2026,MG05,Continuidad promedio del servicio,localidad,Puno,210101,horas/día,mayor_es_mejor,False,1,2022,11.0,11.5,11.3,60.0,informe_supervision_sunass
+EPS04,2022-2026,MG06,Presión promedio del servicio,localidad,Puno,210101,m.c.a.,mayor_es_mejor,False,1,2022,12.1,12.7,12.4,50.0,informe_supervision_sunass
+EPS04,2022-2026,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,2,2023,0.0,1102.0,953.0,86.5,informe_supervision_sunass
+EPS04,2022-2026,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,2,2023,0.0,331.0,205.0,61.9,informe_supervision_sunass
+EPS04,2022-2026,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,2,2023,0.0,1350.0,1084.0,80.3,informe_supervision_sunass
+EPS04,2022-2026,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,2,2023,30.5,27.8,29.0,55.6,informe_supervision_sunass
+EPS04,2022-2026,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,2,2023,20.7,22.7,22.7,100.0,informe_supervision_sunass
+EPS04,2022-2026,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,2,2023,76.2,73.2,81.1,0.0,informe_supervision_sunass
+EPS04,2022-2026,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,2,2023,48.7,64.7,58.6,61.9,informe_supervision_sunass
+EPS04,2022-2026,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,2,2023,72.4,78.4,76.9,75.0,informe_supervision_sunass
+EPS04,2022-2026,MG05,Continuidad promedio del servicio,localidad,Puno,210101,horas/día,mayor_es_mejor,False,2,2023,11.0,11.9,11.7,77.8,informe_supervision_sunass
+EPS04,2022-2026,MG06,Presión promedio del servicio,localidad,Puno,210101,m.c.a.,mayor_es_mejor,False,2,2023,12.1,13.4,12.7,46.2,informe_supervision_sunass
+EPS04,2022-2026,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,3,2024,0.0,1653.0,1437.0,86.9,informe_supervision_sunass
+EPS04,2022-2026,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,3,2024,0.0,496.0,315.0,63.5,informe_supervision_sunass
+EPS04,2022-2026,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,3,2024,0.0,2025.0,1991.0,98.3,informe_supervision_sunass
+EPS04,2022-2026,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,3,2024,30.5,26.5,27.8,67.5,informe_supervision_sunass
+EPS04,2022-2026,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,3,2024,20.7,23.7,23.4,90.0,informe_supervision_sunass
+EPS04,2022-2026,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,3,2024,76.2,71.7,81.0,0.0,informe_supervision_sunass
+EPS04,2022-2026,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,3,2024,48.7,72.7,65.9,71.7,informe_supervision_sunass
+EPS04,2022-2026,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,3,2024,72.4,81.4,82.4,100.0,informe_supervision_sunass
+EPS04,2022-2026,MG05,Continuidad promedio del servicio,localidad,Puno,210101,horas/día,mayor_es_mejor,False,3,2024,11.0,12.4,12.0,71.4,informe_supervision_sunass
+EPS04,2022-2026,MG06,Presión promedio del servicio,localidad,Puno,210101,m.c.a.,mayor_es_mejor,False,3,2024,12.1,14.0,13.4,68.4,informe_supervision_sunass
+EPS04,2022-2026,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,4,2025,0.0,2204.0,2189.0,99.3,informe_supervision_sunass
+EPS04,2022-2026,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,4,2025,0.0,662.0,402.0,60.7,informe_supervision_sunass
+EPS04,2022-2026,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,4,2025,0.0,2700.0,2686.0,99.5,informe_supervision_sunass
+EPS04,2022-2026,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,4,2025,30.5,25.2,27.4,58.5,informe_supervision_sunass
+EPS04,2022-2026,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,4,2025,20.7,24.7,25.1,100.0,informe_supervision_sunass
+EPS04,2022-2026,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,4,2025,76.2,70.2,81.2,0.0,informe_supervision_sunass
+EPS04,2022-2026,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,4,2025,48.7,80.7,48.7,0.0,informe_supervision_sunass
+EPS04,2022-2026,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,4,2025,72.4,84.4,81.9,79.2,informe_supervision_sunass
+EPS04,2022-2026,MG05,Continuidad promedio del servicio,localidad,Puno,210101,horas/día,mayor_es_mejor,False,4,2025,11.0,12.9,12.5,78.9,informe_supervision_sunass
+EPS04,2022-2026,MG06,Presión promedio del servicio,localidad,Puno,210101,m.c.a.,mayor_es_mejor,False,4,2025,12.1,14.7,13.8,65.4,informe_supervision_sunass
+EPS04,2022-2026,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,5,2026,0.0,2755.0,,,
+EPS04,2022-2026,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,5,2026,0.0,827.0,,,
+EPS04,2022-2026,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,5,2026,0.0,3375.0,,,
+EPS04,2022-2026,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,5,2026,30.5,23.9,,,
+EPS04,2022-2026,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,5,2026,20.7,55.1,,,
+EPS04,2022-2026,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,5,2026,76.2,68.7,,,
+EPS04,2022-2026,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,5,2026,48.7,88.7,,,
+EPS04,2022-2026,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,5,2026,72.4,87.4,,,
+EPS04,2022-2026,MG05,Continuidad promedio del servicio,localidad,Puno,210101,horas/día,mayor_es_mejor,False,5,2026,11.0,13.4,,,
+EPS04,2022-2026,MG06,Presión promedio del servicio,localidad,Puno,210101,m.c.a.,mayor_es_mejor,False,5,2026,12.1,15.3,,,
+EPS05,2020-2024,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,3,2022,0.0,22.0,18.0,81.8,informe_supervision_sunass
+EPS05,2020-2024,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,3,2022,0.0,10.0,9.0,90.0,informe_supervision_sunass
+EPS05,2020-2024,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,3,2022,0.0,34.0,35.0,100.0,informe_supervision_sunass
+EPS05,2020-2024,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,3,2022,37.4,33.4,33.2,100.0,informe_supervision_sunass
+EPS05,2020-2024,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,3,2022,33.9,36.9,37.6,100.0,informe_supervision_sunass
+EPS05,2020-2024,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,3,2022,73.3,68.8,75.2,0.0,informe_supervision_sunass
+EPS05,2020-2024,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,3,2022,41.6,65.6,58.2,69.2,informe_supervision_sunass
+EPS05,2020-2024,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,3,2022,84.9,93.9,91.9,77.8,informe_supervision_sunass
+EPS05,2020-2024,MG05,Continuidad promedio del servicio,localidad,Iñapari,170301,horas/día,mayor_es_mejor,False,3,2022,18.4,20.1,20.4,100.0,informe_supervision_sunass
+EPS05,2020-2024,MG06,Presión promedio del servicio,localidad,Iñapari,170301,m.c.a.,mayor_es_mejor,False,3,2022,11.2,12.7,12.2,66.7,informe_supervision_sunass
+EPS05,2020-2024,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,4,2023,0.0,30.0,23.0,76.7,informe_supervision_sunass
+EPS05,2020-2024,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,4,2023,0.0,13.0,13.0,100.0,informe_supervision_sunass
+EPS05,2020-2024,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,4,2023,0.0,46.0,46.0,100.0,informe_supervision_sunass
+EPS05,2020-2024,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,4,2023,37.4,32.0,31.1,100.0,informe_supervision_sunass
+EPS05,2020-2024,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,4,2023,33.9,66.3,38.2,13.3,informe_supervision_sunass
+EPS05,2020-2024,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,4,2023,73.3,67.3,75.0,0.0,informe_supervision_sunass
+EPS05,2020-2024,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,4,2023,41.6,73.6,72.7,97.2,informe_supervision_sunass
+EPS05,2020-2024,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,4,2023,84.9,96.9,92.9,66.7,informe_supervision_sunass
+EPS05,2020-2024,MG05,Continuidad promedio del servicio,localidad,Iñapari,170301,horas/día,mayor_es_mejor,False,4,2023,18.4,20.7,20.9,100.0,informe_supervision_sunass
+EPS05,2020-2024,MG06,Presión promedio del servicio,localidad,Iñapari,170301,m.c.a.,mayor_es_mejor,False,4,2023,11.2,13.2,13.3,100.0,informe_supervision_sunass
+EPS05,2020-2024,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,5,2024,0.0,37.0,37.0,100.0,informe_supervision_sunass
+EPS05,2020-2024,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,5,2024,0.0,17.0,15.0,88.2,informe_supervision_sunass
+EPS05,2020-2024,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,5,2024,0.0,57.0,54.0,94.7,informe_supervision_sunass
+EPS05,2020-2024,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,5,2024,37.4,30.7,30.7,100.0,informe_supervision_sunass
+EPS05,2020-2024,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,5,2024,33.9,66.3,38.7,14.8,informe_supervision_sunass
+EPS05,2020-2024,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,5,2024,73.3,65.8,76.0,0.0,informe_supervision_sunass
+EPS05,2020-2024,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,5,2024,41.6,81.6,85.6,100.0,informe_supervision_sunass
+EPS05,2020-2024,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,5,2024,84.9,98.0,95.6,81.7,informe_supervision_sunass
+EPS05,2020-2024,MG05,Continuidad promedio del servicio,localidad,Iñapari,170301,horas/día,mayor_es_mejor,False,5,2024,18.4,21.3,20.9,86.2,informe_supervision_sunass
+EPS05,2020-2024,MG06,Presión promedio del servicio,localidad,Iñapari,170301,m.c.a.,mayor_es_mejor,False,5,2024,11.2,13.7,12.8,64.0,informe_supervision_sunass
+EPS05,2025-2029,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,1,2025,0.0,6.0,7.0,100.0,informe_supervision_sunass
+EPS05,2025-2029,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,1,2025,0.0,5.0,5.0,100.0,informe_supervision_sunass
+EPS05,2025-2029,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,1,2025,0.0,21.0,20.0,95.2,informe_supervision_sunass
+EPS05,2025-2029,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,1,2025,32.8,31.5,31.6,92.3,informe_supervision_sunass
+EPS05,2025-2029,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,1,2025,51.9,52.9,53.0,100.0,informe_supervision_sunass
+EPS05,2025-2029,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,1,2025,76.0,74.5,76.3,0.0,informe_supervision_sunass
+EPS05,2025-2029,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,1,2025,65.8,73.8,71.4,70.0,informe_supervision_sunass
+EPS05,2025-2029,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,1,2025,68.0,71.0,70.7,90.0,informe_supervision_sunass
+EPS05,2025-2029,MG05,Continuidad promedio del servicio,localidad,Iñapari,170301,horas/día,mayor_es_mejor,False,1,2025,14.3,15.1,15.0,87.5,informe_supervision_sunass
+EPS05,2025-2029,MG06,Presión promedio del servicio,localidad,Iñapari,170301,m.c.a.,mayor_es_mejor,False,1,2025,10.3,11.0,10.9,85.7,informe_supervision_sunass
+EPS05,2025-2029,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,2,2026,0.0,13.0,,,
+EPS05,2025-2029,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,2,2026,0.0,9.0,,,
+EPS05,2025-2029,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,2,2026,0.0,41.0,,,
+EPS05,2025-2029,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,2,2026,32.8,30.2,,,
+EPS05,2025-2029,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,2,2026,51.9,53.9,,,
+EPS05,2025-2029,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,2,2026,76.0,73.0,,,
+EPS05,2025-2029,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,2,2026,65.8,81.8,,,
+EPS05,2025-2029,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,2,2026,68.0,74.0,,,
+EPS05,2025-2029,MG05,Continuidad promedio del servicio,localidad,Iñapari,170301,horas/día,mayor_es_mejor,False,2,2026,14.3,15.9,,,
+EPS05,2025-2029,MG06,Presión promedio del servicio,localidad,Iñapari,170301,m.c.a.,mayor_es_mejor,False,2,2026,10.3,11.8,,,
+EPS06,2022-2026,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,1,2022,0.0,1531.0,1144.0,74.7,informe_supervision_sunass
+EPS06,2022-2026,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,1,2022,0.0,1836.0,1688.0,91.9,informe_supervision_sunass
+EPS06,2022-2026,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,1,2022,0.0,6959.0,6654.0,95.6,informe_supervision_sunass
+EPS06,2022-2026,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,1,2022,31.3,30.4,30.6,77.8,informe_supervision_sunass
+EPS06,2022-2026,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,1,2022,31.9,32.9,33.2,100.0,informe_supervision_sunass
+EPS06,2022-2026,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,1,2022,79.5,78.0,82.1,0.0,informe_supervision_sunass
+EPS06,2022-2026,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,1,2022,77.9,85.9,83.3,67.5,informe_supervision_sunass
+EPS06,2022-2026,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,1,2022,80.4,83.4,82.2,60.0,informe_supervision_sunass
+EPS06,2022-2026,MG05,Continuidad promedio del servicio,localidad,Iquitos,160101,horas/día,mayor_es_mejor,False,1,2022,13.8,14.2,14.1,75.0,informe_supervision_sunass
+EPS06,2022-2026,MG06,Presión promedio del servicio,localidad,Iquitos,160101,m.c.a.,mayor_es_mejor,False,1,2022,15.3,15.9,15.7,66.7,informe_supervision_sunass
+EPS06,2022-2026,MG05,Continuidad promedio del servicio,localidad,San Juan,160113,horas/día,mayor_es_mejor,False,1,2022,10.4,10.9,10.9,100.0,informe_supervision_sunass
+EPS06,2022-2026,MG06,Presión promedio del servicio,localidad,San Juan,160113,m.c.a.,mayor_es_mejor,False,1,2022,10.2,10.9,10.8,85.7,informe_supervision_sunass
+EPS06,2022-2026,MG05,Continuidad promedio del servicio,localidad,Punchana,160108,horas/día,mayor_es_mejor,False,1,2022,21.2,21.6,21.5,75.0,informe_supervision_sunass
+EPS06,2022-2026,MG06,Presión promedio del servicio,localidad,Punchana,160108,m.c.a.,mayor_es_mejor,False,1,2022,10.7,11.1,10.9,50.0,informe_supervision_sunass
+EPS06,2022-2026,MG05,Continuidad promedio del servicio,localidad,Yurimaguas,160201,horas/día,mayor_es_mejor,False,1,2022,14.5,14.9,14.7,50.0,informe_supervision_sunass
+EPS06,2022-2026,MG06,Presión promedio del servicio,localidad,Yurimaguas,160201,m.c.a.,mayor_es_mejor,False,1,2022,17.1,17.7,17.6,83.3,informe_supervision_sunass
+EPS06,2022-2026,MG05,Continuidad promedio del servicio,localidad,Belén,160112,horas/día,mayor_es_mejor,False,1,2022,13.5,14.4,14.4,100.0,informe_supervision_sunass
+EPS06,2022-2026,MG06,Presión promedio del servicio,localidad,Belén,160112,m.c.a.,mayor_es_mejor,False,1,2022,12.3,12.6,12.4,33.3,informe_supervision_sunass
+EPS06,2022-2026,MG05,Continuidad promedio del servicio,localidad,Nauta,160301,horas/día,mayor_es_mejor,False,1,2022,13.8,14.3,14.1,60.0,informe_supervision_sunass
+EPS06,2022-2026,MG06,Presión promedio del servicio,localidad,Nauta,160301,m.c.a.,mayor_es_mejor,False,1,2022,12.2,12.9,12.8,85.7,informe_supervision_sunass
+EPS06,2022-2026,MG05,Continuidad promedio del servicio,localidad,Requena,160501,horas/día,mayor_es_mejor,False,1,2022,17.2,18.0,17.8,75.0,informe_supervision_sunass
+EPS06,2022-2026,MG06,Presión promedio del servicio,localidad,Requena,160501,m.c.a.,mayor_es_mejor,False,1,2022,9.3,10.1,9.8,62.5,informe_supervision_sunass
+EPS06,2022-2026,MG05,Continuidad promedio del servicio,localidad,Contamana,160601,horas/día,mayor_es_mejor,False,1,2022,12.7,13.3,13.2,83.3,informe_supervision_sunass
+EPS06,2022-2026,MG06,Presión promedio del servicio,localidad,Contamana,160601,m.c.a.,mayor_es_mejor,False,1,2022,14.8,15.5,15.1,42.9,informe_supervision_sunass
+EPS06,2022-2026,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,2,2023,0.0,3062.0,2389.0,78.0,informe_supervision_sunass
+EPS06,2022-2026,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,2,2023,0.0,3673.0,3519.0,95.8,informe_supervision_sunass
+EPS06,2022-2026,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,2,2023,0.0,13918.0,13961.0,100.0,informe_supervision_sunass
+EPS06,2022-2026,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,2,2023,31.3,29.6,30.0,76.5,informe_supervision_sunass
+EPS06,2022-2026,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,2,2023,31.9,33.9,34.2,100.0,informe_supervision_sunass
+EPS06,2022-2026,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,2,2023,79.5,76.5,82.4,0.0,informe_supervision_sunass
+EPS06,2022-2026,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,2,2023,77.9,93.9,91.9,87.5,informe_supervision_sunass
+EPS06,2022-2026,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,2,2023,80.4,86.4,87.6,100.0,informe_supervision_sunass
+EPS06,2022-2026,MG05,Continuidad promedio del servicio,localidad,Iquitos,160101,horas/día,mayor_es_mejor,False,2,2023,13.8,14.7,14.7,100.0,informe_supervision_sunass
+EPS06,2022-2026,MG06,Presión promedio del servicio,localidad,Iquitos,160101,m.c.a.,mayor_es_mejor,False,2,2023,15.3,16.5,16.5,100.0,informe_supervision_sunass
+EPS06,2022-2026,MG05,Continuidad promedio del servicio,localidad,San Juan,160113,horas/día,mayor_es_mejor,False,2,2023,10.4,11.4,11.0,60.0,informe_supervision_sunass
+EPS06,2022-2026,MG06,Presión promedio del servicio,localidad,San Juan,160113,m.c.a.,mayor_es_mejor,False,2,2023,10.2,11.5,11.7,100.0,informe_supervision_sunass
+EPS06,2022-2026,MG05,Continuidad promedio del servicio,localidad,Punchana,160108,horas/día,mayor_es_mejor,False,2,2023,21.2,22.0,21.9,87.5,informe_supervision_sunass
+EPS06,2022-2026,MG06,Presión promedio del servicio,localidad,Punchana,160108,m.c.a.,mayor_es_mejor,False,2,2023,10.7,11.4,11.1,57.1,informe_supervision_sunass
+EPS06,2022-2026,MG05,Continuidad promedio del servicio,localidad,Yurimaguas,160201,horas/día,mayor_es_mejor,False,2,2023,14.5,15.4,15.1,66.7,informe_supervision_sunass
+EPS06,2022-2026,MG06,Presión promedio del servicio,localidad,Yurimaguas,160201,m.c.a.,mayor_es_mejor,False,2,2023,17.1,18.3,18.3,100.0,informe_supervision_sunass
+EPS06,2022-2026,MG05,Continuidad promedio del servicio,localidad,Belén,160112,horas/día,mayor_es_mejor,False,2,2023,13.5,15.3,14.8,72.2,informe_supervision_sunass
+EPS06,2022-2026,MG06,Presión promedio del servicio,localidad,Belén,160112,m.c.a.,mayor_es_mejor,False,2,2023,12.3,12.9,12.8,83.3,informe_supervision_sunass
+EPS06,2022-2026,MG05,Continuidad promedio del servicio,localidad,Nauta,160301,horas/día,mayor_es_mejor,False,2,2023,13.8,14.9,14.3,45.5,informe_supervision_sunass
+EPS06,2022-2026,MG06,Presión promedio del servicio,localidad,Nauta,160301,m.c.a.,mayor_es_mejor,False,2,2023,12.2,13.5,13.0,61.5,informe_supervision_sunass
+EPS06,2022-2026,MG05,Continuidad promedio del servicio,localidad,Requena,160501,horas/día,mayor_es_mejor,False,2,2023,17.2,18.8,18.6,87.5,informe_supervision_sunass
+EPS06,2022-2026,MG06,Presión promedio del servicio,localidad,Requena,160501,m.c.a.,mayor_es_mejor,False,2,2023,9.3,10.9,10.4,68.7,informe_supervision_sunass
+EPS06,2022-2026,MG05,Continuidad promedio del servicio,localidad,Contamana,160601,horas/día,mayor_es_mejor,False,2,2023,12.7,13.8,13.1,36.4,informe_supervision_sunass
+EPS06,2022-2026,MG06,Presión promedio del servicio,localidad,Contamana,160601,m.c.a.,mayor_es_mejor,False,2,2023,14.8,16.1,15.5,53.8,informe_supervision_sunass
+EPS06,2022-2026,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,3,2024,0.0,4593.0,4374.0,95.2,informe_supervision_sunass
+EPS06,2022-2026,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,3,2024,0.0,5509.0,4012.0,72.8,informe_supervision_sunass
+EPS06,2022-2026,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,3,2024,0.0,20877.0,22580.0,100.0,informe_supervision_sunass
+EPS06,2022-2026,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,3,2024,31.3,28.8,29.0,92.0,informe_supervision_sunass
+EPS06,2022-2026,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,3,2024,31.9,34.9,35.0,100.0,informe_supervision_sunass
+EPS06,2022-2026,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,3,2024,79.5,75.0,84.2,0.0,informe_supervision_sunass
+EPS06,2022-2026,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,3,2024,77.9,100.0,99.7,98.6,informe_supervision_sunass
+EPS06,2022-2026,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,3,2024,80.4,89.4,91.2,100.0,informe_supervision_sunass
+EPS06,2022-2026,MG05,Continuidad promedio del servicio,localidad,Iquitos,160101,horas/día,mayor_es_mejor,False,3,2024,13.8,15.1,15.0,92.3,informe_supervision_sunass
+EPS06,2022-2026,MG06,Presión promedio del servicio,localidad,Iquitos,160101,m.c.a.,mayor_es_mejor,False,3,2024,15.3,17.1,16.4,61.1,informe_supervision_sunass
+EPS06,2022-2026,MG05,Continuidad promedio del servicio,localidad,San Juan,160113,horas/día,mayor_es_mejor,False,3,2024,10.4,11.9,11.6,80.0,informe_supervision_sunass
+EPS06,2022-2026,MG06,Presión promedio del servicio,localidad,San Juan,160113,m.c.a.,mayor_es_mejor,False,3,2024,10.2,12.2,11.5,65.0,informe_supervision_sunass
+EPS06,2022-2026,MG05,Continuidad promedio del servicio,localidad,Punchana,160108,horas/día,mayor_es_mejor,False,3,2024,21.2,22.4,22.5,100.0,informe_supervision_sunass
+EPS06,2022-2026,MG06,Presión promedio del servicio,localidad,Punchana,160108,m.c.a.,mayor_es_mejor,False,3,2024,10.7,11.8,11.4,63.6,informe_supervision_sunass
+EPS06,2022-2026,MG05,Continuidad promedio del servicio,localidad,Yurimaguas,160201,horas/día,mayor_es_mejor,False,3,2024,14.5,15.9,15.5,71.4,informe_supervision_sunass
+EPS06,2022-2026,MG06,Presión promedio del servicio,localidad,Yurimaguas,160201,m.c.a.,mayor_es_mejor,False,3,2024,17.1,19.0,18.8,89.5,informe_supervision_sunass
+EPS06,2022-2026,MG05,Continuidad promedio del servicio,localidad,Belén,160112,horas/día,mayor_es_mejor,False,3,2024,13.5,16.2,15.4,70.4,informe_supervision_sunass
+EPS06,2022-2026,MG06,Presión promedio del servicio,localidad,Belén,160112,m.c.a.,mayor_es_mejor,False,3,2024,12.3,13.2,12.8,55.6,informe_supervision_sunass
+EPS06,2022-2026,MG05,Continuidad promedio del servicio,localidad,Nauta,160301,horas/día,mayor_es_mejor,False,3,2024,13.8,15.4,14.8,62.5,informe_supervision_sunass
+EPS06,2022-2026,MG06,Presión promedio del servicio,localidad,Nauta,160301,m.c.a.,mayor_es_mejor,False,3,2024,12.2,14.2,14.4,100.0,informe_supervision_sunass
+EPS06,2022-2026,MG05,Continuidad promedio del servicio,localidad,Requena,160501,horas/día,mayor_es_mejor,False,3,2024,17.2,19.6,19.2,83.3,informe_supervision_sunass
+EPS06,2022-2026,MG06,Presión promedio del servicio,localidad,Requena,160501,m.c.a.,mayor_es_mejor,False,3,2024,9.3,11.7,11.3,83.3,informe_supervision_sunass
+EPS06,2022-2026,MG05,Continuidad promedio del servicio,localidad,Contamana,160601,horas/día,mayor_es_mejor,False,3,2024,12.7,14.3,14.2,93.7,informe_supervision_sunass
+EPS06,2022-2026,MG06,Presión promedio del servicio,localidad,Contamana,160601,m.c.a.,mayor_es_mejor,False,3,2024,14.8,16.8,16.6,90.0,informe_supervision_sunass
+EPS06,2022-2026,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,4,2025,0.0,6124.0,5638.0,92.1,informe_supervision_sunass
+EPS06,2022-2026,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,4,2025,0.0,7346.0,6547.0,89.1,informe_supervision_sunass
+EPS06,2022-2026,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,4,2025,0.0,27837.0,20728.0,74.5,informe_supervision_sunass
+EPS06,2022-2026,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,4,2025,31.3,28.0,27.5,100.0,informe_supervision_sunass
+EPS06,2022-2026,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,4,2025,31.9,51.3,36.5,23.7,informe_supervision_sunass
+EPS06,2022-2026,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,4,2025,79.5,73.5,84.0,0.0,informe_supervision_sunass
+EPS06,2022-2026,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,4,2025,77.9,100.0,100.0,100.0,informe_supervision_sunass
+EPS06,2022-2026,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,4,2025,80.4,92.4,86.4,50.0,informe_supervision_sunass
+EPS06,2022-2026,MG05,Continuidad promedio del servicio,localidad,Iquitos,160101,horas/día,mayor_es_mejor,False,4,2025,13.8,15.5,14.6,47.1,informe_supervision_sunass
+EPS06,2022-2026,MG06,Presión promedio del servicio,localidad,Iquitos,160101,m.c.a.,mayor_es_mejor,False,4,2025,15.3,17.7,16.4,45.8,informe_supervision_sunass
+EPS06,2022-2026,MG05,Continuidad promedio del servicio,localidad,San Juan,160113,horas/día,mayor_es_mejor,False,4,2025,10.4,12.4,11.9,75.0,informe_supervision_sunass
+EPS06,2022-2026,MG06,Presión promedio del servicio,localidad,San Juan,160113,m.c.a.,mayor_es_mejor,False,4,2025,10.2,12.8,12.8,100.0,informe_supervision_sunass
+EPS06,2022-2026,MG05,Continuidad promedio del servicio,localidad,Punchana,160108,horas/día,mayor_es_mejor,False,4,2025,21.2,22.8,21.9,43.7,informe_supervision_sunass
+EPS06,2022-2026,MG06,Presión promedio del servicio,localidad,Punchana,160108,m.c.a.,mayor_es_mejor,False,4,2025,10.7,12.1,11.8,78.6,informe_supervision_sunass
+EPS06,2022-2026,MG05,Continuidad promedio del servicio,localidad,Yurimaguas,160201,horas/día,mayor_es_mejor,False,4,2025,14.5,16.3,15.9,77.8,informe_supervision_sunass
+EPS06,2022-2026,MG06,Presión promedio del servicio,localidad,Yurimaguas,160201,m.c.a.,mayor_es_mejor,False,4,2025,17.1,19.6,19.1,80.0,informe_supervision_sunass
+EPS06,2022-2026,MG05,Continuidad promedio del servicio,localidad,Belén,160112,horas/día,mayor_es_mejor,False,4,2025,13.5,17.0,16.7,91.4,informe_supervision_sunass
+EPS06,2022-2026,MG06,Presión promedio del servicio,localidad,Belén,160112,m.c.a.,mayor_es_mejor,False,4,2025,12.3,13.5,13.4,91.7,informe_supervision_sunass
+EPS06,2022-2026,MG05,Continuidad promedio del servicio,localidad,Nauta,160301,horas/día,mayor_es_mejor,False,4,2025,13.8,16.0,15.6,81.8,informe_supervision_sunass
+EPS06,2022-2026,MG06,Presión promedio del servicio,localidad,Nauta,160301,m.c.a.,mayor_es_mejor,False,4,2025,12.2,14.8,14.2,76.9,informe_supervision_sunass
+EPS06,2022-2026,MG05,Continuidad promedio del servicio,localidad,Requena,160501,horas/día,mayor_es_mejor,False,4,2025,17.2,20.4,20.0,87.5,informe_supervision_sunass
+EPS06,2022-2026,MG06,Presión promedio del servicio,localidad,Requena,160501,m.c.a.,mayor_es_mejor,False,4,2025,9.3,12.5,11.6,71.9,informe_supervision_sunass
+EPS06,2022-2026,MG05,Continuidad promedio del servicio,localidad,Contamana,160601,horas/día,mayor_es_mejor,False,4,2025,12.7,14.8,14.6,90.5,informe_supervision_sunass
+EPS06,2022-2026,MG06,Presión promedio del servicio,localidad,Contamana,160601,m.c.a.,mayor_es_mejor,False,4,2025,14.8,17.4,17.0,84.6,informe_supervision_sunass
+EPS06,2022-2026,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,5,2026,0.0,7655.0,,,
+EPS06,2022-2026,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,5,2026,0.0,9182.0,,,
+EPS06,2022-2026,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,5,2026,0.0,34796.0,,,
+EPS06,2022-2026,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,5,2026,31.3,27.2,,,
+EPS06,2022-2026,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,5,2026,31.9,51.3,,,
+EPS06,2022-2026,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,5,2026,79.5,72.0,,,
+EPS06,2022-2026,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,5,2026,77.9,100.0,,,
+EPS06,2022-2026,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,5,2026,80.4,95.4,,,
+EPS06,2022-2026,MG05,Continuidad promedio del servicio,localidad,Iquitos,160101,horas/día,mayor_es_mejor,False,5,2026,13.8,16.0,,,
+EPS06,2022-2026,MG06,Presión promedio del servicio,localidad,Iquitos,160101,m.c.a.,mayor_es_mejor,False,5,2026,15.3,18.3,,,
+EPS06,2022-2026,MG05,Continuidad promedio del servicio,localidad,San Juan,160113,horas/día,mayor_es_mejor,False,5,2026,10.4,12.9,,,
+EPS06,2022-2026,MG06,Presión promedio del servicio,localidad,San Juan,160113,m.c.a.,mayor_es_mejor,False,5,2026,10.2,13.5,,,
+EPS06,2022-2026,MG05,Continuidad promedio del servicio,localidad,Punchana,160108,horas/día,mayor_es_mejor,False,5,2026,21.2,23.3,,,
+EPS06,2022-2026,MG06,Presión promedio del servicio,localidad,Punchana,160108,m.c.a.,mayor_es_mejor,False,5,2026,10.7,12.5,,,
+EPS06,2022-2026,MG05,Continuidad promedio del servicio,localidad,Yurimaguas,160201,horas/día,mayor_es_mejor,False,5,2026,14.5,16.8,,,
+EPS06,2022-2026,MG06,Presión promedio del servicio,localidad,Yurimaguas,160201,m.c.a.,mayor_es_mejor,False,5,2026,17.1,20.2,,,
+EPS06,2022-2026,MG05,Continuidad promedio del servicio,localidad,Belén,160112,horas/día,mayor_es_mejor,False,5,2026,13.5,17.9,,,
+EPS06,2022-2026,MG06,Presión promedio del servicio,localidad,Belén,160112,m.c.a.,mayor_es_mejor,False,5,2026,12.3,13.8,,,
+EPS06,2022-2026,MG05,Continuidad promedio del servicio,localidad,Nauta,160301,horas/día,mayor_es_mejor,False,5,2026,13.8,16.6,,,
+EPS06,2022-2026,MG06,Presión promedio del servicio,localidad,Nauta,160301,m.c.a.,mayor_es_mejor,False,5,2026,12.2,15.4,,,
+EPS06,2022-2026,MG05,Continuidad promedio del servicio,localidad,Requena,160501,horas/día,mayor_es_mejor,False,5,2026,17.2,21.2,,,
+EPS06,2022-2026,MG06,Presión promedio del servicio,localidad,Requena,160501,m.c.a.,mayor_es_mejor,False,5,2026,9.3,13.2,,,
+EPS06,2022-2026,MG05,Continuidad promedio del servicio,localidad,Contamana,160601,horas/día,mayor_es_mejor,False,5,2026,12.7,15.3,,,
+EPS06,2022-2026,MG06,Presión promedio del servicio,localidad,Contamana,160601,m.c.a.,mayor_es_mejor,False,5,2026,14.8,18.1,,,
+EPS07,2021-2025,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,2,2022,0.0,686.0,562.0,81.9,informe_supervision_sunass
+EPS07,2021-2025,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,2,2022,0.0,242.0,184.0,76.0,informe_supervision_sunass
+EPS07,2021-2025,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,2,2022,0.0,1348.0,1215.0,90.1,informe_supervision_sunass
+EPS07,2021-2025,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,2,2022,30.6,28.9,29.0,94.1,informe_supervision_sunass
+EPS07,2021-2025,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,2,2022,40.8,42.8,43.4,100.0,informe_supervision_sunass
+EPS07,2021-2025,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,2,2022,73.7,70.7,74.3,0.0,informe_supervision_sunass
+EPS07,2021-2025,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,2,2022,73.4,89.4,85.1,73.1,informe_supervision_sunass
+EPS07,2021-2025,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,2,2022,76.1,82.1,79.7,60.0,informe_supervision_sunass
+EPS07,2021-2025,MG05,Continuidad promedio del servicio,localidad,Huancavelica,090101,horas/día,mayor_es_mejor,False,2,2022,20.4,22.1,21.4,58.8,informe_supervision_sunass
+EPS07,2021-2025,MG06,Presión promedio del servicio,localidad,Huancavelica,090101,m.c.a.,mayor_es_mejor,False,2,2022,19.1,20.0,19.7,66.7,informe_supervision_sunass
+EPS07,2021-2025,MG05,Continuidad promedio del servicio,localidad,Lircay,090301,horas/día,mayor_es_mejor,False,2,2022,20.9,22.8,22.2,68.4,informe_supervision_sunass
+EPS07,2021-2025,MG06,Presión promedio del servicio,localidad,Lircay,090301,m.c.a.,mayor_es_mejor,False,2,2022,15.9,17.0,16.9,90.9,informe_supervision_sunass
+EPS07,2021-2025,MG05,Continuidad promedio del servicio,localidad,Pampas,090701,horas/día,mayor_es_mejor,False,2,2022,21.1,22.6,22.1,66.7,informe_supervision_sunass
+EPS07,2021-2025,MG06,Presión promedio del servicio,localidad,Pampas,090701,m.c.a.,mayor_es_mejor,False,2,2022,11.9,12.7,12.5,75.0,informe_supervision_sunass
+EPS07,2021-2025,MG05,Continuidad promedio del servicio,localidad,Acobamba,090201,horas/día,mayor_es_mejor,False,2,2022,13.2,14.6,14.0,57.1,informe_supervision_sunass
+EPS07,2021-2025,MG06,Presión promedio del servicio,localidad,Acobamba,090201,m.c.a.,mayor_es_mejor,False,2,2022,17.8,19.1,18.7,69.2,informe_supervision_sunass
+EPS07,2021-2025,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,3,2023,0.0,1029.0,997.0,96.9,informe_supervision_sunass
+EPS07,2021-2025,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,3,2023,0.0,363.0,288.0,79.3,informe_supervision_sunass
+EPS07,2021-2025,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,3,2023,0.0,2022.0,1020.0,50.4,informe_supervision_sunass
+EPS07,2021-2025,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,3,2023,30.6,28.0,28.9,65.4,informe_supervision_sunass
+EPS07,2021-2025,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,3,2023,40.8,70.9,44.1,11.0,informe_supervision_sunass
+EPS07,2021-2025,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,3,2023,73.7,69.2,76.1,0.0,informe_supervision_sunass
+EPS07,2021-2025,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,3,2023,73.4,97.4,89.7,67.9,informe_supervision_sunass
+EPS07,2021-2025,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,3,2023,76.1,85.1,76.4,3.3,informe_supervision_sunass
+EPS07,2021-2025,MG05,Continuidad promedio del servicio,localidad,Huancavelica,090101,horas/día,mayor_es_mejor,False,3,2023,20.4,22.9,21.9,60.0,informe_supervision_sunass
+EPS07,2021-2025,MG06,Presión promedio del servicio,localidad,Huancavelica,090101,m.c.a.,mayor_es_mejor,False,3,2023,19.1,20.4,20.3,92.3,informe_supervision_sunass
+EPS07,2021-2025,MG05,Continuidad promedio del servicio,localidad,Lircay,090301,horas/día,mayor_es_mejor,False,3,2023,20.9,23.7,23.2,82.1,informe_supervision_sunass
+EPS07,2021-2025,MG06,Presión promedio del servicio,localidad,Lircay,090301,m.c.a.,mayor_es_mejor,False,3,2023,15.9,17.5,17.1,75.0,informe_supervision_sunass
+EPS07,2021-2025,MG05,Continuidad promedio del servicio,localidad,Pampas,090701,horas/día,mayor_es_mejor,False,3,2023,21.1,23.3,22.8,77.3,informe_supervision_sunass
+EPS07,2021-2025,MG06,Presión promedio del servicio,localidad,Pampas,090701,m.c.a.,mayor_es_mejor,False,3,2023,11.9,13.1,13.2,100.0,informe_supervision_sunass
+EPS07,2021-2025,MG05,Continuidad promedio del servicio,localidad,Acobamba,090201,horas/día,mayor_es_mejor,False,3,2023,13.2,15.3,14.8,76.2,informe_supervision_sunass
+EPS07,2021-2025,MG06,Presión promedio del servicio,localidad,Acobamba,090201,m.c.a.,mayor_es_mejor,False,3,2023,17.8,19.7,19.2,73.7,informe_supervision_sunass
+EPS07,2021-2025,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,4,2024,0.0,1371.0,1409.0,100.0,informe_supervision_sunass
+EPS07,2021-2025,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,4,2024,0.0,484.0,430.0,88.8,informe_supervision_sunass
+EPS07,2021-2025,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,4,2024,0.0,2696.0,2442.0,90.6,informe_supervision_sunass
+EPS07,2021-2025,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,4,2024,30.6,27.2,27.0,100.0,informe_supervision_sunass
+EPS07,2021-2025,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,4,2024,40.8,70.9,75.5,100.0,informe_supervision_sunass
+EPS07,2021-2025,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,4,2024,73.7,67.7,81.2,0.0,informe_supervision_sunass
+EPS07,2021-2025,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,4,2024,73.4,100.0,96.5,86.8,informe_supervision_sunass
+EPS07,2021-2025,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,4,2024,76.1,88.1,86.0,82.5,informe_supervision_sunass
+EPS07,2021-2025,MG05,Continuidad promedio del servicio,localidad,Huancavelica,090101,horas/día,mayor_es_mejor,False,4,2024,20.4,23.7,22.5,63.6,informe_supervision_sunass
+EPS07,2021-2025,MG06,Presión promedio del servicio,localidad,Huancavelica,090101,m.c.a.,mayor_es_mejor,False,4,2024,19.1,20.8,20.7,94.1,informe_supervision_sunass
+EPS07,2021-2025,MG05,Continuidad promedio del servicio,localidad,Lircay,090301,horas/día,mayor_es_mejor,False,4,2024,20.9,24.0,23.2,74.2,informe_supervision_sunass
+EPS07,2021-2025,MG06,Presión promedio del servicio,localidad,Lircay,090301,m.c.a.,mayor_es_mejor,False,4,2024,15.9,18.0,17.2,61.9,informe_supervision_sunass
+EPS07,2021-2025,MG05,Continuidad promedio del servicio,localidad,Pampas,090701,horas/día,mayor_es_mejor,False,4,2024,21.1,24.0,23.9,96.6,informe_supervision_sunass
+EPS07,2021-2025,MG06,Presión promedio del servicio,localidad,Pampas,090701,m.c.a.,mayor_es_mejor,False,4,2024,11.9,13.6,13.2,76.5,informe_supervision_sunass
+EPS07,2021-2025,MG05,Continuidad promedio del servicio,localidad,Acobamba,090201,horas/día,mayor_es_mejor,False,4,2024,13.2,16.1,15.2,69.0,informe_supervision_sunass
+EPS07,2021-2025,MG06,Presión promedio del servicio,localidad,Acobamba,090201,m.c.a.,mayor_es_mejor,False,4,2024,17.8,20.3,19.2,56.0,informe_supervision_sunass
+EPS07,2021-2025,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,5,2025,0.0,1714.0,1652.0,96.4,informe_supervision_sunass
+EPS07,2021-2025,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,5,2025,0.0,606.0,571.0,94.2,informe_supervision_sunass
+EPS07,2021-2025,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,5,2025,0.0,3369.0,3511.0,100.0,informe_supervision_sunass
+EPS07,2021-2025,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,5,2025,30.6,26.4,27.3,78.6,informe_supervision_sunass
+EPS07,2021-2025,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,5,2025,40.8,70.9,76.4,100.0,informe_supervision_sunass
+EPS07,2021-2025,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,5,2025,73.7,66.2,80.3,0.0,informe_supervision_sunass
+EPS07,2021-2025,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,5,2025,73.4,100.0,100.0,100.0,informe_supervision_sunass
+EPS07,2021-2025,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,5,2025,76.1,91.1,94.1,100.0,informe_supervision_sunass
+EPS07,2021-2025,MG05,Continuidad promedio del servicio,localidad,Huancavelica,090101,horas/día,mayor_es_mejor,False,5,2025,20.4,24.0,22.1,47.2,informe_supervision_sunass
+EPS07,2021-2025,MG06,Presión promedio del servicio,localidad,Huancavelica,090101,m.c.a.,mayor_es_mejor,False,5,2025,19.1,21.2,20.8,81.0,informe_supervision_sunass
+EPS07,2021-2025,MG05,Continuidad promedio del servicio,localidad,Lircay,090301,horas/día,mayor_es_mejor,False,5,2025,20.9,24.0,24.0,100.0,informe_supervision_sunass
+EPS07,2021-2025,MG06,Presión promedio del servicio,localidad,Lircay,090301,m.c.a.,mayor_es_mejor,False,5,2025,15.9,18.5,17.7,69.2,informe_supervision_sunass
+EPS07,2021-2025,MG05,Continuidad promedio del servicio,localidad,Pampas,090701,horas/día,mayor_es_mejor,False,5,2025,21.1,24.0,22.5,48.3,informe_supervision_sunass
+EPS07,2021-2025,MG06,Presión promedio del servicio,localidad,Pampas,090701,m.c.a.,mayor_es_mejor,False,5,2025,11.9,14.0,13.3,66.7,informe_supervision_sunass
+EPS07,2021-2025,MG05,Continuidad promedio del servicio,localidad,Acobamba,090201,horas/día,mayor_es_mejor,False,5,2025,13.2,16.8,15.2,55.6,informe_supervision_sunass
+EPS07,2021-2025,MG06,Presión promedio del servicio,localidad,Acobamba,090201,m.c.a.,mayor_es_mejor,False,5,2025,17.8,20.9,19.8,64.5,informe_supervision_sunass
+EPS07,2026-2030,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,1,2026,0.0,328.0,,,
+EPS07,2026-2030,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,1,2026,0.0,125.0,,,
+EPS07,2026-2030,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,1,2026,0.0,452.0,,,
+EPS07,2026-2030,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,1,2026,31.5,30.3,,,
+EPS07,2026-2030,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,1,2026,52.2,53.2,,,
+EPS07,2026-2030,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,1,2026,80.3,78.8,,,
+EPS07,2026-2030,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,1,2026,73.4,81.4,,,
+EPS07,2026-2030,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,1,2026,84.7,87.7,,,
+EPS07,2026-2030,MG05,Continuidad promedio del servicio,localidad,Huancavelica,090101,horas/día,mayor_es_mejor,False,1,2026,11.9,12.9,,,
+EPS07,2026-2030,MG06,Presión promedio del servicio,localidad,Huancavelica,090101,m.c.a.,mayor_es_mejor,False,1,2026,16.3,16.7,,,
+EPS07,2026-2030,MG05,Continuidad promedio del servicio,localidad,Lircay,090301,horas/día,mayor_es_mejor,False,1,2026,21.6,22.2,,,
+EPS07,2026-2030,MG06,Presión promedio del servicio,localidad,Lircay,090301,m.c.a.,mayor_es_mejor,False,1,2026,13.7,14.3,,,
+EPS07,2026-2030,MG05,Continuidad promedio del servicio,localidad,Pampas,090701,horas/día,mayor_es_mejor,False,1,2026,15.7,16.3,,,
+EPS07,2026-2030,MG06,Presión promedio del servicio,localidad,Pampas,090701,m.c.a.,mayor_es_mejor,False,1,2026,15.1,15.5,,,
+EPS07,2026-2030,MG05,Continuidad promedio del servicio,localidad,Acobamba,090201,horas/día,mayor_es_mejor,False,1,2026,15.9,16.5,,,
+EPS07,2026-2030,MG06,Presión promedio del servicio,localidad,Acobamba,090201,m.c.a.,mayor_es_mejor,False,1,2026,18.6,18.9,,,
+EPS08,2020-2024,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,3,2022,0.0,220.0,235.0,100.0,informe_supervision_sunass
+EPS08,2020-2024,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,3,2022,0.0,83.0,66.0,79.5,informe_supervision_sunass
+EPS08,2020-2024,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,3,2022,0.0,468.0,445.0,95.1,informe_supervision_sunass
+EPS08,2020-2024,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,3,2022,37.6,34.2,35.4,64.7,informe_supervision_sunass
+EPS08,2020-2024,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,3,2022,75.6,78.6,77.6,66.7,informe_supervision_sunass
+EPS08,2020-2024,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,3,2022,74.7,70.2,78.0,0.0,informe_supervision_sunass
+EPS08,2020-2024,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,3,2022,71.1,95.1,71.1,0.0,informe_supervision_sunass
+EPS08,2020-2024,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,3,2022,71.4,80.4,77.8,71.1,informe_supervision_sunass
+EPS08,2020-2024,MG05,Continuidad promedio del servicio,localidad,Casma,020801,horas/día,mayor_es_mejor,False,3,2022,14.3,16.3,15.1,40.0,informe_supervision_sunass
+EPS08,2020-2024,MG06,Presión promedio del servicio,localidad,Casma,020801,m.c.a.,mayor_es_mejor,False,3,2022,11.8,13.7,12.8,52.6,informe_supervision_sunass
+EPS08,2020-2024,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,4,2023,0.0,293.0,251.0,85.7,informe_supervision_sunass
+EPS08,2020-2024,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,4,2023,0.0,111.0,98.0,88.3,informe_supervision_sunass
+EPS08,2020-2024,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,4,2023,0.0,624.0,532.0,85.3,informe_supervision_sunass
+EPS08,2020-2024,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,4,2023,37.6,33.1,33.5,91.1,informe_supervision_sunass
+EPS08,2020-2024,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,4,2023,75.6,79.6,78.0,60.0,informe_supervision_sunass
+EPS08,2020-2024,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,4,2023,74.7,68.7,78.7,0.0,informe_supervision_sunass
+EPS08,2020-2024,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,4,2023,71.1,100.0,72.0,3.1,informe_supervision_sunass
+EPS08,2020-2024,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,4,2023,71.4,83.4,77.6,51.7,informe_supervision_sunass
+EPS08,2020-2024,MG05,Continuidad promedio del servicio,localidad,Casma,020801,horas/día,mayor_es_mejor,False,4,2023,14.3,17.0,15.8,55.6,informe_supervision_sunass
+EPS08,2020-2024,MG06,Presión promedio del servicio,localidad,Casma,020801,m.c.a.,mayor_es_mejor,False,4,2023,11.8,14.3,13.1,52.0,informe_supervision_sunass
+EPS08,2020-2024,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,5,2024,0.0,367.0,347.0,94.6,informe_supervision_sunass
+EPS08,2020-2024,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,5,2024,0.0,139.0,126.0,90.6,informe_supervision_sunass
+EPS08,2020-2024,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,5,2024,0.0,780.0,626.0,80.3,informe_supervision_sunass
+EPS08,2020-2024,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,5,2024,37.6,31.9,32.5,89.5,informe_supervision_sunass
+EPS08,2020-2024,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,5,2024,75.6,92.4,81.3,33.9,informe_supervision_sunass
+EPS08,2020-2024,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,5,2024,74.7,67.2,79.4,0.0,informe_supervision_sunass
+EPS08,2020-2024,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,5,2024,71.1,100.0,100.0,100.0,informe_supervision_sunass
+EPS08,2020-2024,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,5,2024,71.4,86.4,79.4,53.3,informe_supervision_sunass
+EPS08,2020-2024,MG05,Continuidad promedio del servicio,localidad,Casma,020801,horas/día,mayor_es_mejor,False,5,2024,14.3,17.7,16.0,50.0,informe_supervision_sunass
+EPS08,2020-2024,MG06,Presión promedio del servicio,localidad,Casma,020801,m.c.a.,mayor_es_mejor,False,5,2024,11.8,15.0,13.6,56.2,informe_supervision_sunass
+EPS08,2025-2029,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,1,2025,0.0,78.0,67.0,85.9,informe_supervision_sunass
+EPS08,2025-2029,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,1,2025,0.0,32.0,26.0,81.2,informe_supervision_sunass
+EPS08,2025-2029,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,1,2025,0.0,141.0,119.0,84.4,informe_supervision_sunass
+EPS08,2025-2029,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,1,2025,30.7,29.3,29.5,85.7,informe_supervision_sunass
+EPS08,2025-2029,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,1,2025,30.3,31.3,31.1,80.0,informe_supervision_sunass
+EPS08,2025-2029,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,1,2025,79.4,77.9,79.9,0.0,informe_supervision_sunass
+EPS08,2025-2029,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,1,2025,45.5,53.5,50.6,63.8,informe_supervision_sunass
+EPS08,2025-2029,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,1,2025,77.7,80.7,79.1,46.7,informe_supervision_sunass
+EPS08,2025-2029,MG05,Continuidad promedio del servicio,localidad,Casma,020801,horas/día,mayor_es_mejor,False,1,2025,14.8,15.8,15.5,70.0,informe_supervision_sunass
+EPS08,2025-2029,MG06,Presión promedio del servicio,localidad,Casma,020801,m.c.a.,mayor_es_mejor,False,1,2025,19.6,20.3,20.0,57.1,informe_supervision_sunass
+EPS08,2025-2029,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,2,2026,0.0,156.0,,,
+EPS08,2025-2029,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,2,2026,0.0,63.0,,,
+EPS08,2025-2029,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,2,2026,0.0,282.0,,,
+EPS08,2025-2029,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,2,2026,30.7,27.9,,,
+EPS08,2025-2029,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,2,2026,30.3,32.3,,,
+EPS08,2025-2029,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,2,2026,79.4,76.4,,,
+EPS08,2025-2029,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,2,2026,45.5,61.5,,,
+EPS08,2025-2029,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,2,2026,77.7,83.7,,,
+EPS08,2025-2029,MG05,Continuidad promedio del servicio,localidad,Casma,020801,horas/día,mayor_es_mejor,False,2,2026,14.8,16.7,,,
+EPS08,2025-2029,MG06,Presión promedio del servicio,localidad,Casma,020801,m.c.a.,mayor_es_mejor,False,2,2026,19.6,21.1,,,
+EPS09,2022-2026,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,1,2022,0.0,1043.0,623.0,59.7,informe_supervision_sunass
+EPS09,2022-2026,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,1,2022,0.0,1957.0,1533.0,78.3,informe_supervision_sunass
+EPS09,2022-2026,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,1,2022,0.0,4706.0,2805.0,59.6,informe_supervision_sunass
+EPS09,2022-2026,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,1,2022,37.1,36.5,36.6,83.3,informe_supervision_sunass
+EPS09,2022-2026,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,1,2022,79.4,80.4,80.2,80.0,informe_supervision_sunass
+EPS09,2022-2026,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,1,2022,77.6,76.1,80.4,0.0,informe_supervision_sunass
+EPS09,2022-2026,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,1,2022,74.3,82.3,74.3,0.0,informe_supervision_sunass
+EPS09,2022-2026,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,1,2022,76.5,79.5,76.5,0.0,informe_supervision_sunass
+EPS09,2022-2026,MG05,Continuidad promedio del servicio,localidad,Chiclayo,140101,horas/día,mayor_es_mejor,False,1,2022,12.3,12.8,12.7,80.0,informe_supervision_sunass
+EPS09,2022-2026,MG06,Presión promedio del servicio,localidad,Chiclayo,140101,m.c.a.,mayor_es_mejor,False,1,2022,18.7,19.3,18.9,33.3,informe_supervision_sunass
+EPS09,2022-2026,MG05,Continuidad promedio del servicio,localidad,San Carlos,140105,horas/día,mayor_es_mejor,False,1,2022,16.8,17.3,17.1,60.0,informe_supervision_sunass
+EPS09,2022-2026,MG06,Presión promedio del servicio,localidad,San Carlos,140105,m.c.a.,mayor_es_mejor,False,1,2022,18.8,19.5,19.2,57.1,informe_supervision_sunass
+EPS09,2022-2026,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,2,2023,0.0,2086.0,1460.0,70.0,informe_supervision_sunass
+EPS09,2022-2026,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,2,2023,0.0,3914.0,3542.0,90.5,informe_supervision_sunass
+EPS09,2022-2026,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,2,2023,0.0,9413.0,6199.0,65.9,informe_supervision_sunass
+EPS09,2022-2026,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,2,2023,37.1,35.9,36.4,58.3,informe_supervision_sunass
+EPS09,2022-2026,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,2,2023,79.4,81.4,80.9,75.0,informe_supervision_sunass
+EPS09,2022-2026,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,2,2023,77.6,74.6,80.3,0.0,informe_supervision_sunass
+EPS09,2022-2026,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,2,2023,74.3,90.3,76.2,11.9,informe_supervision_sunass
+EPS09,2022-2026,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,2,2023,76.5,82.5,77.4,15.0,informe_supervision_sunass
+EPS09,2022-2026,MG05,Continuidad promedio del servicio,localidad,Chiclayo,140101,horas/día,mayor_es_mejor,False,2,2023,12.3,13.2,12.8,55.6,informe_supervision_sunass
+EPS09,2022-2026,MG06,Presión promedio del servicio,localidad,Chiclayo,140101,m.c.a.,mayor_es_mejor,False,2,2023,18.7,19.9,19.8,91.7,informe_supervision_sunass
+EPS09,2022-2026,MG05,Continuidad promedio del servicio,localidad,San Carlos,140105,horas/día,mayor_es_mejor,False,2,2023,16.8,17.7,17.2,44.4,informe_supervision_sunass
+EPS09,2022-2026,MG06,Presión promedio del servicio,localidad,San Carlos,140105,m.c.a.,mayor_es_mejor,False,2,2023,18.8,20.1,19.4,46.2,informe_supervision_sunass
+EPS09,2022-2026,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,3,2024,0.0,3129.0,2395.0,76.5,informe_supervision_sunass
+EPS09,2022-2026,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,3,2024,0.0,5870.0,4189.0,71.4,informe_supervision_sunass
+EPS09,2022-2026,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,3,2024,0.0,14119.0,12842.0,91.0,informe_supervision_sunass
+EPS09,2022-2026,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,3,2024,37.1,35.3,35.9,66.7,informe_supervision_sunass
+EPS09,2022-2026,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,3,2024,79.4,100.0,82.0,12.6,informe_supervision_sunass
+EPS09,2022-2026,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,3,2024,77.6,73.1,81.2,0.0,informe_supervision_sunass
+EPS09,2022-2026,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,3,2024,74.3,98.3,86.4,50.4,informe_supervision_sunass
+EPS09,2022-2026,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,3,2024,76.5,85.5,82.6,67.8,informe_supervision_sunass
+EPS09,2022-2026,MG05,Continuidad promedio del servicio,localidad,Chiclayo,140101,horas/día,mayor_es_mejor,False,3,2024,12.3,13.7,13.3,71.4,informe_supervision_sunass
+EPS09,2022-2026,MG06,Presión promedio del servicio,localidad,Chiclayo,140101,m.c.a.,mayor_es_mejor,False,3,2024,18.7,20.5,19.6,50.0,informe_supervision_sunass
+EPS09,2022-2026,MG05,Continuidad promedio del servicio,localidad,San Carlos,140105,horas/día,mayor_es_mejor,False,3,2024,16.8,18.1,17.4,46.2,informe_supervision_sunass
+EPS09,2022-2026,MG06,Presión promedio del servicio,localidad,San Carlos,140105,m.c.a.,mayor_es_mejor,False,3,2024,18.8,20.8,20.2,70.0,informe_supervision_sunass
+EPS09,2022-2026,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,4,2025,0.0,4173.0,3552.0,85.1,informe_supervision_sunass
+EPS09,2022-2026,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,4,2025,0.0,7827.0,6162.0,78.7,informe_supervision_sunass
+EPS09,2022-2026,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,4,2025,0.0,18826.0,14224.0,75.6,informe_supervision_sunass
+EPS09,2022-2026,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,4,2025,37.1,34.7,35.2,79.2,informe_supervision_sunass
+EPS09,2022-2026,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,4,2025,79.4,100.0,82.6,15.5,informe_supervision_sunass
+EPS09,2022-2026,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,4,2025,77.6,71.6,84.2,0.0,informe_supervision_sunass
+EPS09,2022-2026,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,4,2025,74.3,100.0,100.0,100.0,informe_supervision_sunass
+EPS09,2022-2026,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,4,2025,76.5,88.5,81.7,43.3,informe_supervision_sunass
+EPS09,2022-2026,MG05,Continuidad promedio del servicio,localidad,Chiclayo,140101,horas/día,mayor_es_mejor,False,4,2025,12.3,14.1,13.1,44.4,informe_supervision_sunass
+EPS09,2022-2026,MG06,Presión promedio del servicio,localidad,Chiclayo,140101,m.c.a.,mayor_es_mejor,False,4,2025,18.7,21.1,20.9,91.7,informe_supervision_sunass
+EPS09,2022-2026,MG05,Continuidad promedio del servicio,localidad,San Carlos,140105,horas/día,mayor_es_mejor,False,4,2025,16.8,18.5,17.6,47.1,informe_supervision_sunass
+EPS09,2022-2026,MG06,Presión promedio del servicio,localidad,San Carlos,140105,m.c.a.,mayor_es_mejor,False,4,2025,18.8,21.5,20.6,66.7,informe_supervision_sunass
+EPS09,2022-2026,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,5,2026,0.0,5216.0,,,
+EPS09,2022-2026,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,5,2026,0.0,9784.0,,,
+EPS09,2022-2026,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,5,2026,0.0,23532.0,,,
+EPS09,2022-2026,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,5,2026,37.1,34.1,,,
+EPS09,2022-2026,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,5,2026,79.4,100.0,,,
+EPS09,2022-2026,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,5,2026,77.6,70.1,,,
+EPS09,2022-2026,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,5,2026,74.3,100.0,,,
+EPS09,2022-2026,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,5,2026,76.5,91.5,,,
+EPS09,2022-2026,MG05,Continuidad promedio del servicio,localidad,Chiclayo,140101,horas/día,mayor_es_mejor,False,5,2026,12.3,14.5,,,
+EPS09,2022-2026,MG06,Presión promedio del servicio,localidad,Chiclayo,140101,m.c.a.,mayor_es_mejor,False,5,2026,18.7,21.6,,,
+EPS09,2022-2026,MG05,Continuidad promedio del servicio,localidad,San Carlos,140105,horas/día,mayor_es_mejor,False,5,2026,16.8,18.9,,,
+EPS09,2022-2026,MG06,Presión promedio del servicio,localidad,San Carlos,140105,m.c.a.,mayor_es_mejor,False,5,2026,18.8,22.2,,,
+EPS10,2019-2023,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,4,2022,0.0,2418.0,2348.0,97.1,informe_supervision_sunass
+EPS10,2019-2023,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,4,2022,0.0,1126.0,1000.0,88.8,informe_supervision_sunass
+EPS10,2019-2023,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,4,2022,0.0,3965.0,4181.0,100.0,informe_supervision_sunass
+EPS10,2019-2023,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,4,2022,29.1,23.7,23.8,98.1,informe_supervision_sunass
+EPS10,2019-2023,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,4,2022,46.7,79.1,51.1,13.6,informe_supervision_sunass
+EPS10,2019-2023,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,4,2022,76.6,70.6,75.4,20.0,informe_supervision_sunass
+EPS10,2019-2023,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,4,2022,51.7,83.7,71.5,61.9,informe_supervision_sunass
+EPS10,2019-2023,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,4,2022,61.8,73.8,71.8,83.3,informe_supervision_sunass
+EPS10,2019-2023,MG05,Continuidad promedio del servicio,localidad,Tumbes,240101,horas/día,mayor_es_mejor,False,4,2022,20.0,21.8,21.1,61.1,informe_supervision_sunass
+EPS10,2019-2023,MG06,Presión promedio del servicio,localidad,Tumbes,240101,m.c.a.,mayor_es_mejor,False,4,2022,16.1,19.2,18.7,83.9,informe_supervision_sunass
+EPS10,2019-2023,MG05,Continuidad promedio del servicio,localidad,Zarumilla,240301,horas/día,mayor_es_mejor,False,4,2022,13.4,16.2,15.0,57.1,informe_supervision_sunass
+EPS10,2019-2023,MG06,Presión promedio del servicio,localidad,Zarumilla,240301,m.c.a.,mayor_es_mejor,False,4,2022,9.5,11.8,10.9,60.9,informe_supervision_sunass
+EPS10,2019-2023,MG05,Continuidad promedio del servicio,localidad,Zorritos,240201,horas/día,mayor_es_mejor,False,4,2022,10.0,13.4,13.1,91.2,informe_supervision_sunass
+EPS10,2019-2023,MG06,Presión promedio del servicio,localidad,Zorritos,240201,m.c.a.,mayor_es_mejor,False,4,2022,18.5,20.9,20.9,100.0,informe_supervision_sunass
+EPS10,2019-2023,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,5,2023,0.0,3023.0,2958.0,97.8,informe_supervision_sunass
+EPS10,2019-2023,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,5,2023,0.0,1407.0,1261.0,89.6,informe_supervision_sunass
+EPS10,2019-2023,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,5,2023,0.0,4956.0,5529.0,100.0,informe_supervision_sunass
+EPS10,2019-2023,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,5,2023,29.1,22.4,22.9,92.5,informe_supervision_sunass
+EPS10,2019-2023,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,5,2023,46.7,79.1,85.0,100.0,informe_supervision_sunass
+EPS10,2019-2023,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,5,2023,76.6,69.1,77.6,0.0,informe_supervision_sunass
+EPS10,2019-2023,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,5,2023,51.7,91.7,84.5,82.0,informe_supervision_sunass
+EPS10,2019-2023,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,5,2023,61.8,76.8,74.9,87.3,informe_supervision_sunass
+EPS10,2019-2023,MG05,Continuidad promedio del servicio,localidad,Tumbes,240101,horas/día,mayor_es_mejor,False,5,2023,20.0,22.2,21.1,50.0,informe_supervision_sunass
+EPS10,2019-2023,MG06,Presión promedio del servicio,localidad,Tumbes,240101,m.c.a.,mayor_es_mejor,False,5,2023,16.1,19.9,19.3,84.2,informe_supervision_sunass
+EPS10,2019-2023,MG05,Continuidad promedio del servicio,localidad,Zarumilla,240301,horas/día,mayor_es_mejor,False,5,2023,13.4,16.9,17.1,100.0,informe_supervision_sunass
+EPS10,2019-2023,MG06,Presión promedio del servicio,localidad,Zarumilla,240301,m.c.a.,mayor_es_mejor,False,5,2023,9.5,12.4,11.8,79.3,informe_supervision_sunass
+EPS10,2019-2023,MG05,Continuidad promedio del servicio,localidad,Zorritos,240201,horas/día,mayor_es_mejor,False,5,2023,10.0,14.2,12.0,47.6,informe_supervision_sunass
+EPS10,2019-2023,MG06,Presión promedio del servicio,localidad,Zorritos,240201,m.c.a.,mayor_es_mejor,False,5,2023,18.5,21.5,20.2,56.7,informe_supervision_sunass
+EPS10,2024-2028,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,1,2024,0.0,339.0,306.0,90.3,informe_supervision_sunass
+EPS10,2024-2028,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,1,2024,0.0,434.0,403.0,92.9,informe_supervision_sunass
+EPS10,2024-2028,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,1,2024,0.0,904.0,817.0,90.4,informe_supervision_sunass
+EPS10,2024-2028,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,1,2024,36.4,35.8,35.9,83.3,informe_supervision_sunass
+EPS10,2024-2028,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,1,2024,31.7,32.7,32.6,90.0,informe_supervision_sunass
+EPS10,2024-2028,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,1,2024,77.6,76.1,78.1,0.0,informe_supervision_sunass
+EPS10,2024-2028,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,1,2024,64.4,72.4,69.6,65.0,informe_supervision_sunass
+EPS10,2024-2028,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,1,2024,79.1,82.1,81.1,66.7,informe_supervision_sunass
+EPS10,2024-2028,MG05,Continuidad promedio del servicio,localidad,Tumbes,240101,horas/día,mayor_es_mejor,False,1,2024,14.1,14.7,14.5,66.7,informe_supervision_sunass
+EPS10,2024-2028,MG06,Presión promedio del servicio,localidad,Tumbes,240101,m.c.a.,mayor_es_mejor,False,1,2024,18.7,19.1,19.0,75.0,informe_supervision_sunass
+EPS10,2024-2028,MG05,Continuidad promedio del servicio,localidad,Zarumilla,240301,horas/día,mayor_es_mejor,False,1,2024,15.9,16.3,16.2,75.0,informe_supervision_sunass
+EPS10,2024-2028,MG06,Presión promedio del servicio,localidad,Zarumilla,240301,m.c.a.,mayor_es_mejor,False,1,2024,11.6,12.1,11.9,60.0,informe_supervision_sunass
+EPS10,2024-2028,MG05,Continuidad promedio del servicio,localidad,Zorritos,240201,horas/día,mayor_es_mejor,False,1,2024,21.8,22.3,22.2,80.0,informe_supervision_sunass
+EPS10,2024-2028,MG06,Presión promedio del servicio,localidad,Zorritos,240201,m.c.a.,mayor_es_mejor,False,1,2024,13.2,13.9,13.8,85.7,informe_supervision_sunass
+EPS10,2024-2028,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,2,2025,0.0,678.0,639.0,94.2,informe_supervision_sunass
+EPS10,2024-2028,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,2,2025,0.0,868.0,852.0,98.2,informe_supervision_sunass
+EPS10,2024-2028,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,2,2025,0.0,1808.0,1873.0,100.0,informe_supervision_sunass
+EPS10,2024-2028,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,2,2025,36.4,35.2,35.3,91.7,informe_supervision_sunass
+EPS10,2024-2028,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,2,2025,31.7,33.7,33.9,100.0,informe_supervision_sunass
+EPS10,2024-2028,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,2,2025,77.6,74.6,77.1,16.7,informe_supervision_sunass
+EPS10,2024-2028,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,2,2025,64.4,80.4,73.9,59.4,informe_supervision_sunass
+EPS10,2024-2028,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,2,2025,79.1,85.1,83.2,68.3,informe_supervision_sunass
+EPS10,2024-2028,MG05,Continuidad promedio del servicio,localidad,Tumbes,240101,horas/día,mayor_es_mejor,False,2,2025,14.1,15.2,14.9,72.7,informe_supervision_sunass
+EPS10,2024-2028,MG06,Presión promedio del servicio,localidad,Tumbes,240101,m.c.a.,mayor_es_mejor,False,2,2025,18.7,19.5,19.4,87.5,informe_supervision_sunass
+EPS10,2024-2028,MG05,Continuidad promedio del servicio,localidad,Zarumilla,240301,horas/día,mayor_es_mejor,False,2,2025,15.9,16.7,16.7,100.0,informe_supervision_sunass
+EPS10,2024-2028,MG06,Presión promedio del servicio,localidad,Zarumilla,240301,m.c.a.,mayor_es_mejor,False,2,2025,11.6,12.6,12.4,80.0,informe_supervision_sunass
+EPS10,2024-2028,MG05,Continuidad promedio del servicio,localidad,Zorritos,240201,horas/día,mayor_es_mejor,False,2,2025,21.8,22.7,22.3,55.6,informe_supervision_sunass
+EPS10,2024-2028,MG06,Presión promedio del servicio,localidad,Zorritos,240201,m.c.a.,mayor_es_mejor,False,2,2025,13.2,14.7,13.9,46.7,informe_supervision_sunass
+EPS10,2024-2028,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,3,2026,0.0,1017.0,,,
+EPS10,2024-2028,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,3,2026,0.0,1302.0,,,
+EPS10,2024-2028,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,3,2026,0.0,2713.0,,,
+EPS10,2024-2028,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,3,2026,36.4,34.5,,,
+EPS10,2024-2028,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,3,2026,31.7,63.3,,,
+EPS10,2024-2028,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,3,2026,77.6,73.1,,,
+EPS10,2024-2028,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,3,2026,64.4,88.4,,,
+EPS10,2024-2028,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,3,2026,79.1,88.1,,,
+EPS10,2024-2028,MG05,Continuidad promedio del servicio,localidad,Tumbes,240101,horas/día,mayor_es_mejor,False,3,2026,14.1,15.7,,,
+EPS10,2024-2028,MG06,Presión promedio del servicio,localidad,Tumbes,240101,m.c.a.,mayor_es_mejor,False,3,2026,18.7,19.8,,,
+EPS10,2024-2028,MG05,Continuidad promedio del servicio,localidad,Zarumilla,240301,horas/día,mayor_es_mejor,False,3,2026,15.9,17.1,,,
+EPS10,2024-2028,MG06,Presión promedio del servicio,localidad,Zarumilla,240301,m.c.a.,mayor_es_mejor,False,3,2026,11.6,13.1,,,
+EPS10,2024-2028,MG05,Continuidad promedio del servicio,localidad,Zorritos,240201,horas/día,mayor_es_mejor,False,3,2026,21.8,23.2,,,
+EPS10,2024-2028,MG06,Presión promedio del servicio,localidad,Zorritos,240201,m.c.a.,mayor_es_mejor,False,3,2026,13.2,15.5,,,
+EPS11,2021-2025,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,2,2022,0.0,667.0,416.0,62.4,informe_supervision_sunass
+EPS11,2021-2025,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,2,2022,0.0,315.0,265.0,84.1,informe_supervision_sunass
+EPS11,2021-2025,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,2,2022,0.0,1093.0,758.0,69.4,informe_supervision_sunass
+EPS11,2021-2025,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,2,2022,34.4,32.1,33.3,47.8,informe_supervision_sunass
+EPS11,2021-2025,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,2,2022,72.4,74.4,74.3,95.0,informe_supervision_sunass
+EPS11,2021-2025,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,2,2022,83.9,80.9,88.5,0.0,informe_supervision_sunass
+EPS11,2021-2025,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,2,2022,66.1,82.1,71.9,36.3,informe_supervision_sunass
+EPS11,2021-2025,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,2,2022,69.5,75.5,72.4,48.3,informe_supervision_sunass
+EPS11,2021-2025,MG05,Continuidad promedio del servicio,localidad,Chachapoyas,010101,horas/día,mayor_es_mejor,False,2,2022,14.3,15.6,14.8,38.5,informe_supervision_sunass
+EPS11,2021-2025,MG06,Presión promedio del servicio,localidad,Chachapoyas,010101,m.c.a.,mayor_es_mejor,False,2,2022,15.6,16.6,16.0,40.0,informe_supervision_sunass
+EPS11,2021-2025,MG05,Continuidad promedio del servicio,localidad,Bagua Grande,010701,horas/día,mayor_es_mejor,False,2,2022,21.0,22.0,21.4,40.0,informe_supervision_sunass
+EPS11,2021-2025,MG06,Presión promedio del servicio,localidad,Bagua Grande,010701,m.c.a.,mayor_es_mejor,False,2,2022,16.7,17.4,17.1,57.1,informe_supervision_sunass
+EPS11,2021-2025,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,3,2023,0.0,1001.0,589.0,58.8,informe_supervision_sunass
+EPS11,2021-2025,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,3,2023,0.0,473.0,487.0,100.0,informe_supervision_sunass
+EPS11,2021-2025,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,3,2023,0.0,1640.0,1184.0,72.2,informe_supervision_sunass
+EPS11,2021-2025,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,3,2023,34.4,31.0,31.8,76.5,informe_supervision_sunass
+EPS11,2021-2025,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,3,2023,72.4,100.0,74.9,9.1,informe_supervision_sunass
+EPS11,2021-2025,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,3,2023,83.9,79.4,98.0,0.0,informe_supervision_sunass
+EPS11,2021-2025,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,3,2023,66.1,90.1,69.0,12.1,informe_supervision_sunass
+EPS11,2021-2025,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,3,2023,69.5,78.5,72.8,36.7,informe_supervision_sunass
+EPS11,2021-2025,MG05,Continuidad promedio del servicio,localidad,Chachapoyas,010101,horas/día,mayor_es_mejor,False,3,2023,14.3,16.2,15.4,57.9,informe_supervision_sunass
+EPS11,2021-2025,MG06,Presión promedio del servicio,localidad,Chachapoyas,010101,m.c.a.,mayor_es_mejor,False,3,2023,15.6,17.1,16.3,46.7,informe_supervision_sunass
+EPS11,2021-2025,MG05,Continuidad promedio del servicio,localidad,Bagua Grande,010701,horas/día,mayor_es_mejor,False,3,2023,21.0,22.5,21.5,33.3,informe_supervision_sunass
+EPS11,2021-2025,MG06,Presión promedio del servicio,localidad,Bagua Grande,010701,m.c.a.,mayor_es_mejor,False,3,2023,16.7,17.8,17.3,54.5,informe_supervision_sunass
+EPS11,2021-2025,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,4,2024,0.0,1334.0,1025.0,76.8,informe_supervision_sunass
+EPS11,2021-2025,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,4,2024,0.0,630.0,500.0,79.4,informe_supervision_sunass
+EPS11,2021-2025,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,4,2024,0.0,2187.0,1608.0,73.5,informe_supervision_sunass
+EPS11,2021-2025,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,4,2024,34.4,29.9,30.3,91.1,informe_supervision_sunass
+EPS11,2021-2025,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,4,2024,72.4,100.0,74.9,9.1,informe_supervision_sunass
+EPS11,2021-2025,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,4,2024,83.9,77.9,104.4,0.0,informe_supervision_sunass
+EPS11,2021-2025,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,4,2024,66.1,98.1,92.8,83.4,informe_supervision_sunass
+EPS11,2021-2025,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,4,2024,69.5,81.5,74.9,45.0,informe_supervision_sunass
+EPS11,2021-2025,MG05,Continuidad promedio del servicio,localidad,Chachapoyas,010101,horas/día,mayor_es_mejor,False,4,2024,14.3,16.8,15.3,40.0,informe_supervision_sunass
+EPS11,2021-2025,MG06,Presión promedio del servicio,localidad,Chachapoyas,010101,m.c.a.,mayor_es_mejor,False,4,2024,15.6,17.6,16.2,30.0,informe_supervision_sunass
+EPS11,2021-2025,MG05,Continuidad promedio del servicio,localidad,Bagua Grande,010701,horas/día,mayor_es_mejor,False,4,2024,21.0,23.0,22.0,50.0,informe_supervision_sunass
+EPS11,2021-2025,MG06,Presión promedio del servicio,localidad,Bagua Grande,010701,m.c.a.,mayor_es_mejor,False,4,2024,16.7,18.1,17.4,50.0,informe_supervision_sunass
+EPS11,2021-2025,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,5,2025,0.0,1668.0,1766.0,100.0,informe_supervision_sunass
+EPS11,2021-2025,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,5,2025,0.0,788.0,791.0,100.0,informe_supervision_sunass
+EPS11,2021-2025,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,5,2025,0.0,2733.0,1513.0,55.4,informe_supervision_sunass
+EPS11,2021-2025,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,5,2025,34.4,28.8,32.1,41.1,informe_supervision_sunass
+EPS11,2021-2025,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,5,2025,72.4,100.0,100.0,100.0,informe_supervision_sunass
+EPS11,2021-2025,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,5,2025,83.9,76.4,108.1,0.0,informe_supervision_sunass
+EPS11,2021-2025,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,5,2025,66.1,100.0,92.9,79.1,informe_supervision_sunass
+EPS11,2021-2025,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,5,2025,69.5,84.5,69.8,2.0,informe_supervision_sunass
+EPS11,2021-2025,MG05,Continuidad promedio del servicio,localidad,Chachapoyas,010101,horas/día,mayor_es_mejor,False,5,2025,14.3,17.5,16.1,56.3,informe_supervision_sunass
+EPS11,2021-2025,MG06,Presión promedio del servicio,localidad,Chachapoyas,010101,m.c.a.,mayor_es_mejor,False,5,2025,15.6,18.1,16.9,52.0,informe_supervision_sunass
+EPS11,2021-2025,MG05,Continuidad promedio del servicio,localidad,Bagua Grande,010701,horas/día,mayor_es_mejor,False,5,2025,21.0,23.5,22.1,44.0,informe_supervision_sunass
+EPS11,2021-2025,MG06,Presión promedio del servicio,localidad,Bagua Grande,010701,m.c.a.,mayor_es_mejor,False,5,2025,16.7,18.5,17.4,38.9,informe_supervision_sunass
+EPS11,2026-2030,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,1,2026,0.0,229.0,,,
+EPS11,2026-2030,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,1,2026,0.0,185.0,,,
+EPS11,2026-2030,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,1,2026,0.0,477.0,,,
+EPS11,2026-2030,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,1,2026,28.4,27.1,,,
+EPS11,2026-2030,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,1,2026,27.5,28.5,,,
+EPS11,2026-2030,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,1,2026,108.1,106.6,,,
+EPS11,2026-2030,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,1,2026,78.0,86.0,,,
+EPS11,2026-2030,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,1,2026,73.9,76.9,,,
+EPS11,2026-2030,MG05,Continuidad promedio del servicio,localidad,Chachapoyas,010101,horas/día,mayor_es_mejor,False,1,2026,15.0,15.6,,,
+EPS11,2026-2030,MG06,Presión promedio del servicio,localidad,Chachapoyas,010101,m.c.a.,mayor_es_mejor,False,1,2026,15.4,15.7,,,
+EPS11,2026-2030,MG05,Continuidad promedio del servicio,localidad,Bagua Grande,010701,horas/día,mayor_es_mejor,False,1,2026,11.6,12.3,,,
+EPS11,2026-2030,MG06,Presión promedio del servicio,localidad,Bagua Grande,010701,m.c.a.,mayor_es_mejor,False,1,2026,11.4,11.8,,,
+EPS12,2021-2025,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,2,2022,0.0,1145.0,658.0,57.5,informe_supervision_sunass
+EPS12,2021-2025,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,2,2022,0.0,682.0,347.0,50.9,informe_supervision_sunass
+EPS12,2021-2025,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,2,2022,0.0,1822.0,1240.0,68.1,informe_supervision_sunass
+EPS12,2021-2025,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,2,2022,37.4,34.9,35.5,76.0,informe_supervision_sunass
+EPS12,2021-2025,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,2,2022,36.7,38.7,38.7,100.0,informe_supervision_sunass
+EPS12,2021-2025,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,2,2022,99.9,96.9,102.2,0.0,informe_supervision_sunass
+EPS12,2021-2025,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,2,2022,41.0,57.0,50.4,58.7,informe_supervision_sunass
+EPS12,2021-2025,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,2,2022,74.9,80.9,76.8,31.7,informe_supervision_sunass
+EPS12,2021-2025,MG05,Continuidad promedio del servicio,localidad,Abancay,030101,horas/día,mayor_es_mejor,False,2,2022,20.3,21.8,21.1,53.3,informe_supervision_sunass
+EPS12,2021-2025,MG06,Presión promedio del servicio,localidad,Abancay,030101,m.c.a.,mayor_es_mejor,False,2,2022,19.0,20.4,19.7,50.0,informe_supervision_sunass
+EPS12,2021-2025,MG05,Continuidad promedio del servicio,localidad,Andahuaylas,030201,horas/día,mayor_es_mejor,False,2,2022,21.8,23.5,22.5,41.2,informe_supervision_sunass
+EPS12,2021-2025,MG06,Presión promedio del servicio,localidad,Andahuaylas,030201,m.c.a.,mayor_es_mejor,False,2,2022,12.3,13.5,13.1,66.7,informe_supervision_sunass
+EPS12,2021-2025,MG05,Continuidad promedio del servicio,localidad,Tambobamba,030501,horas/día,mayor_es_mejor,False,2,2022,16.9,17.7,17.3,50.0,informe_supervision_sunass
+EPS12,2021-2025,MG06,Presión promedio del servicio,localidad,Tambobamba,030501,m.c.a.,mayor_es_mejor,False,2,2022,10.4,11.4,11.0,60.0,informe_supervision_sunass
+EPS12,2021-2025,MG05,Continuidad promedio del servicio,localidad,Chincheros,030601,horas/día,mayor_es_mejor,False,2,2022,14.3,15.2,14.8,55.6,informe_supervision_sunass
+EPS12,2021-2025,MG06,Presión promedio del servicio,localidad,Chincheros,030601,m.c.a.,mayor_es_mejor,False,2,2022,18.0,19.4,18.5,35.7,informe_supervision_sunass
+EPS12,2021-2025,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,3,2023,0.0,1717.0,1403.0,81.7,informe_supervision_sunass
+EPS12,2021-2025,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,3,2023,0.0,1023.0,543.0,53.1,informe_supervision_sunass
+EPS12,2021-2025,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,3,2023,0.0,2734.0,2116.0,77.4,informe_supervision_sunass
+EPS12,2021-2025,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,3,2023,37.4,33.7,35.2,59.5,informe_supervision_sunass
+EPS12,2021-2025,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,3,2023,36.7,39.7,39.2,83.3,informe_supervision_sunass
+EPS12,2021-2025,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,3,2023,99.9,95.4,102.5,0.0,informe_supervision_sunass
+EPS12,2021-2025,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,3,2023,41.0,65.0,55.5,60.4,informe_supervision_sunass
+EPS12,2021-2025,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,3,2023,74.9,83.9,80.2,58.9,informe_supervision_sunass
+EPS12,2021-2025,MG05,Continuidad promedio del servicio,localidad,Abancay,030101,horas/día,mayor_es_mejor,False,3,2023,20.3,22.6,21.6,56.5,informe_supervision_sunass
+EPS12,2021-2025,MG06,Presión promedio del servicio,localidad,Abancay,030101,m.c.a.,mayor_es_mejor,False,3,2023,19.0,21.2,20.0,45.5,informe_supervision_sunass
+EPS12,2021-2025,MG05,Continuidad promedio del servicio,localidad,Andahuaylas,030201,horas/día,mayor_es_mejor,False,3,2023,21.8,24.0,22.8,45.5,informe_supervision_sunass
+EPS12,2021-2025,MG06,Presión promedio del servicio,localidad,Andahuaylas,030201,m.c.a.,mayor_es_mejor,False,3,2023,12.3,14.0,12.9,35.3,informe_supervision_sunass
+EPS12,2021-2025,MG05,Continuidad promedio del servicio,localidad,Tambobamba,030501,horas/día,mayor_es_mejor,False,3,2023,16.9,18.1,17.3,33.3,informe_supervision_sunass
+EPS12,2021-2025,MG06,Presión promedio del servicio,localidad,Tambobamba,030501,m.c.a.,mayor_es_mejor,False,3,2023,10.4,11.9,11.0,40.0,informe_supervision_sunass
+EPS12,2021-2025,MG05,Continuidad promedio del servicio,localidad,Chincheros,030601,horas/día,mayor_es_mejor,False,3,2023,14.3,15.7,14.9,42.9,informe_supervision_sunass
+EPS12,2021-2025,MG06,Presión promedio del servicio,localidad,Chincheros,030601,m.c.a.,mayor_es_mejor,False,3,2023,18.0,20.1,18.5,23.8,informe_supervision_sunass
+EPS12,2021-2025,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,4,2024,0.0,2289.0,1827.0,79.8,informe_supervision_sunass
+EPS12,2021-2025,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,4,2024,0.0,1365.0,832.0,61.0,informe_supervision_sunass
+EPS12,2021-2025,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,4,2024,0.0,3645.0,3955.0,100.0,informe_supervision_sunass
+EPS12,2021-2025,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,4,2024,37.4,32.5,34.1,67.3,informe_supervision_sunass
+EPS12,2021-2025,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,4,2024,36.7,69.8,40.6,11.8,informe_supervision_sunass
+EPS12,2021-2025,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,4,2024,99.9,93.9,108.4,0.0,informe_supervision_sunass
+EPS12,2021-2025,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,4,2024,41.0,73.0,57.0,50.0,informe_supervision_sunass
+EPS12,2021-2025,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,4,2024,74.9,86.9,84.2,77.5,informe_supervision_sunass
+EPS12,2021-2025,MG05,Continuidad promedio del servicio,localidad,Abancay,030101,horas/día,mayor_es_mejor,False,4,2024,20.3,23.4,22.1,58.1,informe_supervision_sunass
+EPS12,2021-2025,MG06,Presión promedio del servicio,localidad,Abancay,030101,m.c.a.,mayor_es_mejor,False,4,2024,19.0,21.9,19.6,20.7,informe_supervision_sunass
+EPS12,2021-2025,MG05,Continuidad promedio del servicio,localidad,Andahuaylas,030201,horas/día,mayor_es_mejor,False,4,2024,21.8,24.0,23.0,54.5,informe_supervision_sunass
+EPS12,2021-2025,MG06,Presión promedio del servicio,localidad,Andahuaylas,030201,m.c.a.,mayor_es_mejor,False,4,2024,12.3,14.6,13.5,52.2,informe_supervision_sunass
+EPS12,2021-2025,MG05,Continuidad promedio del servicio,localidad,Tambobamba,030501,horas/día,mayor_es_mejor,False,4,2024,16.9,18.5,17.9,62.5,informe_supervision_sunass
+EPS12,2021-2025,MG06,Presión promedio del servicio,localidad,Tambobamba,030501,m.c.a.,mayor_es_mejor,False,4,2024,10.4,12.4,11.7,65.0,informe_supervision_sunass
+EPS12,2021-2025,MG05,Continuidad promedio del servicio,localidad,Chincheros,030601,horas/día,mayor_es_mejor,False,4,2024,14.3,16.1,14.9,33.3,informe_supervision_sunass
+EPS12,2021-2025,MG06,Presión promedio del servicio,localidad,Chincheros,030601,m.c.a.,mayor_es_mejor,False,4,2024,18.0,20.8,18.9,32.1,informe_supervision_sunass
+EPS12,2021-2025,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,5,2025,0.0,2862.0,2381.0,83.2,informe_supervision_sunass
+EPS12,2021-2025,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,5,2025,0.0,1706.0,1669.0,97.8,informe_supervision_sunass
+EPS12,2021-2025,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,5,2025,0.0,4556.0,3805.0,83.5,informe_supervision_sunass
+EPS12,2021-2025,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,5,2025,37.4,31.3,33.0,72.1,informe_supervision_sunass
+EPS12,2021-2025,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,5,2025,36.7,69.8,41.5,14.5,informe_supervision_sunass
+EPS12,2021-2025,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,5,2025,99.9,92.4,112.1,0.0,informe_supervision_sunass
+EPS12,2021-2025,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,5,2025,41.0,81.0,59.5,46.2,informe_supervision_sunass
+EPS12,2021-2025,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,5,2025,74.9,89.9,84.1,61.3,informe_supervision_sunass
+EPS12,2021-2025,MG05,Continuidad promedio del servicio,localidad,Abancay,030101,horas/día,mayor_es_mejor,False,5,2025,20.3,24.0,21.4,29.7,informe_supervision_sunass
+EPS12,2021-2025,MG06,Presión promedio del servicio,localidad,Abancay,030101,m.c.a.,mayor_es_mejor,False,5,2025,19.0,22.6,21.2,61.1,informe_supervision_sunass
+EPS12,2021-2025,MG05,Continuidad promedio del servicio,localidad,Andahuaylas,030201,horas/día,mayor_es_mejor,False,5,2025,21.8,24.0,22.9,50.0,informe_supervision_sunass
+EPS12,2021-2025,MG06,Presión promedio del servicio,localidad,Andahuaylas,030201,m.c.a.,mayor_es_mejor,False,5,2025,12.3,15.1,13.7,50.0,informe_supervision_sunass
+EPS12,2021-2025,MG05,Continuidad promedio del servicio,localidad,Tambobamba,030501,horas/día,mayor_es_mejor,False,5,2025,16.9,18.9,18.1,60.0,informe_supervision_sunass
+EPS12,2021-2025,MG06,Presión promedio del servicio,localidad,Tambobamba,030501,m.c.a.,mayor_es_mejor,False,5,2025,10.4,13.0,11.7,50.0,informe_supervision_sunass
+EPS12,2021-2025,MG05,Continuidad promedio del servicio,localidad,Chincheros,030601,horas/día,mayor_es_mejor,False,5,2025,14.3,16.6,15.7,60.9,informe_supervision_sunass
+EPS12,2021-2025,MG06,Presión promedio del servicio,localidad,Chincheros,030601,m.c.a.,mayor_es_mejor,False,5,2025,18.0,21.6,19.8,50.0,informe_supervision_sunass
+EPS12,2026-2030,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,1,2026,0.0,525.0,,,
+EPS12,2026-2030,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,1,2026,0.0,286.0,,,
+EPS12,2026-2030,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,1,2026,0.0,902.0,,,
+EPS12,2026-2030,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,1,2026,36.1,34.8,,,
+EPS12,2026-2030,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,1,2026,45.5,46.5,,,
+EPS12,2026-2030,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,1,2026,112.1,110.6,,,
+EPS12,2026-2030,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,1,2026,51.7,59.7,,,
+EPS12,2026-2030,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,1,2026,70.7,73.7,,,
+EPS12,2026-2030,MG05,Continuidad promedio del servicio,localidad,Abancay,030101,horas/día,mayor_es_mejor,False,1,2026,17.0,17.8,,,
+EPS12,2026-2030,MG06,Presión promedio del servicio,localidad,Abancay,030101,m.c.a.,mayor_es_mejor,False,1,2026,17.6,18.3,,,
+EPS12,2026-2030,MG05,Continuidad promedio del servicio,localidad,Andahuaylas,030201,horas/día,mayor_es_mejor,False,1,2026,21.9,22.3,,,
+EPS12,2026-2030,MG06,Presión promedio del servicio,localidad,Andahuaylas,030201,m.c.a.,mayor_es_mejor,False,1,2026,11.3,11.7,,,
+EPS12,2026-2030,MG05,Continuidad promedio del servicio,localidad,Tambobamba,030501,horas/día,mayor_es_mejor,False,1,2026,17.6,18.1,,,
+EPS12,2026-2030,MG06,Presión promedio del servicio,localidad,Tambobamba,030501,m.c.a.,mayor_es_mejor,False,1,2026,18.7,19.2,,,
+EPS12,2026-2030,MG05,Continuidad promedio del servicio,localidad,Chincheros,030601,horas/día,mayor_es_mejor,False,1,2026,10.5,11.1,,,
+EPS12,2026-2030,MG06,Presión promedio del servicio,localidad,Chincheros,030601,m.c.a.,mayor_es_mejor,False,1,2026,13.1,13.4,,,
+EPS13,2019-2023,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,4,2022,0.0,343.0,221.0,64.4,informe_supervision_sunass
+EPS13,2019-2023,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,4,2022,0.0,369.0,383.0,100.0,informe_supervision_sunass
+EPS13,2019-2023,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,4,2022,0.0,989.0,724.0,73.2,informe_supervision_sunass
+EPS13,2019-2023,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,4,2022,41.2,37.2,40.2,25.0,informe_supervision_sunass
+EPS13,2019-2023,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,4,2022,44.5,69.4,46.1,6.4,informe_supervision_sunass
+EPS13,2019-2023,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,4,2022,99.4,93.4,99.3,1.7,informe_supervision_sunass
+EPS13,2019-2023,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,4,2022,44.0,76.0,58.7,45.9,informe_supervision_sunass
+EPS13,2019-2023,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,4,2022,58.2,70.2,62.8,38.3,informe_supervision_sunass
+EPS13,2019-2023,MG05,Continuidad promedio del servicio,localidad,Bambamarca,060701,horas/día,mayor_es_mejor,False,4,2022,14.3,15.9,14.9,37.5,informe_supervision_sunass
+EPS13,2019-2023,MG06,Presión promedio del servicio,localidad,Bambamarca,060701,m.c.a.,mayor_es_mejor,False,4,2022,9.2,11.7,10.1,36.0,informe_supervision_sunass
+EPS13,2019-2023,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,5,2023,0.0,429.0,320.0,74.6,informe_supervision_sunass
+EPS13,2019-2023,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,5,2023,0.0,461.0,481.0,100.0,informe_supervision_sunass
+EPS13,2019-2023,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,5,2023,0.0,1236.0,819.0,66.3,informe_supervision_sunass
+EPS13,2019-2023,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,5,2023,41.2,36.2,38.8,48.0,informe_supervision_sunass
+EPS13,2019-2023,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,5,2023,44.5,69.4,48.4,15.7,informe_supervision_sunass
+EPS13,2019-2023,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,5,2023,99.4,91.9,104.5,0.0,informe_supervision_sunass
+EPS13,2019-2023,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,5,2023,44.0,84.0,56.4,31.0,informe_supervision_sunass
+EPS13,2019-2023,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,5,2023,58.2,73.2,64.4,41.3,informe_supervision_sunass
+EPS13,2019-2023,MG05,Continuidad promedio del servicio,localidad,Bambamarca,060701,horas/día,mayor_es_mejor,False,5,2023,14.3,16.3,14.7,20.0,informe_supervision_sunass
+EPS13,2019-2023,MG06,Presión promedio del servicio,localidad,Bambamarca,060701,m.c.a.,mayor_es_mejor,False,5,2023,9.2,12.4,10.1,28.1,informe_supervision_sunass
+EPS13,2024-2028,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,1,2024,0.0,93.0,60.0,64.5,informe_supervision_sunass
+EPS13,2024-2028,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,1,2024,0.0,128.0,89.0,69.5,informe_supervision_sunass
+EPS13,2024-2028,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,1,2024,0.0,249.0,173.0,69.5,informe_supervision_sunass
+EPS13,2024-2028,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,1,2024,37.7,36.2,36.8,60.0,informe_supervision_sunass
+EPS13,2024-2028,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,1,2024,65.3,66.3,66.0,70.0,informe_supervision_sunass
+EPS13,2024-2028,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,1,2024,104.5,103.0,111.7,0.0,informe_supervision_sunass
+EPS13,2024-2028,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,1,2024,66.5,74.5,66.7,2.5,informe_supervision_sunass
+EPS13,2024-2028,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,1,2024,56.6,59.6,57.8,40.0,informe_supervision_sunass
+EPS13,2024-2028,MG05,Continuidad promedio del servicio,localidad,Bambamarca,060701,horas/día,mayor_es_mejor,False,1,2024,15.4,15.9,15.6,40.0,informe_supervision_sunass
+EPS13,2024-2028,MG06,Presión promedio del servicio,localidad,Bambamarca,060701,m.c.a.,mayor_es_mejor,False,1,2024,19.5,20.2,19.7,28.6,informe_supervision_sunass
+EPS13,2024-2028,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,2,2025,0.0,186.0,103.0,55.4,informe_supervision_sunass
+EPS13,2024-2028,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,2,2025,0.0,256.0,197.0,77.0,informe_supervision_sunass
+EPS13,2024-2028,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,2,2025,0.0,497.0,324.0,65.2,informe_supervision_sunass
+EPS13,2024-2028,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,2,2025,37.7,34.7,36.5,40.0,informe_supervision_sunass
+EPS13,2024-2028,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,2,2025,65.3,67.3,66.3,50.0,informe_supervision_sunass
+EPS13,2024-2028,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,2,2025,104.5,101.5,109.3,0.0,informe_supervision_sunass
+EPS13,2024-2028,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,2,2025,66.5,82.5,70.7,26.3,informe_supervision_sunass
+EPS13,2024-2028,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,2,2025,56.6,62.6,58.1,25.0,informe_supervision_sunass
+EPS13,2024-2028,MG05,Continuidad promedio del servicio,localidad,Bambamarca,060701,horas/día,mayor_es_mejor,False,2,2025,15.4,16.3,15.6,22.2,informe_supervision_sunass
+EPS13,2024-2028,MG06,Presión promedio del servicio,localidad,Bambamarca,060701,m.c.a.,mayor_es_mejor,False,2,2025,19.5,20.8,20.0,38.5,informe_supervision_sunass
+EPS13,2024-2028,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,3,2026,0.0,278.0,,,
+EPS13,2024-2028,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,3,2026,0.0,384.0,,,
+EPS13,2024-2028,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,3,2026,0.0,746.0,,,
+EPS13,2024-2028,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,3,2026,37.7,33.3,,,
+EPS13,2024-2028,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,3,2026,65.3,68.3,,,
+EPS13,2024-2028,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,3,2026,104.5,100.0,,,
+EPS13,2024-2028,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,3,2026,66.5,90.5,,,
+EPS13,2024-2028,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,3,2026,56.6,65.6,,,
+EPS13,2024-2028,MG05,Continuidad promedio del servicio,localidad,Bambamarca,060701,horas/día,mayor_es_mejor,False,3,2026,15.4,16.7,,,
+EPS13,2024-2028,MG06,Presión promedio del servicio,localidad,Bambamarca,060701,m.c.a.,mayor_es_mejor,False,3,2026,19.5,21.5,,,
+EPS14,2018-2022,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,5,2022,0.0,273.0,263.0,96.3,informe_supervision_sunass
+EPS14,2018-2022,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,5,2022,0.0,402.0,452.0,100.0,informe_supervision_sunass
+EPS14,2018-2022,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,5,2022,0.0,1069.0,1032.0,96.5,informe_supervision_sunass
+EPS14,2018-2022,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,5,2022,32.6,27.8,27.6,100.0,informe_supervision_sunass
+EPS14,2018-2022,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,5,2022,63.0,82.9,69.5,32.7,informe_supervision_sunass
+EPS14,2018-2022,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,5,2022,62.1,55.0,61.9,2.8,informe_supervision_sunass
+EPS14,2018-2022,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,5,2022,73.6,100.0,100.0,100.0,informe_supervision_sunass
+EPS14,2018-2022,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,5,2022,58.5,73.5,75.0,100.0,informe_supervision_sunass
+EPS14,2018-2022,MG05,Continuidad promedio del servicio,localidad,San Miguel,050501,horas/día,mayor_es_mejor,False,5,2022,11.5,14.8,14.3,84.8,informe_supervision_sunass
+EPS14,2018-2022,MG06,Presión promedio del servicio,localidad,San Miguel,050501,m.c.a.,mayor_es_mejor,False,5,2022,19.9,21.5,21.4,93.7,informe_supervision_sunass
+EPS14,2018-2022,MG05,Continuidad promedio del servicio,localidad,Coracora,050701,horas/día,mayor_es_mejor,False,5,2022,20.7,22.9,22.8,95.5,informe_supervision_sunass
+EPS14,2018-2022,MG06,Presión promedio del servicio,localidad,Coracora,050701,m.c.a.,mayor_es_mejor,False,5,2022,19.0,21.4,21.8,100.0,informe_supervision_sunass
+EPS14,2023-2027,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,1,2023,0.0,85.0,82.0,96.5,informe_supervision_sunass
+EPS14,2023-2027,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,1,2023,0.0,57.0,38.0,66.7,informe_supervision_sunass
+EPS14,2023-2027,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,1,2023,0.0,109.0,58.0,53.2,informe_supervision_sunass
+EPS14,2023-2027,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,1,2023,31.1,30.1,30.1,100.0,informe_supervision_sunass
+EPS14,2023-2027,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,1,2023,38.9,39.9,39.9,100.0,informe_supervision_sunass
+EPS14,2023-2027,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,1,2023,61.9,60.4,62.1,0.0,informe_supervision_sunass
+EPS14,2023-2027,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,1,2023,69.4,77.4,76.8,92.5,informe_supervision_sunass
+EPS14,2023-2027,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,1,2023,76.0,79.0,76.0,0.0,informe_supervision_sunass
+EPS14,2023-2027,MG05,Continuidad promedio del servicio,localidad,San Miguel,050501,horas/día,mayor_es_mejor,False,1,2023,19.5,20.2,20.2,100.0,informe_supervision_sunass
+EPS14,2023-2027,MG06,Presión promedio del servicio,localidad,San Miguel,050501,m.c.a.,mayor_es_mejor,False,1,2023,11.3,11.8,11.8,100.0,informe_supervision_sunass
+EPS14,2023-2027,MG05,Continuidad promedio del servicio,localidad,Coracora,050701,horas/día,mayor_es_mejor,False,1,2023,15.8,16.7,16.8,100.0,informe_supervision_sunass
+EPS14,2023-2027,MG06,Presión promedio del servicio,localidad,Coracora,050701,m.c.a.,mayor_es_mejor,False,1,2023,15.8,16.6,16.5,87.5,informe_supervision_sunass
+EPS14,2023-2027,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,2,2024,0.0,169.0,177.0,100.0,informe_supervision_sunass
+EPS14,2023-2027,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,2,2024,0.0,113.0,104.0,92.0,informe_supervision_sunass
+EPS14,2023-2027,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,2,2024,0.0,218.0,164.0,75.2,informe_supervision_sunass
+EPS14,2023-2027,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,2,2024,31.1,29.2,28.7,100.0,informe_supervision_sunass
+EPS14,2023-2027,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,2,2024,38.9,40.9,41.5,100.0,informe_supervision_sunass
+EPS14,2023-2027,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,2,2024,61.9,58.9,62.6,0.0,informe_supervision_sunass
+EPS14,2023-2027,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,2,2024,69.4,85.4,84.5,94.4,informe_supervision_sunass
+EPS14,2023-2027,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,2,2024,76.0,82.0,78.4,40.0,informe_supervision_sunass
+EPS14,2023-2027,MG05,Continuidad promedio del servicio,localidad,San Miguel,050501,horas/día,mayor_es_mejor,False,2,2024,19.5,20.8,20.6,84.6,informe_supervision_sunass
+EPS14,2023-2027,MG06,Presión promedio del servicio,localidad,San Miguel,050501,m.c.a.,mayor_es_mejor,False,2,2024,11.3,12.4,12.0,63.6,informe_supervision_sunass
+EPS14,2023-2027,MG05,Continuidad promedio del servicio,localidad,Coracora,050701,horas/día,mayor_es_mejor,False,2,2024,15.8,17.5,17.4,94.1,informe_supervision_sunass
+EPS14,2023-2027,MG06,Presión promedio del servicio,localidad,Coracora,050701,m.c.a.,mayor_es_mejor,False,2,2024,15.8,17.4,17.5,100.0,informe_supervision_sunass
+EPS14,2023-2027,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,3,2025,0.0,254.0,277.0,100.0,informe_supervision_sunass
+EPS14,2023-2027,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,3,2025,0.0,170.0,186.0,100.0,informe_supervision_sunass
+EPS14,2023-2027,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,3,2025,0.0,327.0,350.0,100.0,informe_supervision_sunass
+EPS14,2023-2027,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,3,2025,31.1,28.2,28.6,86.2,informe_supervision_sunass
+EPS14,2023-2027,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,3,2025,38.9,41.9,42.8,100.0,informe_supervision_sunass
+EPS14,2023-2027,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,3,2025,61.9,57.4,62.4,0.0,informe_supervision_sunass
+EPS14,2023-2027,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,3,2025,69.4,93.4,88.9,81.2,informe_supervision_sunass
+EPS14,2023-2027,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,3,2025,76.0,85.0,85.2,100.0,informe_supervision_sunass
+EPS14,2023-2027,MG05,Continuidad promedio del servicio,localidad,San Miguel,050501,horas/día,mayor_es_mejor,False,3,2025,19.5,21.4,21.6,100.0,informe_supervision_sunass
+EPS14,2023-2027,MG06,Presión promedio del servicio,localidad,San Miguel,050501,m.c.a.,mayor_es_mejor,False,3,2025,11.3,12.9,12.7,87.5,informe_supervision_sunass
+EPS14,2023-2027,MG05,Continuidad promedio del servicio,localidad,Coracora,050701,horas/día,mayor_es_mejor,False,3,2025,15.8,18.3,18.5,100.0,informe_supervision_sunass
+EPS14,2023-2027,MG06,Presión promedio del servicio,localidad,Coracora,050701,m.c.a.,mayor_es_mejor,False,3,2025,15.8,18.1,16.9,47.8,informe_supervision_sunass
+EPS14,2023-2027,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,4,2026,0.0,339.0,,,
+EPS14,2023-2027,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,4,2026,0.0,227.0,,,
+EPS14,2023-2027,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,4,2026,0.0,436.0,,,
+EPS14,2023-2027,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,4,2026,31.1,27.2,,,
+EPS14,2023-2027,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,4,2026,38.9,73.7,,,
+EPS14,2023-2027,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,4,2026,61.9,55.9,,,
+EPS14,2023-2027,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,4,2026,69.4,100.0,,,
+EPS14,2023-2027,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,4,2026,76.0,88.0,,,
+EPS14,2023-2027,MG05,Continuidad promedio del servicio,localidad,San Miguel,050501,horas/día,mayor_es_mejor,False,4,2026,19.5,22.1,,,
+EPS14,2023-2027,MG06,Presión promedio del servicio,localidad,San Miguel,050501,m.c.a.,mayor_es_mejor,False,4,2026,11.3,13.5,,,
+EPS14,2023-2027,MG05,Continuidad promedio del servicio,localidad,Coracora,050701,horas/día,mayor_es_mejor,False,4,2026,15.8,19.2,,,
+EPS14,2023-2027,MG06,Presión promedio del servicio,localidad,Coracora,050701,m.c.a.,mayor_es_mejor,False,4,2026,15.8,18.9,,,
+EPS15,2019-2023,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,4,2022,0.0,5250.0,4073.0,77.6,informe_supervision_sunass
+EPS15,2019-2023,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,4,2022,0.0,3919.0,3867.0,98.7,informe_supervision_sunass
+EPS15,2019-2023,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,4,2022,0.0,10126.0,5212.0,51.5,informe_supervision_sunass
+EPS15,2019-2023,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,4,2022,30.4,27.6,28.7,60.7,informe_supervision_sunass
+EPS15,2019-2023,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,4,2022,46.9,75.2,49.0,7.4,informe_supervision_sunass
+EPS15,2019-2023,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,4,2022,82.1,76.1,88.5,0.0,informe_supervision_sunass
+EPS15,2019-2023,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,4,2022,44.6,76.6,47.5,9.1,informe_supervision_sunass
+EPS15,2019-2023,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,4,2022,57.0,69.0,57.0,0.0,informe_supervision_sunass
+EPS15,2019-2023,MG05,Continuidad promedio del servicio,localidad,Piura,200101,horas/día,mayor_es_mejor,False,4,2022,12.6,14.4,13.6,55.6,informe_supervision_sunass
+EPS15,2019-2023,MG06,Presión promedio del servicio,localidad,Piura,200101,m.c.a.,mayor_es_mejor,False,4,2022,18.7,21.9,20.1,43.8,informe_supervision_sunass
+EPS15,2019-2023,MG05,Continuidad promedio del servicio,localidad,Sullana,200601,horas/día,mayor_es_mejor,False,4,2022,10.8,13.6,12.0,42.9,informe_supervision_sunass
+EPS15,2019-2023,MG06,Presión promedio del servicio,localidad,Sullana,200601,m.c.a.,mayor_es_mejor,False,4,2022,10.3,12.4,11.3,47.6,informe_supervision_sunass
+EPS15,2019-2023,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,5,2023,0.0,6562.0,6029.0,91.9,informe_supervision_sunass
+EPS15,2019-2023,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,5,2023,0.0,4899.0,4353.0,88.9,informe_supervision_sunass
+EPS15,2019-2023,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,5,2023,0.0,12657.0,8078.0,63.8,informe_supervision_sunass
+EPS15,2019-2023,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,5,2023,30.4,26.9,28.5,54.3,informe_supervision_sunass
+EPS15,2019-2023,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,5,2023,46.9,75.2,50.2,11.7,informe_supervision_sunass
+EPS15,2019-2023,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,5,2023,82.1,74.6,95.0,0.0,informe_supervision_sunass
+EPS15,2019-2023,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,5,2023,44.6,84.6,66.1,53.7,informe_supervision_sunass
+EPS15,2019-2023,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,5,2023,57.0,72.0,58.6,10.7,informe_supervision_sunass
+EPS15,2019-2023,MG05,Continuidad promedio del servicio,localidad,Piura,200101,horas/día,mayor_es_mejor,False,5,2023,12.6,14.8,13.7,50.0,informe_supervision_sunass
+EPS15,2019-2023,MG06,Presión promedio del servicio,localidad,Piura,200101,m.c.a.,mayor_es_mejor,False,5,2023,18.7,22.7,19.9,30.0,informe_supervision_sunass
+EPS15,2019-2023,MG05,Continuidad promedio del servicio,localidad,Sullana,200601,horas/día,mayor_es_mejor,False,5,2023,10.8,14.3,12.7,54.3,informe_supervision_sunass
+EPS15,2019-2023,MG06,Presión promedio del servicio,localidad,Sullana,200601,m.c.a.,mayor_es_mejor,False,5,2023,10.3,12.9,11.9,61.5,informe_supervision_sunass
+EPS15,2024-2028,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,1,2024,0.0,892.0,512.0,57.4,informe_supervision_sunass
+EPS15,2024-2028,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,1,2024,0.0,1066.0,867.0,81.3,informe_supervision_sunass
+EPS15,2024-2028,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,1,2024,0.0,1557.0,926.0,59.5,informe_supervision_sunass
+EPS15,2024-2028,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,1,2024,30.2,28.9,29.4,61.5,informe_supervision_sunass
+EPS15,2024-2028,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,1,2024,58.9,59.9,59.4,50.0,informe_supervision_sunass
+EPS15,2024-2028,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,1,2024,95.0,93.5,98.3,0.0,informe_supervision_sunass
+EPS15,2024-2028,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,1,2024,55.1,63.1,58.4,41.2,informe_supervision_sunass
+EPS15,2024-2028,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,1,2024,77.0,80.0,77.2,6.7,informe_supervision_sunass
+EPS15,2024-2028,MG05,Continuidad promedio del servicio,localidad,Piura,200101,horas/día,mayor_es_mejor,False,1,2024,17.2,17.8,17.5,50.0,informe_supervision_sunass
+EPS15,2024-2028,MG06,Presión promedio del servicio,localidad,Piura,200101,m.c.a.,mayor_es_mejor,False,1,2024,17.8,18.3,18.0,40.0,informe_supervision_sunass
+EPS15,2024-2028,MG05,Continuidad promedio del servicio,localidad,Sullana,200601,horas/día,mayor_es_mejor,False,1,2024,20.2,21.0,20.6,50.0,informe_supervision_sunass
+EPS15,2024-2028,MG06,Presión promedio del servicio,localidad,Sullana,200601,m.c.a.,mayor_es_mejor,False,1,2024,17.9,18.2,18.0,33.3,informe_supervision_sunass
+EPS15,2024-2028,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,2,2025,0.0,1785.0,1164.0,65.2,informe_supervision_sunass
+EPS15,2024-2028,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,2,2025,0.0,2133.0,2346.0,100.0,informe_supervision_sunass
+EPS15,2024-2028,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,2,2025,0.0,3113.0,2128.0,68.4,informe_supervision_sunass
+EPS15,2024-2028,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,2,2025,30.2,27.6,28.7,57.7,informe_supervision_sunass
+EPS15,2024-2028,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,2,2025,58.9,60.9,60.3,70.0,informe_supervision_sunass
+EPS15,2024-2028,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,2,2025,95.0,92.0,103.7,0.0,informe_supervision_sunass
+EPS15,2024-2028,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,2,2025,55.1,71.1,63.4,51.9,informe_supervision_sunass
+EPS15,2024-2028,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,2,2025,77.0,83.0,78.4,23.3,informe_supervision_sunass
+EPS15,2024-2028,MG05,Continuidad promedio del servicio,localidad,Piura,200101,horas/día,mayor_es_mejor,False,2,2025,17.2,18.4,17.8,50.0,informe_supervision_sunass
+EPS15,2024-2028,MG06,Presión promedio del servicio,localidad,Piura,200101,m.c.a.,mayor_es_mejor,False,2,2025,17.8,18.7,18.3,55.6,informe_supervision_sunass
+EPS15,2024-2028,MG05,Continuidad promedio del servicio,localidad,Sullana,200601,horas/día,mayor_es_mejor,False,2,2025,20.2,21.9,20.9,41.2,informe_supervision_sunass
+EPS15,2024-2028,MG06,Presión promedio del servicio,localidad,Sullana,200601,m.c.a.,mayor_es_mejor,False,2,2025,17.9,18.6,18.2,42.9,informe_supervision_sunass
+EPS15,2024-2028,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,3,2026,0.0,2677.0,,,
+EPS15,2024-2028,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,3,2026,0.0,3199.0,,,
+EPS15,2024-2028,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,3,2026,0.0,4670.0,,,
+EPS15,2024-2028,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,3,2026,30.2,26.3,,,
+EPS15,2024-2028,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,3,2026,58.9,91.9,,,
+EPS15,2024-2028,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,3,2026,95.0,90.5,,,
+EPS15,2024-2028,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,3,2026,55.1,79.1,,,
+EPS15,2024-2028,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,3,2026,77.0,86.0,,,
+EPS15,2024-2028,MG05,Continuidad promedio del servicio,localidad,Piura,200101,horas/día,mayor_es_mejor,False,3,2026,17.2,19.0,,,
+EPS15,2024-2028,MG06,Presión promedio del servicio,localidad,Piura,200101,m.c.a.,mayor_es_mejor,False,3,2026,17.8,19.2,,,
+EPS15,2024-2028,MG05,Continuidad promedio del servicio,localidad,Sullana,200601,horas/día,mayor_es_mejor,False,3,2026,20.2,22.7,,,
+EPS15,2024-2028,MG06,Presión promedio del servicio,localidad,Sullana,200601,m.c.a.,mayor_es_mejor,False,3,2026,17.9,19.0,,,
+EPS16,2018-2022,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,5,2022,0.0,1944.0,2030.0,100.0,informe_supervision_sunass
+EPS16,2018-2022,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,5,2022,0.0,1677.0,1795.0,100.0,informe_supervision_sunass
+EPS16,2018-2022,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,5,2022,0.0,3808.0,3906.0,100.0,informe_supervision_sunass
+EPS16,2018-2022,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,5,2022,30.5,25.1,26.2,79.6,informe_supervision_sunass
+EPS16,2018-2022,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,5,2022,59.7,91.4,96.3,100.0,informe_supervision_sunass
+EPS16,2018-2022,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,5,2022,58.8,55.0,59.1,0.0,informe_supervision_sunass
+EPS16,2018-2022,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,5,2022,44.6,84.6,83.1,96.2,informe_supervision_sunass
+EPS16,2018-2022,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,5,2022,61.9,76.9,72.6,71.3,informe_supervision_sunass
+EPS16,2018-2022,MG05,Continuidad promedio del servicio,localidad,Tacna,230101,horas/día,mayor_es_mejor,False,5,2022,12.0,16.8,16.9,100.0,informe_supervision_sunass
+EPS16,2018-2022,MG06,Presión promedio del servicio,localidad,Tacna,230101,m.c.a.,mayor_es_mejor,False,5,2022,12.1,13.9,13.8,94.4,informe_supervision_sunass
+EPS16,2023-2027,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,1,2023,0.0,560.0,373.0,66.6,informe_supervision_sunass
+EPS16,2023-2027,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,1,2023,0.0,244.0,262.0,100.0,informe_supervision_sunass
+EPS16,2023-2027,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,1,2023,0.0,740.0,711.0,96.1,informe_supervision_sunass
+EPS16,2023-2027,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,1,2023,33.8,32.6,32.5,100.0,informe_supervision_sunass
+EPS16,2023-2027,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,1,2023,25.6,26.6,26.9,100.0,informe_supervision_sunass
+EPS16,2023-2027,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,1,2023,59.1,57.6,61.3,0.0,informe_supervision_sunass
+EPS16,2023-2027,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,1,2023,48.3,56.3,56.7,100.0,informe_supervision_sunass
+EPS16,2023-2027,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,1,2023,63.0,66.0,66.0,100.0,informe_supervision_sunass
+EPS16,2023-2027,MG05,Continuidad promedio del servicio,localidad,Tacna,230101,horas/día,mayor_es_mejor,False,1,2023,14.5,15.2,15.3,100.0,informe_supervision_sunass
+EPS16,2023-2027,MG06,Presión promedio del servicio,localidad,Tacna,230101,m.c.a.,mayor_es_mejor,False,1,2023,9.0,9.4,9.3,75.0,informe_supervision_sunass
+EPS16,2023-2027,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,2,2024,0.0,1120.0,904.0,80.7,informe_supervision_sunass
+EPS16,2023-2027,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,2,2024,0.0,489.0,331.0,67.7,informe_supervision_sunass
+EPS16,2023-2027,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,2,2024,0.0,1481.0,1520.0,100.0,informe_supervision_sunass
+EPS16,2023-2027,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,2,2024,33.8,31.4,31.3,100.0,informe_supervision_sunass
+EPS16,2023-2027,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,2,2024,25.6,27.6,27.6,100.0,informe_supervision_sunass
+EPS16,2023-2027,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,2,2024,59.1,56.1,61.9,0.0,informe_supervision_sunass
+EPS16,2023-2027,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,2,2024,48.3,64.3,61.5,82.5,informe_supervision_sunass
+EPS16,2023-2027,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,2,2024,63.0,69.0,69.5,100.0,informe_supervision_sunass
+EPS16,2023-2027,MG05,Continuidad promedio del servicio,localidad,Tacna,230101,horas/día,mayor_es_mejor,False,2,2024,14.5,15.8,15.8,100.0,informe_supervision_sunass
+EPS16,2023-2027,MG06,Presión promedio del servicio,localidad,Tacna,230101,m.c.a.,mayor_es_mejor,False,2,2024,9.0,9.7,9.8,100.0,informe_supervision_sunass
+EPS16,2023-2027,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,3,2025,0.0,1680.0,1599.0,95.2,informe_supervision_sunass
+EPS16,2023-2027,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,3,2025,0.0,733.0,642.0,87.6,informe_supervision_sunass
+EPS16,2023-2027,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,3,2025,0.0,2221.0,2041.0,91.9,informe_supervision_sunass
+EPS16,2023-2027,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,3,2025,33.8,30.3,30.0,100.0,informe_supervision_sunass
+EPS16,2023-2027,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,3,2025,25.6,60.3,28.5,8.4,informe_supervision_sunass
+EPS16,2023-2027,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,3,2025,59.1,55.0,62.4,0.0,informe_supervision_sunass
+EPS16,2023-2027,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,3,2025,48.3,72.3,66.1,74.2,informe_supervision_sunass
+EPS16,2023-2027,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,3,2025,63.0,72.0,69.5,72.2,informe_supervision_sunass
+EPS16,2023-2027,MG05,Continuidad promedio del servicio,localidad,Tacna,230101,horas/día,mayor_es_mejor,False,3,2025,14.5,16.5,16.2,85.0,informe_supervision_sunass
+EPS16,2023-2027,MG06,Presión promedio del servicio,localidad,Tacna,230101,m.c.a.,mayor_es_mejor,False,3,2025,9.0,10.1,9.8,72.7,informe_supervision_sunass
+EPS16,2023-2027,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,4,2026,0.0,2240.0,,,
+EPS16,2023-2027,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,4,2026,0.0,977.0,,,
+EPS16,2023-2027,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,4,2026,0.0,2962.0,,,
+EPS16,2023-2027,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,4,2026,33.8,29.1,,,
+EPS16,2023-2027,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,4,2026,25.6,60.3,,,
+EPS16,2023-2027,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,4,2026,59.1,55.0,,,
+EPS16,2023-2027,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,4,2026,48.3,80.3,,,
+EPS16,2023-2027,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,4,2026,63.0,75.0,,,
+EPS16,2023-2027,MG05,Continuidad promedio del servicio,localidad,Tacna,230101,horas/día,mayor_es_mejor,False,4,2026,14.5,17.1,,,
+EPS16,2023-2027,MG06,Presión promedio del servicio,localidad,Tacna,230101,m.c.a.,mayor_es_mejor,False,4,2026,9.0,10.5,,,
+EPS17,2018-2022,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,5,2022,0.0,677.0,740.0,100.0,informe_supervision_sunass
+EPS17,2018-2022,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,5,2022,0.0,460.0,341.0,74.1,informe_supervision_sunass
+EPS17,2018-2022,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,5,2022,0.0,1226.0,1276.0,100.0,informe_supervision_sunass
+EPS17,2018-2022,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,5,2022,33.8,29.1,28.6,100.0,informe_supervision_sunass
+EPS17,2018-2022,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,5,2022,67.9,89.0,92.4,100.0,informe_supervision_sunass
+EPS17,2018-2022,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,5,2022,72.6,65.1,74.1,0.0,informe_supervision_sunass
+EPS17,2018-2022,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,5,2022,69.5,100.0,100.0,100.0,informe_supervision_sunass
+EPS17,2018-2022,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,5,2022,77.7,92.7,92.0,95.3,informe_supervision_sunass
+EPS17,2018-2022,MG05,Continuidad promedio del servicio,localidad,Oxapampa,190301,horas/día,mayor_es_mejor,False,5,2022,20.3,24.0,21.4,29.7,informe_supervision_sunass
+EPS17,2018-2022,MG06,Presión promedio del servicio,localidad,Oxapampa,190301,m.c.a.,mayor_es_mejor,False,5,2022,9.7,12.3,12.2,96.2,informe_supervision_sunass
+EPS17,2018-2022,MG05,Continuidad promedio del servicio,localidad,Yanahuanca,190201,horas/día,mayor_es_mejor,False,5,2022,17.7,20.5,19.7,71.4,informe_supervision_sunass
+EPS17,2018-2022,MG06,Presión promedio del servicio,localidad,Yanahuanca,190201,m.c.a.,mayor_es_mejor,False,5,2022,11.3,14.9,13.8,69.4,informe_supervision_sunass
+EPS17,2023-2027,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,1,2023,0.0,145.0,129.0,89.0,informe_supervision_sunass
+EPS17,2023-2027,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,1,2023,0.0,103.0,67.0,65.0,informe_supervision_sunass
+EPS17,2023-2027,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,1,2023,0.0,184.0,115.0,62.5,informe_supervision_sunass
+EPS17,2023-2027,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,1,2023,31.1,29.7,30.1,71.4,informe_supervision_sunass
+EPS17,2023-2027,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,1,2023,51.4,52.4,52.5,100.0,informe_supervision_sunass
+EPS17,2023-2027,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,1,2023,74.1,72.6,72.7,93.3,informe_supervision_sunass
+EPS17,2023-2027,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,1,2023,68.6,76.6,72.7,51.3,informe_supervision_sunass
+EPS17,2023-2027,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,1,2023,63.5,66.5,64.1,20.0,informe_supervision_sunass
+EPS17,2023-2027,MG05,Continuidad promedio del servicio,localidad,Oxapampa,190301,horas/día,mayor_es_mejor,False,1,2023,11.8,12.6,12.3,62.5,informe_supervision_sunass
+EPS17,2023-2027,MG06,Presión promedio del servicio,localidad,Oxapampa,190301,m.c.a.,mayor_es_mejor,False,1,2023,9.1,9.8,9.5,57.1,informe_supervision_sunass
+EPS17,2023-2027,MG05,Continuidad promedio del servicio,localidad,Yanahuanca,190201,horas/día,mayor_es_mejor,False,1,2023,10.9,11.5,11.2,50.0,informe_supervision_sunass
+EPS17,2023-2027,MG06,Presión promedio del servicio,localidad,Yanahuanca,190201,m.c.a.,mayor_es_mejor,False,1,2023,11.8,12.2,12.0,50.0,informe_supervision_sunass
+EPS17,2023-2027,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,2,2024,0.0,290.0,233.0,80.3,informe_supervision_sunass
+EPS17,2023-2027,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,2,2024,0.0,207.0,155.0,74.9,informe_supervision_sunass
+EPS17,2023-2027,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,2,2024,0.0,368.0,318.0,86.4,informe_supervision_sunass
+EPS17,2023-2027,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,2,2024,31.1,28.3,29.1,71.4,informe_supervision_sunass
+EPS17,2023-2027,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,2,2024,51.4,53.4,53.6,100.0,informe_supervision_sunass
+EPS17,2023-2027,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,2,2024,74.1,71.1,77.1,0.0,informe_supervision_sunass
+EPS17,2023-2027,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,2,2024,68.6,84.6,77.7,56.9,informe_supervision_sunass
+EPS17,2023-2027,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,2,2024,63.5,69.5,67.3,63.3,informe_supervision_sunass
+EPS17,2023-2027,MG05,Continuidad promedio del servicio,localidad,Oxapampa,190301,horas/día,mayor_es_mejor,False,2,2024,11.8,13.5,12.9,64.7,informe_supervision_sunass
+EPS17,2023-2027,MG06,Presión promedio del servicio,localidad,Oxapampa,190301,m.c.a.,mayor_es_mejor,False,2,2024,9.1,10.5,9.9,57.1,informe_supervision_sunass
+EPS17,2023-2027,MG05,Continuidad promedio del servicio,localidad,Yanahuanca,190201,horas/día,mayor_es_mejor,False,2,2024,10.9,12.2,11.5,46.2,informe_supervision_sunass
+EPS17,2023-2027,MG06,Presión promedio del servicio,localidad,Yanahuanca,190201,m.c.a.,mayor_es_mejor,False,2,2024,11.8,12.7,12.6,88.9,informe_supervision_sunass
+EPS17,2023-2027,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,3,2025,0.0,435.0,290.0,66.7,informe_supervision_sunass
+EPS17,2023-2027,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,3,2025,0.0,310.0,252.0,81.3,informe_supervision_sunass
+EPS17,2023-2027,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,3,2025,0.0,552.0,593.0,100.0,informe_supervision_sunass
+EPS17,2023-2027,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,3,2025,31.1,26.9,28.4,64.3,informe_supervision_sunass
+EPS17,2023-2027,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,3,2025,51.4,54.4,54.0,86.7,informe_supervision_sunass
+EPS17,2023-2027,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,3,2025,74.1,69.6,76.0,0.0,informe_supervision_sunass
+EPS17,2023-2027,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,3,2025,68.6,92.6,87.6,79.2,informe_supervision_sunass
+EPS17,2023-2027,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,3,2025,63.5,72.5,74.3,100.0,informe_supervision_sunass
+EPS17,2023-2027,MG05,Continuidad promedio del servicio,localidad,Oxapampa,190301,horas/día,mayor_es_mejor,False,3,2025,11.8,14.3,13.6,72.0,informe_supervision_sunass
+EPS17,2023-2027,MG06,Presión promedio del servicio,localidad,Oxapampa,190301,m.c.a.,mayor_es_mejor,False,3,2025,9.1,11.1,10.3,60.0,informe_supervision_sunass
+EPS17,2023-2027,MG05,Continuidad promedio del servicio,localidad,Yanahuanca,190201,horas/día,mayor_es_mejor,False,3,2025,10.9,12.8,12.4,78.9,informe_supervision_sunass
+EPS17,2023-2027,MG06,Presión promedio del servicio,localidad,Yanahuanca,190201,m.c.a.,mayor_es_mejor,False,3,2025,11.8,13.1,12.8,76.9,informe_supervision_sunass
+EPS17,2023-2027,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,4,2026,0.0,580.0,,,
+EPS17,2023-2027,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,4,2026,0.0,414.0,,,
+EPS17,2023-2027,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,4,2026,0.0,735.0,,,
+EPS17,2023-2027,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,4,2026,31.1,25.5,,,
+EPS17,2023-2027,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,4,2026,51.4,55.4,,,
+EPS17,2023-2027,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,4,2026,74.1,68.1,,,
+EPS17,2023-2027,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,4,2026,68.6,100.0,,,
+EPS17,2023-2027,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,4,2026,63.5,75.5,,,
+EPS17,2023-2027,MG05,Continuidad promedio del servicio,localidad,Oxapampa,190301,horas/día,mayor_es_mejor,False,4,2026,11.8,15.1,,,
+EPS17,2023-2027,MG06,Presión promedio del servicio,localidad,Oxapampa,190301,m.c.a.,mayor_es_mejor,False,4,2026,9.1,11.8,,,
+EPS17,2023-2027,MG05,Continuidad promedio del servicio,localidad,Yanahuanca,190201,horas/día,mayor_es_mejor,False,4,2026,10.9,13.5,,,
+EPS17,2023-2027,MG06,Presión promedio del servicio,localidad,Yanahuanca,190201,m.c.a.,mayor_es_mejor,False,4,2026,11.8,13.6,,,
+EPS18,2021-2025,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,2,2022,0.0,1092.0,598.0,54.8,informe_supervision_sunass
+EPS18,2021-2025,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,2,2022,0.0,806.0,463.0,57.4,informe_supervision_sunass
+EPS18,2021-2025,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,2,2022,0.0,1839.0,945.0,51.4,informe_supervision_sunass
+EPS18,2021-2025,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,2,2022,35.0,33.2,33.8,66.7,informe_supervision_sunass
+EPS18,2021-2025,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,2,2022,42.8,44.8,43.9,55.0,informe_supervision_sunass
+EPS18,2021-2025,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,2,2022,76.2,73.2,80.1,0.0,informe_supervision_sunass
+EPS18,2021-2025,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,2,2022,56.9,72.9,62.9,37.5,informe_supervision_sunass
+EPS18,2021-2025,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,2,2022,62.4,68.4,62.9,8.3,informe_supervision_sunass
+EPS18,2021-2025,MG05,Continuidad promedio del servicio,localidad,Moquegua,180101,horas/día,mayor_es_mejor,False,2,2022,12.1,13.3,12.3,16.7,informe_supervision_sunass
+EPS18,2021-2025,MG06,Presión promedio del servicio,localidad,Moquegua,180101,m.c.a.,mayor_es_mejor,False,2,2022,13.6,15.1,14.2,40.0,informe_supervision_sunass
+EPS18,2021-2025,MG05,Continuidad promedio del servicio,localidad,Ilo,180301,horas/día,mayor_es_mejor,False,2,2022,17.5,19.0,18.0,33.3,informe_supervision_sunass
+EPS18,2021-2025,MG06,Presión promedio del servicio,localidad,Ilo,180301,m.c.a.,mayor_es_mejor,False,2,2022,15.7,16.6,15.8,11.1,informe_supervision_sunass
+EPS18,2021-2025,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,3,2023,0.0,1638.0,991.0,60.5,informe_supervision_sunass
+EPS18,2021-2025,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,3,2023,0.0,1210.0,785.0,64.9,informe_supervision_sunass
+EPS18,2021-2025,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,3,2023,0.0,2758.0,1861.0,67.5,informe_supervision_sunass
+EPS18,2021-2025,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,3,2023,35.0,32.3,32.8,81.5,informe_supervision_sunass
+EPS18,2021-2025,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,3,2023,42.8,45.8,44.4,53.3,informe_supervision_sunass
+EPS18,2021-2025,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,3,2023,76.2,71.7,81.8,0.0,informe_supervision_sunass
+EPS18,2021-2025,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,3,2023,56.9,80.9,63.1,25.8,informe_supervision_sunass
+EPS18,2021-2025,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,3,2023,62.4,71.4,66.5,45.6,informe_supervision_sunass
+EPS18,2021-2025,MG05,Continuidad promedio del servicio,localidad,Moquegua,180101,horas/día,mayor_es_mejor,False,3,2023,12.1,13.9,12.7,33.3,informe_supervision_sunass
+EPS18,2021-2025,MG06,Presión promedio del servicio,localidad,Moquegua,180101,m.c.a.,mayor_es_mejor,False,3,2023,13.6,15.9,14.2,26.1,informe_supervision_sunass
+EPS18,2021-2025,MG05,Continuidad promedio del servicio,localidad,Ilo,180301,horas/día,mayor_es_mejor,False,3,2023,17.5,19.7,18.3,36.4,informe_supervision_sunass
+EPS18,2021-2025,MG06,Presión promedio del servicio,localidad,Ilo,180301,m.c.a.,mayor_es_mejor,False,3,2023,15.7,17.1,16.2,35.7,informe_supervision_sunass
+EPS18,2021-2025,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,4,2024,0.0,2185.0,1370.0,62.7,informe_supervision_sunass
+EPS18,2021-2025,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,4,2024,0.0,1613.0,1294.0,80.2,informe_supervision_sunass
+EPS18,2021-2025,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,4,2024,0.0,3678.0,2097.0,57.0,informe_supervision_sunass
+EPS18,2021-2025,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,4,2024,35.0,31.4,32.6,66.7,informe_supervision_sunass
+EPS18,2021-2025,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,4,2024,42.8,46.8,45.5,67.5,informe_supervision_sunass
+EPS18,2021-2025,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,4,2024,76.2,70.2,84.3,0.0,informe_supervision_sunass
+EPS18,2021-2025,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,4,2024,56.9,88.9,67.3,32.5,informe_supervision_sunass
+EPS18,2021-2025,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,4,2024,62.4,74.4,63.4,8.3,informe_supervision_sunass
+EPS18,2021-2025,MG05,Continuidad promedio del servicio,localidad,Moquegua,180101,horas/día,mayor_es_mejor,False,4,2024,12.1,14.4,13.1,43.5,informe_supervision_sunass
+EPS18,2021-2025,MG06,Presión promedio del servicio,localidad,Moquegua,180101,m.c.a.,mayor_es_mejor,False,4,2024,13.6,16.6,14.8,40.0,informe_supervision_sunass
+EPS18,2021-2025,MG05,Continuidad promedio del servicio,localidad,Ilo,180301,horas/día,mayor_es_mejor,False,4,2024,17.5,20.4,18.4,31.0,informe_supervision_sunass
+EPS18,2021-2025,MG06,Presión promedio del servicio,localidad,Ilo,180301,m.c.a.,mayor_es_mejor,False,4,2024,15.7,17.5,16.3,33.3,informe_supervision_sunass
+EPS18,2021-2025,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,5,2025,0.0,2731.0,1654.0,60.6,informe_supervision_sunass
+EPS18,2021-2025,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,5,2025,0.0,2016.0,1614.0,80.1,informe_supervision_sunass
+EPS18,2021-2025,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,5,2025,0.0,4597.0,3582.0,77.9,informe_supervision_sunass
+EPS18,2021-2025,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,5,2025,35.0,30.5,32.4,57.8,informe_supervision_sunass
+EPS18,2021-2025,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,5,2025,42.8,47.8,45.7,58.0,informe_supervision_sunass
+EPS18,2021-2025,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,5,2025,76.2,68.7,82.4,0.0,informe_supervision_sunass
+EPS18,2021-2025,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,5,2025,56.9,96.9,69.7,32.0,informe_supervision_sunass
+EPS18,2021-2025,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,5,2025,62.4,77.4,72.1,64.7,informe_supervision_sunass
+EPS18,2021-2025,MG05,Continuidad promedio del servicio,localidad,Moquegua,180101,horas/día,mayor_es_mejor,False,5,2025,12.1,15.0,12.4,10.3,informe_supervision_sunass
+EPS18,2021-2025,MG06,Presión promedio del servicio,localidad,Moquegua,180101,m.c.a.,mayor_es_mejor,False,5,2025,13.6,17.3,14.5,24.3,informe_supervision_sunass
+EPS18,2021-2025,MG05,Continuidad promedio del servicio,localidad,Ilo,180301,horas/día,mayor_es_mejor,False,5,2025,17.5,21.1,18.5,27.8,informe_supervision_sunass
+EPS18,2021-2025,MG06,Presión promedio del servicio,localidad,Ilo,180301,m.c.a.,mayor_es_mejor,False,5,2025,15.7,18.0,16.3,26.1,informe_supervision_sunass
+EPS18,2026-2030,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,1,2026,0.0,552.0,,,
+EPS18,2026-2030,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,1,2026,0.0,234.0,,,
+EPS18,2026-2030,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,1,2026,0.0,818.0,,,
+EPS18,2026-2030,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,1,2026,34.4,33.0,,,
+EPS18,2026-2030,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,1,2026,45.8,46.8,,,
+EPS18,2026-2030,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,1,2026,82.4,80.9,,,
+EPS18,2026-2030,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,1,2026,67.5,75.5,,,
+EPS18,2026-2030,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,1,2026,55.4,58.4,,,
+EPS18,2026-2030,MG05,Continuidad promedio del servicio,localidad,Moquegua,180101,horas/día,mayor_es_mejor,False,1,2026,21.8,22.7,,,
+EPS18,2026-2030,MG06,Presión promedio del servicio,localidad,Moquegua,180101,m.c.a.,mayor_es_mejor,False,1,2026,13.9,14.2,,,
+EPS18,2026-2030,MG05,Continuidad promedio del servicio,localidad,Ilo,180301,horas/día,mayor_es_mejor,False,1,2026,16.1,16.9,,,
+EPS18,2026-2030,MG06,Presión promedio del servicio,localidad,Ilo,180301,m.c.a.,mayor_es_mejor,False,1,2026,13.5,14.0,,,
+EPS19,2019-2023,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,4,2022,0.0,8507.0,8244.0,96.9,informe_supervision_sunass
+EPS19,2019-2023,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,4,2022,0.0,5312.0,4770.0,89.8,informe_supervision_sunass
+EPS19,2019-2023,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,4,2022,0.0,16451.0,14511.0,88.2,informe_supervision_sunass
+EPS19,2019-2023,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,4,2022,29.6,26.5,26.4,100.0,informe_supervision_sunass
+EPS19,2019-2023,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,4,2022,24.0,55.9,61.0,100.0,informe_supervision_sunass
+EPS19,2019-2023,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,4,2022,84.0,78.0,88.7,0.0,informe_supervision_sunass
+EPS19,2019-2023,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,4,2022,58.5,90.5,93.7,100.0,informe_supervision_sunass
+EPS19,2019-2023,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,4,2022,74.5,86.5,82.4,65.8,informe_supervision_sunass
+EPS19,2019-2023,MG05,Continuidad promedio del servicio,localidad,Cusco,080101,horas/día,mayor_es_mejor,False,4,2022,12.7,16.7,16.0,82.5,informe_supervision_sunass
+EPS19,2019-2023,MG06,Presión promedio del servicio,localidad,Cusco,080101,m.c.a.,mayor_es_mejor,False,4,2022,13.8,15.3,15.3,100.0,informe_supervision_sunass
+EPS19,2019-2023,MG05,Continuidad promedio del servicio,localidad,Santiago,080106,horas/día,mayor_es_mejor,False,4,2022,20.8,24.0,23.4,81.2,informe_supervision_sunass
+EPS19,2019-2023,MG06,Presión promedio del servicio,localidad,Santiago,080106,m.c.a.,mayor_es_mejor,False,4,2022,17.8,20.9,21.0,100.0,informe_supervision_sunass
+EPS19,2019-2023,MG05,Continuidad promedio del servicio,localidad,San Sebastián,080105,horas/día,mayor_es_mejor,False,4,2022,12.9,14.9,14.9,100.0,informe_supervision_sunass
+EPS19,2019-2023,MG06,Presión promedio del servicio,localidad,San Sebastián,080105,m.c.a.,mayor_es_mejor,False,4,2022,18.5,20.3,20.1,88.9,informe_supervision_sunass
+EPS19,2019-2023,MG05,Continuidad promedio del servicio,localidad,Wanchaq,080108,horas/día,mayor_es_mejor,False,4,2022,19.7,22.6,22.0,79.3,informe_supervision_sunass
+EPS19,2019-2023,MG06,Presión promedio del servicio,localidad,Wanchaq,080108,m.c.a.,mayor_es_mejor,False,4,2022,16.9,18.9,18.9,100.0,informe_supervision_sunass
+EPS19,2019-2023,MG05,Continuidad promedio del servicio,localidad,Sicuani,080601,horas/día,mayor_es_mejor,False,4,2022,21.6,23.7,23.2,76.2,informe_supervision_sunass
+EPS19,2019-2023,MG06,Presión promedio del servicio,localidad,Sicuani,080601,m.c.a.,mayor_es_mejor,False,4,2022,17.7,19.5,19.0,72.2,informe_supervision_sunass
+EPS19,2019-2023,MG05,Continuidad promedio del servicio,localidad,San Jerónimo,080104,horas/día,mayor_es_mejor,False,4,2022,21.2,24.0,23.6,85.7,informe_supervision_sunass
+EPS19,2019-2023,MG06,Presión promedio del servicio,localidad,San Jerónimo,080104,m.c.a.,mayor_es_mejor,False,4,2022,15.0,16.7,16.5,88.2,informe_supervision_sunass
+EPS19,2019-2023,MG05,Continuidad promedio del servicio,localidad,Echarate,080902,horas/día,mayor_es_mejor,False,4,2022,10.5,13.2,12.3,66.7,informe_supervision_sunass
+EPS19,2019-2023,MG06,Presión promedio del servicio,localidad,Echarate,080902,m.c.a.,mayor_es_mejor,False,4,2022,10.1,12.0,12.1,100.0,informe_supervision_sunass
+EPS19,2019-2023,MG05,Continuidad promedio del servicio,localidad,Quillabamba,080901,horas/día,mayor_es_mejor,False,4,2022,19.8,22.0,20.7,40.9,informe_supervision_sunass
+EPS19,2019-2023,MG06,Presión promedio del servicio,localidad,Quillabamba,080901,m.c.a.,mayor_es_mejor,False,4,2022,9.4,12.5,12.6,100.0,informe_supervision_sunass
+EPS19,2019-2023,MG05,Continuidad promedio del servicio,localidad,Yauri,080801,horas/día,mayor_es_mejor,False,4,2022,12.2,14.9,15.0,100.0,informe_supervision_sunass
+EPS19,2019-2023,MG06,Presión promedio del servicio,localidad,Yauri,080801,m.c.a.,mayor_es_mejor,False,4,2022,16.6,18.0,18.0,100.0,informe_supervision_sunass
+EPS19,2019-2023,MG05,Continuidad promedio del servicio,localidad,Pichari,080910,horas/día,mayor_es_mejor,False,4,2022,12.6,16.5,16.7,100.0,informe_supervision_sunass
+EPS19,2019-2023,MG06,Presión promedio del servicio,localidad,Pichari,080910,m.c.a.,mayor_es_mejor,False,4,2022,18.8,21.8,21.4,86.7,informe_supervision_sunass
+EPS19,2019-2023,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,5,2023,0.0,10634.0,10872.0,100.0,informe_supervision_sunass
+EPS19,2019-2023,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,5,2023,0.0,6640.0,7184.0,100.0,informe_supervision_sunass
+EPS19,2019-2023,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,5,2023,0.0,20564.0,22972.0,100.0,informe_supervision_sunass
+EPS19,2019-2023,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,5,2023,29.6,25.8,25.8,100.0,informe_supervision_sunass
+EPS19,2019-2023,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,5,2023,24.0,55.9,61.1,100.0,informe_supervision_sunass
+EPS19,2019-2023,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,5,2023,84.0,76.5,97.1,0.0,informe_supervision_sunass
+EPS19,2019-2023,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,5,2023,58.5,98.5,94.0,88.8,informe_supervision_sunass
+EPS19,2019-2023,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,5,2023,74.5,89.5,89.0,96.7,informe_supervision_sunass
+EPS19,2019-2023,MG05,Continuidad promedio del servicio,localidad,Cusco,080101,horas/día,mayor_es_mejor,False,5,2023,12.7,17.6,18.6,100.0,informe_supervision_sunass
+EPS19,2019-2023,MG06,Presión promedio del servicio,localidad,Cusco,080101,m.c.a.,mayor_es_mejor,False,5,2023,13.8,15.7,15.7,100.0,informe_supervision_sunass
+EPS19,2019-2023,MG05,Continuidad promedio del servicio,localidad,Santiago,080106,horas/día,mayor_es_mejor,False,5,2023,20.8,24.0,23.0,68.7,informe_supervision_sunass
+EPS19,2019-2023,MG06,Presión promedio del servicio,localidad,Santiago,080106,m.c.a.,mayor_es_mejor,False,5,2023,17.8,21.6,20.7,76.3,informe_supervision_sunass
+EPS19,2019-2023,MG05,Continuidad promedio del servicio,localidad,San Sebastián,080105,horas/día,mayor_es_mejor,False,5,2023,12.9,15.4,15.0,84.0,informe_supervision_sunass
+EPS19,2019-2023,MG06,Presión promedio del servicio,localidad,San Sebastián,080105,m.c.a.,mayor_es_mejor,False,5,2023,18.5,20.7,19.9,63.6,informe_supervision_sunass
+EPS19,2019-2023,MG05,Continuidad promedio del servicio,localidad,Wanchaq,080108,horas/día,mayor_es_mejor,False,5,2023,19.7,23.4,22.5,75.7,informe_supervision_sunass
+EPS19,2019-2023,MG06,Presión promedio del servicio,localidad,Wanchaq,080108,m.c.a.,mayor_es_mejor,False,5,2023,16.9,19.4,19.2,92.0,informe_supervision_sunass
+EPS19,2019-2023,MG05,Continuidad promedio del servicio,localidad,Sicuani,080601,horas/día,mayor_es_mejor,False,5,2023,21.6,24.0,23.3,70.8,informe_supervision_sunass
+EPS19,2019-2023,MG06,Presión promedio del servicio,localidad,Sicuani,080601,m.c.a.,mayor_es_mejor,False,5,2023,17.7,19.9,18.7,45.5,informe_supervision_sunass
+EPS19,2019-2023,MG05,Continuidad promedio del servicio,localidad,San Jerónimo,080104,horas/día,mayor_es_mejor,False,5,2023,21.2,24.0,24.0,100.0,informe_supervision_sunass
+EPS19,2019-2023,MG06,Presión promedio del servicio,localidad,San Jerónimo,080104,m.c.a.,mayor_es_mejor,False,5,2023,15.0,17.1,16.6,76.2,informe_supervision_sunass
+EPS19,2019-2023,MG05,Continuidad promedio del servicio,localidad,Echarate,080902,horas/día,mayor_es_mejor,False,5,2023,10.5,13.9,14.0,100.0,informe_supervision_sunass
+EPS19,2019-2023,MG06,Presión promedio del servicio,localidad,Echarate,080902,m.c.a.,mayor_es_mejor,False,5,2023,10.1,12.5,11.7,66.7,informe_supervision_sunass
+EPS19,2019-2023,MG05,Continuidad promedio del servicio,localidad,Quillabamba,080901,horas/día,mayor_es_mejor,False,5,2023,19.8,22.5,22.5,100.0,informe_supervision_sunass
+EPS19,2019-2023,MG06,Presión promedio del servicio,localidad,Quillabamba,080901,m.c.a.,mayor_es_mejor,False,5,2023,9.4,13.3,12.6,82.1,informe_supervision_sunass
+EPS19,2019-2023,MG05,Continuidad promedio del servicio,localidad,Yauri,080801,horas/día,mayor_es_mejor,False,5,2023,12.2,15.6,14.8,76.5,informe_supervision_sunass
+EPS19,2019-2023,MG06,Presión promedio del servicio,localidad,Yauri,080801,m.c.a.,mayor_es_mejor,False,5,2023,16.6,18.4,18.3,94.4,informe_supervision_sunass
+EPS19,2019-2023,MG05,Continuidad promedio del servicio,localidad,Pichari,080910,horas/día,mayor_es_mejor,False,5,2023,12.6,17.5,15.9,67.3,informe_supervision_sunass
+EPS19,2019-2023,MG06,Presión promedio del servicio,localidad,Pichari,080910,m.c.a.,mayor_es_mejor,False,5,2023,18.8,22.5,22.7,100.0,informe_supervision_sunass
+EPS19,2024-2028,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,1,2024,0.0,3120.0,2902.0,93.0,informe_supervision_sunass
+EPS19,2024-2028,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,1,2024,0.0,1581.0,1535.0,97.1,informe_supervision_sunass
+EPS19,2024-2028,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,1,2024,0.0,3530.0,3480.0,98.6,informe_supervision_sunass
+EPS19,2024-2028,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,1,2024,37.1,36.2,36.0,100.0,informe_supervision_sunass
+EPS19,2024-2028,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,1,2024,67.6,68.6,68.7,100.0,informe_supervision_sunass
+EPS19,2024-2028,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,1,2024,97.1,95.6,101.8,0.0,informe_supervision_sunass
+EPS19,2024-2028,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,1,2024,67.7,75.7,72.5,60.0,informe_supervision_sunass
+EPS19,2024-2028,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,1,2024,77.6,80.6,80.1,83.3,informe_supervision_sunass
+EPS19,2024-2028,MG05,Continuidad promedio del servicio,localidad,Cusco,080101,horas/día,mayor_es_mejor,False,1,2024,14.2,15.2,15.0,80.0,informe_supervision_sunass
+EPS19,2024-2028,MG06,Presión promedio del servicio,localidad,Cusco,080101,m.c.a.,mayor_es_mejor,False,1,2024,18.5,18.9,19.0,100.0,informe_supervision_sunass
+EPS19,2024-2028,MG05,Continuidad promedio del servicio,localidad,Santiago,080106,horas/día,mayor_es_mejor,False,1,2024,15.9,16.6,16.6,100.0,informe_supervision_sunass
+EPS19,2024-2028,MG06,Presión promedio del servicio,localidad,Santiago,080106,m.c.a.,mayor_es_mejor,False,1,2024,10.7,11.2,11.1,80.0,informe_supervision_sunass
+EPS19,2024-2028,MG05,Continuidad promedio del servicio,localidad,San Sebastián,080105,horas/día,mayor_es_mejor,False,1,2024,21.5,22.4,21.9,44.4,informe_supervision_sunass
+EPS19,2024-2028,MG06,Presión promedio del servicio,localidad,San Sebastián,080105,m.c.a.,mayor_es_mejor,False,1,2024,14.0,14.3,14.4,100.0,informe_supervision_sunass
+EPS19,2024-2028,MG05,Continuidad promedio del servicio,localidad,Wanchaq,080108,horas/día,mayor_es_mejor,False,1,2024,15.5,16.1,15.9,66.7,informe_supervision_sunass
+EPS19,2024-2028,MG06,Presión promedio del servicio,localidad,Wanchaq,080108,m.c.a.,mayor_es_mejor,False,1,2024,17.3,17.7,17.6,75.0,informe_supervision_sunass
+EPS19,2024-2028,MG05,Continuidad promedio del servicio,localidad,Sicuani,080601,horas/día,mayor_es_mejor,False,1,2024,16.3,16.9,16.8,83.3,informe_supervision_sunass
+EPS19,2024-2028,MG06,Presión promedio del servicio,localidad,Sicuani,080601,m.c.a.,mayor_es_mejor,False,1,2024,15.0,15.4,15.4,100.0,informe_supervision_sunass
+EPS19,2024-2028,MG05,Continuidad promedio del servicio,localidad,San Jerónimo,080104,horas/día,mayor_es_mejor,False,1,2024,21.2,22.2,22.1,90.0,informe_supervision_sunass
+EPS19,2024-2028,MG06,Presión promedio del servicio,localidad,San Jerónimo,080104,m.c.a.,mayor_es_mejor,False,1,2024,17.2,17.7,17.6,80.0,informe_supervision_sunass
+EPS19,2024-2028,MG05,Continuidad promedio del servicio,localidad,Echarate,080902,horas/día,mayor_es_mejor,False,1,2024,18.2,18.9,19.0,100.0,informe_supervision_sunass
+EPS19,2024-2028,MG06,Presión promedio del servicio,localidad,Echarate,080902,m.c.a.,mayor_es_mejor,False,1,2024,14.7,15.5,15.2,62.5,informe_supervision_sunass
+EPS19,2024-2028,MG05,Continuidad promedio del servicio,localidad,Quillabamba,080901,horas/día,mayor_es_mejor,False,1,2024,19.9,20.5,20.6,100.0,informe_supervision_sunass
+EPS19,2024-2028,MG06,Presión promedio del servicio,localidad,Quillabamba,080901,m.c.a.,mayor_es_mejor,False,1,2024,17.0,17.6,17.6,100.0,informe_supervision_sunass
+EPS19,2024-2028,MG05,Continuidad promedio del servicio,localidad,Yauri,080801,horas/día,mayor_es_mejor,False,1,2024,19.7,20.5,20.6,100.0,informe_supervision_sunass
+EPS19,2024-2028,MG06,Presión promedio del servicio,localidad,Yauri,080801,m.c.a.,mayor_es_mejor,False,1,2024,13.3,14.0,14.1,100.0,informe_supervision_sunass
+EPS19,2024-2028,MG05,Continuidad promedio del servicio,localidad,Pichari,080910,horas/día,mayor_es_mejor,False,1,2024,12.0,12.6,12.6,100.0,informe_supervision_sunass
+EPS19,2024-2028,MG06,Presión promedio del servicio,localidad,Pichari,080910,m.c.a.,mayor_es_mejor,False,1,2024,17.9,18.5,18.6,100.0,informe_supervision_sunass
+EPS19,2024-2028,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,2,2025,0.0,6240.0,6100.0,97.8,informe_supervision_sunass
+EPS19,2024-2028,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,2,2025,0.0,3162.0,2683.0,84.9,informe_supervision_sunass
+EPS19,2024-2028,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,2,2025,0.0,7061.0,6796.0,96.2,informe_supervision_sunass
+EPS19,2024-2028,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,2,2025,37.1,35.3,35.0,100.0,informe_supervision_sunass
+EPS19,2024-2028,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,2,2025,67.6,69.6,70.2,100.0,informe_supervision_sunass
+EPS19,2024-2028,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,2,2025,97.1,94.1,107.1,0.0,informe_supervision_sunass
+EPS19,2024-2028,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,2,2025,67.7,83.7,74.0,39.4,informe_supervision_sunass
+EPS19,2024-2028,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,2,2025,77.6,83.6,84.3,100.0,informe_supervision_sunass
+EPS19,2024-2028,MG05,Continuidad promedio del servicio,localidad,Cusco,080101,horas/día,mayor_es_mejor,False,2,2025,14.2,16.1,16.1,100.0,informe_supervision_sunass
+EPS19,2024-2028,MG06,Presión promedio del servicio,localidad,Cusco,080101,m.c.a.,mayor_es_mejor,False,2,2025,18.5,19.2,18.8,42.9,informe_supervision_sunass
+EPS19,2024-2028,MG05,Continuidad promedio del servicio,localidad,Santiago,080106,horas/día,mayor_es_mejor,False,2,2025,15.9,17.3,16.6,50.0,informe_supervision_sunass
+EPS19,2024-2028,MG06,Presión promedio del servicio,localidad,Santiago,080106,m.c.a.,mayor_es_mejor,False,2,2025,10.7,11.7,11.4,70.0,informe_supervision_sunass
+EPS19,2024-2028,MG05,Continuidad promedio del servicio,localidad,San Sebastián,080105,horas/día,mayor_es_mejor,False,2,2025,21.5,23.3,22.5,55.6,informe_supervision_sunass
+EPS19,2024-2028,MG06,Presión promedio del servicio,localidad,San Sebastián,080105,m.c.a.,mayor_es_mejor,False,2,2025,14.0,14.6,14.3,50.0,informe_supervision_sunass
+EPS19,2024-2028,MG05,Continuidad promedio del servicio,localidad,Wanchaq,080108,horas/día,mayor_es_mejor,False,2,2025,15.5,16.7,16.5,83.3,informe_supervision_sunass
+EPS19,2024-2028,MG06,Presión promedio del servicio,localidad,Wanchaq,080108,m.c.a.,mayor_es_mejor,False,2,2025,17.3,18.0,17.9,85.7,informe_supervision_sunass
+EPS19,2024-2028,MG05,Continuidad promedio del servicio,localidad,Sicuani,080601,horas/día,mayor_es_mejor,False,2,2025,16.3,17.4,17.3,90.9,informe_supervision_sunass
+EPS19,2024-2028,MG06,Presión promedio del servicio,localidad,Sicuani,080601,m.c.a.,mayor_es_mejor,False,2,2025,15.0,15.8,15.9,100.0,informe_supervision_sunass
+EPS19,2024-2028,MG05,Continuidad promedio del servicio,localidad,San Jerónimo,080104,horas/día,mayor_es_mejor,False,2,2025,21.2,23.1,22.8,84.2,informe_supervision_sunass
+EPS19,2024-2028,MG06,Presión promedio del servicio,localidad,San Jerónimo,080104,m.c.a.,mayor_es_mejor,False,2,2025,17.2,18.2,18.0,80.0,informe_supervision_sunass
+EPS19,2024-2028,MG05,Continuidad promedio del servicio,localidad,Echarate,080902,horas/día,mayor_es_mejor,False,2,2025,18.2,19.5,19.0,61.5,informe_supervision_sunass
+EPS19,2024-2028,MG06,Presión promedio del servicio,localidad,Echarate,080902,m.c.a.,mayor_es_mejor,False,2,2025,14.7,16.3,16.0,81.2,informe_supervision_sunass
+EPS19,2024-2028,MG05,Continuidad promedio del servicio,localidad,Quillabamba,080901,horas/día,mayor_es_mejor,False,2,2025,19.9,21.2,20.9,76.9,informe_supervision_sunass
+EPS19,2024-2028,MG06,Presión promedio del servicio,localidad,Quillabamba,080901,m.c.a.,mayor_es_mejor,False,2,2025,17.0,18.1,17.9,81.8,informe_supervision_sunass
+EPS19,2024-2028,MG05,Continuidad promedio del servicio,localidad,Yauri,080801,horas/día,mayor_es_mejor,False,2,2025,19.7,21.4,21.0,76.5,informe_supervision_sunass
+EPS19,2024-2028,MG06,Presión promedio del servicio,localidad,Yauri,080801,m.c.a.,mayor_es_mejor,False,2,2025,13.3,14.7,14.2,64.3,informe_supervision_sunass
+EPS19,2024-2028,MG05,Continuidad promedio del servicio,localidad,Pichari,080910,horas/día,mayor_es_mejor,False,2,2025,12.0,13.1,13.1,100.0,informe_supervision_sunass
+EPS19,2024-2028,MG06,Presión promedio del servicio,localidad,Pichari,080910,m.c.a.,mayor_es_mejor,False,2,2025,17.9,19.1,18.8,75.0,informe_supervision_sunass
+EPS19,2024-2028,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,3,2026,0.0,9360.0,,,
+EPS19,2024-2028,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,3,2026,0.0,4743.0,,,
+EPS19,2024-2028,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,3,2026,0.0,10591.0,,,
+EPS19,2024-2028,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,3,2026,37.1,34.4,,,
+EPS19,2024-2028,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,3,2026,67.6,70.6,,,
+EPS19,2024-2028,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,3,2026,97.1,92.6,,,
+EPS19,2024-2028,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,3,2026,67.7,91.7,,,
+EPS19,2024-2028,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,3,2026,77.6,86.6,,,
+EPS19,2024-2028,MG05,Continuidad promedio del servicio,localidad,Cusco,080101,horas/día,mayor_es_mejor,False,3,2026,14.2,17.1,,,
+EPS19,2024-2028,MG06,Presión promedio del servicio,localidad,Cusco,080101,m.c.a.,mayor_es_mejor,False,3,2026,18.5,19.6,,,
+EPS19,2024-2028,MG05,Continuidad promedio del servicio,localidad,Santiago,080106,horas/día,mayor_es_mejor,False,3,2026,15.9,18.0,,,
+EPS19,2024-2028,MG06,Presión promedio del servicio,localidad,Santiago,080106,m.c.a.,mayor_es_mejor,False,3,2026,10.7,12.2,,,
+EPS19,2024-2028,MG05,Continuidad promedio del servicio,localidad,San Sebastián,080105,horas/día,mayor_es_mejor,False,3,2026,21.5,24.0,,,
+EPS19,2024-2028,MG06,Presión promedio del servicio,localidad,San Sebastián,080105,m.c.a.,mayor_es_mejor,False,3,2026,14.0,15.0,,,
+EPS19,2024-2028,MG05,Continuidad promedio del servicio,localidad,Wanchaq,080108,horas/día,mayor_es_mejor,False,3,2026,15.5,17.3,,,
+EPS19,2024-2028,MG06,Presión promedio del servicio,localidad,Wanchaq,080108,m.c.a.,mayor_es_mejor,False,3,2026,17.3,18.4,,,
+EPS19,2024-2028,MG05,Continuidad promedio del servicio,localidad,Sicuani,080601,horas/día,mayor_es_mejor,False,3,2026,16.3,18.0,,,
+EPS19,2024-2028,MG06,Presión promedio del servicio,localidad,Sicuani,080601,m.c.a.,mayor_es_mejor,False,3,2026,15.0,16.3,,,
+EPS19,2024-2028,MG05,Continuidad promedio del servicio,localidad,San Jerónimo,080104,horas/día,mayor_es_mejor,False,3,2026,21.2,24.0,,,
+EPS19,2024-2028,MG06,Presión promedio del servicio,localidad,San Jerónimo,080104,m.c.a.,mayor_es_mejor,False,3,2026,17.2,18.7,,,
+EPS19,2024-2028,MG05,Continuidad promedio del servicio,localidad,Echarate,080902,horas/día,mayor_es_mejor,False,3,2026,18.2,20.2,,,
+EPS19,2024-2028,MG06,Presión promedio del servicio,localidad,Echarate,080902,m.c.a.,mayor_es_mejor,False,3,2026,14.7,17.1,,,
+EPS19,2024-2028,MG05,Continuidad promedio del servicio,localidad,Quillabamba,080901,horas/día,mayor_es_mejor,False,3,2026,19.9,21.9,,,
+EPS19,2024-2028,MG06,Presión promedio del servicio,localidad,Quillabamba,080901,m.c.a.,mayor_es_mejor,False,3,2026,17.0,18.7,,,
+EPS19,2024-2028,MG05,Continuidad promedio del servicio,localidad,Yauri,080801,horas/día,mayor_es_mejor,False,3,2026,19.7,22.3,,,
+EPS19,2024-2028,MG06,Presión promedio del servicio,localidad,Yauri,080801,m.c.a.,mayor_es_mejor,False,3,2026,13.3,15.4,,,
+EPS19,2024-2028,MG05,Continuidad promedio del servicio,localidad,Pichari,080910,horas/día,mayor_es_mejor,False,3,2026,12.0,13.6,,,
+EPS19,2024-2028,MG06,Presión promedio del servicio,localidad,Pichari,080910,m.c.a.,mayor_es_mejor,False,3,2026,17.9,19.6,,,
+EPS20,2020-2024,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,3,2022,0.0,1301.0,1199.0,92.2,informe_supervision_sunass
+EPS20,2020-2024,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,3,2022,0.0,764.0,705.0,92.3,informe_supervision_sunass
+EPS20,2020-2024,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,3,2022,0.0,2099.0,2157.0,100.0,informe_supervision_sunass
+EPS20,2020-2024,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,3,2022,31.1,27.2,26.4,100.0,informe_supervision_sunass
+EPS20,2020-2024,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,3,2022,52.3,55.3,56.2,100.0,informe_supervision_sunass
+EPS20,2020-2024,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,3,2022,61.5,57.0,62.1,0.0,informe_supervision_sunass
+EPS20,2020-2024,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,3,2022,44.3,68.3,67.9,98.3,informe_supervision_sunass
+EPS20,2020-2024,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,3,2022,78.0,87.0,88.8,100.0,informe_supervision_sunass
+EPS20,2020-2024,MG05,Continuidad promedio del servicio,localidad,Pucallpa,250101,horas/día,mayor_es_mejor,False,3,2022,11.9,13.9,13.3,70.0,informe_supervision_sunass
+EPS20,2020-2024,MG06,Presión promedio del servicio,localidad,Pucallpa,250101,m.c.a.,mayor_es_mejor,False,3,2022,19.0,20.9,21.0,100.0,informe_supervision_sunass
+EPS20,2020-2024,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,4,2023,0.0,1735.0,1723.0,99.3,informe_supervision_sunass
+EPS20,2020-2024,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,4,2023,0.0,1019.0,1028.0,100.0,informe_supervision_sunass
+EPS20,2020-2024,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,4,2023,0.0,2799.0,3405.0,100.0,informe_supervision_sunass
+EPS20,2020-2024,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,4,2023,31.1,25.9,27.8,63.5,informe_supervision_sunass
+EPS20,2020-2024,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,4,2023,52.3,69.3,56.7,25.9,informe_supervision_sunass
+EPS20,2020-2024,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,4,2023,61.5,55.5,63.3,0.0,informe_supervision_sunass
+EPS20,2020-2024,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,4,2023,44.3,76.3,52.5,25.6,informe_supervision_sunass
+EPS20,2020-2024,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,4,2023,78.0,90.0,92.2,100.0,informe_supervision_sunass
+EPS20,2020-2024,MG05,Continuidad promedio del servicio,localidad,Pucallpa,250101,horas/día,mayor_es_mejor,False,4,2023,11.9,14.5,14.6,100.0,informe_supervision_sunass
+EPS20,2020-2024,MG06,Presión promedio del servicio,localidad,Pucallpa,250101,m.c.a.,mayor_es_mejor,False,4,2023,19.0,21.5,20.5,60.0,informe_supervision_sunass
+EPS20,2020-2024,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,5,2024,0.0,2168.0,2346.0,100.0,informe_supervision_sunass
+EPS20,2020-2024,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,5,2024,0.0,1274.0,1335.0,100.0,informe_supervision_sunass
+EPS20,2020-2024,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,5,2024,0.0,3499.0,4083.0,100.0,informe_supervision_sunass
+EPS20,2020-2024,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,5,2024,31.1,24.6,23.7,100.0,informe_supervision_sunass
+EPS20,2020-2024,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,5,2024,52.3,69.3,75.3,100.0,informe_supervision_sunass
+EPS20,2020-2024,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,5,2024,61.5,55.0,64.5,0.0,informe_supervision_sunass
+EPS20,2020-2024,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,5,2024,44.3,84.3,80.6,90.8,informe_supervision_sunass
+EPS20,2020-2024,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,5,2024,78.0,93.0,94.9,100.0,informe_supervision_sunass
+EPS20,2020-2024,MG05,Continuidad promedio del servicio,localidad,Pucallpa,250101,horas/día,mayor_es_mejor,False,5,2024,11.9,15.2,14.1,66.7,informe_supervision_sunass
+EPS20,2020-2024,MG06,Presión promedio del servicio,localidad,Pucallpa,250101,m.c.a.,mayor_es_mejor,False,5,2024,19.0,22.1,21.7,87.1,informe_supervision_sunass
+EPS20,2025-2029,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,1,2025,0.0,463.0,430.0,92.9,informe_supervision_sunass
+EPS20,2025-2029,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,1,2025,0.0,322.0,245.0,76.1,informe_supervision_sunass
+EPS20,2025-2029,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,1,2025,0.0,467.0,357.0,76.4,informe_supervision_sunass
+EPS20,2025-2029,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,1,2025,34.9,34.0,34.2,77.8,informe_supervision_sunass
+EPS20,2025-2029,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,1,2025,38.9,39.9,39.8,90.0,informe_supervision_sunass
+EPS20,2025-2029,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,1,2025,64.5,63.0,65.7,0.0,informe_supervision_sunass
+EPS20,2025-2029,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,1,2025,66.2,74.2,75.0,100.0,informe_supervision_sunass
+EPS20,2025-2029,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,1,2025,83.9,86.9,85.5,53.3,informe_supervision_sunass
+EPS20,2025-2029,MG05,Continuidad promedio del servicio,localidad,Pucallpa,250101,horas/día,mayor_es_mejor,False,1,2025,10.4,11.0,11.0,100.0,informe_supervision_sunass
+EPS20,2025-2029,MG06,Presión promedio del servicio,localidad,Pucallpa,250101,m.c.a.,mayor_es_mejor,False,1,2025,10.7,11.2,11.1,80.0,informe_supervision_sunass
+EPS20,2025-2029,MG01,Incremento de conexiones domiciliarias de agua potable,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,True,2,2026,0.0,925.0,,,
+EPS20,2025-2029,MG02,Incremento de conexiones domiciliarias de alcantarillado,eps,,,conexiones (acumulado en el periodo),mayor_es_mejor,False,2,2026,0.0,644.0,,,
+EPS20,2025-2029,MG03,Renovación e instalación de medidores,eps,,,medidores (acumulado en el periodo),mayor_es_mejor,True,2,2026,0.0,933.0,,,
+EPS20,2025-2029,MG04,Agua no facturada,eps,,,%,menor_es_mejor,True,2,2026,34.9,33.0,,,
+EPS20,2025-2029,MG07,Tratamiento de aguas residuales,eps,,,%,mayor_es_mejor,True,2,2026,38.9,40.9,,,
+EPS20,2025-2029,MG08,Relación de trabajo,eps,,,%,menor_es_mejor,False,2,2026,64.5,61.5,,,
+EPS20,2025-2029,MG09,Catastro comercial actualizado,eps,,,%,mayor_es_mejor,False,2,2026,66.2,82.2,,,
+EPS20,2025-2029,MG10,Micromedición,eps,,,%,mayor_es_mejor,False,2,2026,83.9,89.9,,,
+EPS20,2025-2029,MG05,Continuidad promedio del servicio,localidad,Pucallpa,250101,horas/día,mayor_es_mejor,False,2,2026,10.4,11.6,,,
+EPS20,2025-2029,MG06,Presión promedio del servicio,localidad,Pucallpa,250101,m.c.a.,mayor_es_mejor,False,2,2026,10.7,11.6,,,
