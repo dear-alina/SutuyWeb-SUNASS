@@ -40,6 +40,9 @@ context: |
   - Se verifican sus funcionalidades mínimas (specs y contratos), aunque la pantalla ya exista, y se confirman antes de implementar.
   - Lo que falte en el frontend se agrega en la rama frontend; si la pantalla está completa, solo se construye su backend.
   - El backend siempre se conecta a la base de datos: nada de datos simulados (frontend/src/demo/ es solo para demostraciones).
+  - No se espera a que el frontend llegue a main: antes y después de cada tarea de backend se lee origin/frontend
+    (git fetch origin frontend, git log, git show origin/frontend:<ruta>; sin checkout ni merge) y se alinea el backend.
+  - Estas reglas también aplican a los cambios solo de backend: se verifican las pantallas que alimenta la API.
 
 rules:
   proposal:

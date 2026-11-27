@@ -31,6 +31,16 @@ Cada parte del proyecto tiene una persona responsable. Esta guía dice quién pu
 
 Los datos simulados del frontend (`frontend/src/demo/`) son solo para demostraciones; el backend nunca los usa.
 
+**No se espera a que el frontend llegue a `main`.** La responsable del frontend fusiona su rama cuando termina, así que antes y después de cada tarea de backend se revisa la rama `frontend` en GitHub y se alinea el backend con lo que cambió:
+
+```bash
+git fetch origin frontend
+git log --oneline main..origin/frontend          # qué subió
+git show origin/frontend:frontend/src/<ruta>     # leer una pantalla, sin checkout ni merge
+```
+
+Estos pasos también aplican a los cambios solo de backend: se revisan las pantallas que alimenta la API.
+
 ## Base de datos
 
 - **Preparar** una migración (escribirla con `npx supabase migration new`, probarla con `npx supabase db reset` y pgTAP en local) lo hace quien desarrolla el cambio.
