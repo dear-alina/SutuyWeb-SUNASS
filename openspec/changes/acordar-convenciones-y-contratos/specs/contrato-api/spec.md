@@ -56,7 +56,8 @@ Todo error SHALL responderse con `Content-Type: application/problem+json`. La re
 - 401: sin sesión o sesión vencida.
 - 403: autenticado sin permiso para la acción.
 - 404: el recurso no existe o el usuario no puede verlo.
-- 409: transición inválida o conflicto de estado.
+- 409: transición inválida o conflicto de estado (por ejemplo, `solicitud_resuelta`).
+- 429: demasiados intentos (`demasiados_intentos`).
 - 422: validación fallida.
 - 503 o 504: servicio dependiente no disponible o sin respuesta a tiempo.
 
@@ -77,23 +78,42 @@ Los listados SHALL responder con un objeto que tenga `datos` (la lista) y `pagin
 
 ### Requirement: Sesión gestionada por el backend
 El inicio de sesión SHALL pasar siempre por el backend:
-- `POST /api/v1/sesiones` acepta `correo` y `clave`.
+- `POST /api/v1/sesiones` acepta `institucion` (`sunass` o `eps`, la pestaña de la pantalla de ingreso), `usuario` (el correo), `clave` y, cuando `institucion` es `eps`, `ruc` (11 dígitos). Con `eps`, el perfil SHALL ser de rol `eps` y su EPS SHALL tener ese `ruc`; con `sunass`, el perfil SHALL ser de rol `sunass` o `admin`.
 - `DELETE /api/v1/sesiones/actual` cierra la sesión.
-- `GET /api/v1/perfil` devuelve el usuario autenticado con su `rol`, su `area`, su EPS (si corresponde) y su `proveedor` de acceso (`correo` o `microsoft`).
+- `GET /api/v1/perfil` devuelve el usuario autenticado con `usuarioId`, `nombre`, `cargo`, `correo`, `rol`, `area`, `codigoEps`, `nombreEps` y `proveedor` de acceso (`correo` o `microsoft`).
 
-La sesión SHALL viajar en una cookie `HttpOnly`, `Secure` y `SameSite=Lax`. El frontend SHALL NOT recibir ni guardar tokens ni claves de Supabase. Los métodos que modifican datos SHALL exigir protección contra CSRF. Las rutas `GET /api/v1/sesiones/microsoft` y `GET /api/v1/sesiones/microsoft/retorno` SHALL quedar reservadas para el acceso con Microsoft Entra ID; mientras no esté configurado, SHALL responder 503 con `codigo: "proveedor_no_configurado"`.
+La sesión SHALL viajar en una cookie `HttpOnly`, `Secure` y `SameSite=Lax`. El frontend SHALL NOT recibir ni guardar tokens ni claves de Supabase. Los métodos que modifican datos SHALL exigir protección contra CSRF. Los intentos de inicio de sesión SHALL limitarse; al superar el límite, la API SHALL responder 429 con `codigo: "demasiados_intentos"`. Las rutas `GET /api/v1/sesiones/microsoft` y `GET /api/v1/sesiones/microsoft/retorno` SHALL quedar reservadas para el acceso con Microsoft Entra ID; mientras no esté configurado, SHALL responder 503 con `codigo: "proveedor_no_configurado"`.
 
 #### Scenario: Inicio de sesión correcto
-- **WHEN** una persona de una EPS con acceso aprobado envía correo y clave válidos
+- **WHEN** una persona de una EPS con acceso aprobado envía `institucion: "eps"`, el RUC de su EPS, su correo y su clave
 - **THEN** la API responde con su perfil, establece la cookie de sesión y el cuerpo no contiene tokens
 
 #### Scenario: Credenciales inválidas
-- **WHEN** el correo o la clave no son válidos
-- **THEN** la API responde 401 con `codigo: "credenciales_invalidas"` sin indicar cuál de los dos falló
+- **WHEN** el correo o la clave no son válidos, el RUC no es el de su EPS o la pestaña no corresponde a su rol
+- **THEN** la API responde 401 con `codigo: "credenciales_invalidas"` sin indicar qué falló
+
+#### Scenario: Acceso aún no aprobado
+- **WHEN** una persona cuya solicitud de acceso está pendiente intenta ingresar con su correo y su clave
+- **THEN** la API responde 403 con `codigo: "acceso_pendiente"`
 
 #### Scenario: Petición sin sesión
 - **WHEN** se pide `GET /api/v1/expedientes` sin cookie de sesión o con la sesión vencida
 - **THEN** la API responde 401
+
+### Requirement: Solicitudes de acceso de las EPS
+`POST /api/v1/solicitudes-acceso` SHALL ser público y SHALL recibir `ruc`, `nombre`, `correo`, `clave` y, opcionalmente, `cargo`. SHALL responder 201 con `solicitudAccesoId`, `estado: "pendiente"` y `solicitadoEn`, sin crear perfil. SHALL responder 422 en el campo `ruc` si el RUC no pertenece a una EPS del catálogo, 409 con `codigo: "solicitud_pendiente"` si el correo ya tiene una solicitud pendiente y 409 con `codigo: "correo_registrado"` si ya tiene cuenta. Solo el rol `admin` SHALL poder listar las solicitudes (`GET /api/v1/solicitudes-acceso`, paginado y filtrable por `estado`), aprobarlas (`POST /api/v1/solicitudes-acceso/{solicitudAccesoId}/aprobacion`) o rechazarlas con `motivoRechazo` (`POST /api/v1/solicitudes-acceso/{solicitudAccesoId}/rechazo`). Resolver una solicitud que ya no está pendiente SHALL responderse con 409 y `codigo: "solicitud_resuelta"`.
+
+#### Scenario: Registro de una EPS
+- **WHEN** se envía una solicitud con el RUC de una EPS del catálogo y un correo nuevo
+- **THEN** la API responde 201 con `estado: "pendiente"` y esa persona no puede ingresar hasta que el Admin la apruebe
+
+#### Scenario: Aprobación
+- **WHEN** el Admin aprueba una solicitud pendiente
+- **THEN** la persona puede ingresar con `institucion: "eps"`, el RUC de su EPS, su correo y su clave
+
+#### Scenario: Solicitud ya resuelta
+- **WHEN** el Admin intenta aprobar una solicitud ya rechazada
+- **THEN** la API responde 409 con `codigo: "solicitud_resuelta"`
 
 ### Requirement: Permisos calculados por el backend
 El backend SHALL aplicar los permisos en cada petición según el perfil del usuario.
