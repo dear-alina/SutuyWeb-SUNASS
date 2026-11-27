@@ -21,6 +21,16 @@ Cada parte del proyecto tiene una persona responsable. Esta guía dice quién pu
 4. Un cambio que toca un contrato o un archivo compartido (ver tabla) no se fusiona hasta que lo aprueben todos los responsables afectados. Un cambio incompatible en un contrato necesita su propio cambio de OpenSpec.
 5. Después de fusionar e implementar, se archiva el cambio con `openspec archive`.
 
+## Cómo se construye una pantalla
+
+1. Se parte de la pantalla tal como está en la rama `frontend`.
+2. Se listan sus funcionalidades mínimas, según las specs y los contratos de OpenSpec, aunque la pantalla ya exista, y se confirman antes de implementar.
+3. Si falta algo, se agrega en la rama `frontend`, en commits propios que revisa la responsable del frontend.
+4. El backend se construye en su propia rama, conectado a la base de datos, con pruebas contra Supabase local.
+5. La pantalla se conecta a la API real.
+
+Los datos simulados del frontend (`frontend/src/demo/`) son solo para demostraciones; el backend nunca los usa.
+
 ## Base de datos
 
 - **Preparar** una migración (escribirla con `npx supabase migration new`, probarla con `npx supabase db reset` y pgTAP en local) lo hace quien desarrolla el cambio.
