@@ -3,31 +3,42 @@
 import { useState, type FormEvent } from "react";
 import { useRouter } from "next/navigation";
 import "@/estilos/ingreso.css";
+import "@/estilos/app.css";
 import { ErrorDeApi } from "@/servicios/api/cliente-api";
 import { iniciarSesion, obtenerRutaInicio, type Institucion } from "@/servicios/api/sesiones";
 import { usarSesion } from "@/servicios/sesion/ContextoSesion";
-
-const MENSAJE_CREDENCIALES = "El usuario o la clave no son correctos.";
+import { CLAVE_DEMO, CUENTAS_DEMO, estaModoDemoActivo } from "@/utilidades/cuentas-demo";
+import { obtenerMensajeDeError } from "@/utilidades/mensajes-error";
 
 function obtenerMensajeError(error: unknown): string {
-  if (error instanceof ErrorDeApi) {
-    if (error.problema.codigo === "credenciales_invalidas") return MENSAJE_CREDENCIALES;
-    if (error.problema.codigo === "validacion_fallida") return "Complete todos los campos.";
-    return error.problema.detail ?? "No se pudo iniciar sesión. Intente de nuevo.";
-  }
-  return "No hay conexión con el servidor. Intente de nuevo en unos minutos.";
+  if (error instanceof ErrorDeApi && error.problema.codigo === "validacion_fallida") return "Complete todos los campos.";
+  return obtenerMensajeDeError(error, "No se pudo iniciar sesión. Intente de nuevo.");
 }
 
 export default function PaginaIngreso() {
   const router = useRouter();
-  const { esModoDemo, ingresarDemo } = usarSesion();
-  const [institucion, setInstitucion] = useState<Institucion>("sunass");
-  const [ruc, setRuc] = useState("");
-  const [usuario, setUsuario] = useState("");
-  const [clave, setClave] = useState("");
+  const { esDemoSinBackend, ingresarDemo, establecerPerfil } = usarSesion();
+  // Modo demo: empieza con la primera cuenta.
+  const cuentaInicial = estaModoDemoActivo ? CUENTAS_DEMO[0] : null;
+  const [indiceCuentaDemo, setIndiceCuentaDemo] = useState(0);
+  const [institucion, setInstitucion] = useState<Institucion>(cuentaInicial?.institucion ?? "sunass");
+  const [ruc, setRuc] = useState(cuentaInicial?.ruc ?? "");
+  const [usuario, setUsuario] = useState(cuentaInicial?.usuario ?? "");
+  const [clave, setClave] = useState(cuentaInicial ? CLAVE_DEMO : "");
   const [esClaveVisible, setEsClaveVisible] = useState(false);
   const [mensajeError, setMensajeError] = useState("");
   const [debeMostrarAvisoPruebas, setDebeMostrarAvisoPruebas] = useState(false);
+  const [estaEnviando, setEstaEnviando] = useState(false);
+
+  function elegirCuentaDemo(indice: number) {
+    const cuenta = CUENTAS_DEMO[indice];
+    setIndiceCuentaDemo(indice);
+    setInstitucion(cuenta.institucion);
+    setRuc(cuenta.ruc);
+    setUsuario(cuenta.usuario);
+    setClave(CLAVE_DEMO);
+    setMensajeError("");
+  }
 
   function cambiarInstitucion(nueva: Institucion) {
     setInstitucion(nueva);
@@ -36,21 +47,21 @@ export default function PaginaIngreso() {
 
   async function enviarFormulario(evento: FormEvent<HTMLFormElement>) {
     evento.preventDefault();
+    if (estaEnviando) return;
     setMensajeError("");
-    if (esModoDemo) {
+    if (esDemoSinBackend) {
       const usuarioDemo = ingresarDemo({ institucion, ruc, usuario, clave });
-      if (!usuarioDemo) {
-        setMensajeError(MENSAJE_CREDENCIALES); // no se indica cuál dato falló
-        return;
-      }
-      router.push(obtenerRutaInicio(usuarioDemo));
+      if (!usuarioDemo) setMensajeError("El usuario o la clave no son correctos.");
+      else router.push(obtenerRutaInicio(usuarioDemo));
       return;
     }
+    setEstaEnviando(true);
     try {
-      const perfil = await iniciarSesion({ institucion, ruc: ruc.trim(), usuario: usuario.trim(), clave });
+      const perfil = establecerPerfil(await iniciarSesion({ institucion, ruc: ruc.trim(), usuario: usuario.trim(), clave }));
       router.push(obtenerRutaInicio(perfil));
     } catch (error) {
       setMensajeError(obtenerMensajeError(error)); // se conserva lo ingresado
+      setEstaEnviando(false);
     }
   }
 
@@ -114,19 +125,45 @@ export default function PaginaIngreso() {
             <p id="error-ingreso" className="aviso-error" role="alert">{mensajeError}</p>
           )}
 
-          <button className="boton login__entrar" type="submit">Ingresar</button>
+          <button className="boton login__entrar" type="submit" disabled={estaEnviando}>
+            {estaEnviando ? "Ingresando…" : "Ingresar"}
+          </button>
         </form>
 
-        <p className="login__linea">
-          Prototipo con nombres ficticios ·{" "}
-          <button type="button" className="login__enlace" onClick={() => setDebeMostrarAvisoPruebas((valor) => !valor)}>
-            usuarios de prueba
-          </button>
-          {" · "}
-          <a className="login__enlace" href="/solicitar-acceso">solicitar acceso</a>
-        </p>
+        <div className="login__registro">
+          <p>¿Su empresa aún no tiene acceso?</p>
+          <a className="boton boton--secundario login__entrar" href="/solicitar-acceso">Registrarse</a>
+        </div>
 
-        {debeMostrarAvisoPruebas && (
+        <div className="login__pie">
+          <p className="login__linea">
+            Prototipo con nombres ficticios
+            {!estaModoDemoActivo && (
+              <>
+                {" · "}
+                <button type="button" className="login__enlace" onClick={() => setDebeMostrarAvisoPruebas((valor) => !valor)}>
+                  usuarios de prueba
+                </button>
+              </>
+            )}
+          </p>
+
+          {estaModoDemoActivo && (
+            <details className="login__demo">
+              <summary>Cuentas de demostración</summary>
+              <label className="campo">
+                <span>Cuenta</span>
+                <select value={indiceCuentaDemo} onChange={(e) => elegirCuentaDemo(Number(e.target.value))}>
+                  {CUENTAS_DEMO.map((cuenta, indice) => (
+                    <option key={cuenta.usuario} value={indice}>{cuenta.etiqueta}</option>
+                  ))}
+                </select>
+              </label>
+            </details>
+          )}
+        </div>
+
+        {!estaModoDemoActivo && debeMostrarAvisoPruebas && (
           <p className="login__aviso" role="status">
             Los usuarios de prueba se entregan al equipo por un canal privado: no se publican en el repositorio.
           </p>

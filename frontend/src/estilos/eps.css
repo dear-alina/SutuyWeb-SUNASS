@@ -157,3 +157,5 @@
   .eps-barra__salir { font-size: 0; }
   .eps-barra__salir .ms { font-size: 24px; }
 }
+.pedido-sunass { display: grid; gap: var(--space-1); padding: var(--space-3); border-radius: var(--shape-corner-small); background: var(--surface-container-lowest); color: var(--on-surface); }
+.pedido-sunass p { margin: 0; }

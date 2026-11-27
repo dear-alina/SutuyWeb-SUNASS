@@ -98,7 +98,7 @@ export default function PaginaInicioSunass() {
 
         {seleccionado ? (
           <div className="bandeja__detalle">
-            <FichaExpedienteSunass expediente={seleccionado} nombreEps={nombreEps(seleccionado.codigoEps)} area={area} />
+            <FichaExpedienteSunass expediente={seleccionado} nombreEps={nombreEps(seleccionado.codigoEps)} area={area} todos={expedientes} />
             <TarjetasTiempo expediente={seleccionado} area={area} />
           </div>
         ) : (

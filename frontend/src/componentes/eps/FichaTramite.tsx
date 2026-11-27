@@ -1,7 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import type { ExpedienteFi } from "@/demo/expedientes-demo";
+import { FECHA_CORTE, type ExpedienteFi } from "@/demo/expedientes-demo";
+import { actualizarExpediente } from "@/demo/almacen-expedientes";
+import { responderPedido } from "@/demo/flujo-fi";
+import { REQUISITOS_TUPA_FI } from "@/demo/requisitos-tupa";
 import {
   ETAPAS_EPS, TEXTO_RESULTADO, filtrarDocumentosParaEps, obtenerHitoPendiente, obtenerInicioEtapa,
   obtenerUltimoMovimiento, type SituacionEps,
@@ -13,30 +16,57 @@ const TIPO_DOCUMENTO: Record<string, string> = {
   carta_ep: "Carta de la EP", anexo: "Anexo", oficio: "Oficio", resolucion_consejo_directivo: "Resolución del Consejo Directivo",
 };
 
-function PanelQueDebeHacer({ situacion }: { situacion: SituacionEps }) {
+function PanelQueDebeHacer({ expediente, situacion }: { expediente: ExpedienteFi; situacion: SituacionEps }) {
   const [mensaje, setMensaje] = useState("");
+  const [archivos, setArchivos] = useState<Record<string, string>>({});
   const { accion } = situacion;
+  const pedido = (expediente.pedidos ?? []).at(-1);
+
   if (!accion) {
     return (
       <section className="ficha__bloque" aria-labelledby="que-hacer">
         <h3 id="que-hacer">¿Debe hacer algo?</h3>
+        {mensaje && <p className="aviso aviso--exito" role="status">{mensaje}</p>}
         <p>No. {situacion.queEstaPasando}</p>
       </section>
     );
   }
+
+  // Lo que pide el oficio: en la subsanación, un PDF por cada requisito observado; en la información, uno solo
+  const campos = accion.tipo === "subsanar" && pedido?.requisitos.length
+    ? REQUISITOS_TUPA_FI.filter((r) => pedido.requisitos.includes(r.codigo)).map((r) => ({ codigo: r.codigo as string, texto: r.texto }))
+    : [{ codigo: "informacion", texto: accion.tipo === "subsanar" ? "Documento de subsanación" : "Información adicional solicitada" }];
+
+  function enviar(evento: React.FormEvent<HTMLFormElement>) {
+    evento.preventDefault();
+    const enviados = campos.map((c) => ({
+      nombre: archivos[c.codigo], descripcion: c.texto, codigoRequisito: c.codigo === "informacion" ? undefined : c.codigo,
+    }));
+    actualizarExpediente(expediente.codigoExpediente, (e) => responderPedido(e, FECHA_CORTE, enviados));
+    setMensaje(`${accion?.tipo === "subsanar" ? "Subsanación" : "Información"} enviada el ${formatearFecha(FECHA_CORTE)}. La Sunass continúa con la evaluación y su plazo vuelve a correr.`);
+  }
+
   return (
     <section className="ficha__bloque ficha__bloque--accion" aria-labelledby="que-hacer">
       <h3 id="que-hacer">¿Debe hacer algo? Sí</h3>
       <p><b>{accion.titulo}</b> antes del <b>{formatearFecha(accion.venceEl)}</b> ({accion.diasHabilesRestantes >= 0 ? `faltan ${textoDiasHabiles(accion.diasHabilesRestantes)}` : "plazo vencido"}). <small>Base: {accion.base}.</small></p>
-      <form className="ficha__formulario" onSubmit={(e) => { e.preventDefault(); setMensaje("Documento enviado. Recibirá una constancia de recepción."); }}>
-        <label className="campo">
-          <span>Adjuntar documento (PDF)</span>
-          <input type="file" accept="application/pdf" required />
-        </label>
+      {pedido && (
+        <div className="pedido-sunass">
+          <p><b>Lo que pide la Sunass</b>{pedido.numeroOficio ? ` · Oficio ${pedido.numeroOficio}` : ""}</p>
+          {pedido.detalle && <p>{pedido.detalle}</p>}
+        </div>
+      )}
+      <form className="ficha__formulario" onSubmit={enviar}>
+        {campos.map((c) => (
+          <label key={c.codigo} className="campo">
+            <span>{c.texto} (PDF){archivos[c.codigo] ? ` · ${archivos[c.codigo]}` : ""}</span>
+            <input type="file" accept="application/pdf" required onChange={(e) => setArchivos({ ...archivos, [c.codigo]: e.target.files?.[0]?.name ?? "" })} />
+          </label>
+        ))}
         <div className="ficha__botones">
           <button type="submit" className="boton">{accion.tipo === "subsanar" ? "Enviar subsanación" : "Enviar información"}</button>
           {accion.puedePedirProrroga && (
-            <button type="button" className="boton boton--secundario" onClick={() => setMensaje("Pedido de prórroga enviado. Solo puede pedirse una vez y antes del vencimiento (RGT 89.6).")}>
+            <button type="button" className="boton boton--secundario" onClick={() => setMensaje("Pedido de prórroga enviado. Solo puede pedirse una vez y antes del vencimiento (RGT 89.6); la Sunass le responderá.")}>
               Pedir prórroga
             </button>
           )}
@@ -96,7 +126,7 @@ export function FichaTramite({ expediente, situacion, fechaReferencia }: { exped
         </p>
       </header>
 
-      <PanelQueDebeHacer situacion={situacion} />
+      <PanelQueDebeHacer key={expediente.codigoExpediente} expediente={expediente} situacion={situacion} />
       <LineaTiempo expediente={expediente} />
       <IndicadorSilencio expediente={expediente} situacion={situacion} fechaReferencia={fechaReferencia} />
 

@@ -166,3 +166,34 @@
 .requisitos-tupa li small { font: var(--text-body-small); }
 .requisitos-tupa .ms { font-size: 20px; }
 .banda-demo__boton { min-height: 32px; padding: 0 var(--space-1); border: 0; background: none; color: inherit; font: inherit; font-weight: 700; text-decoration: underline; cursor: pointer; }
+
+/* Formar equipo (SRT) */
+.equipo { margin: 0; padding: 0; border: 0; display: grid; gap: var(--space-2); }
+.equipo legend { padding: 0 0 var(--space-2); font: var(--text-label-large); }
+.equipo__opcion { display: flex; gap: var(--space-3); align-items: flex-start; padding: var(--space-3); border: 1px solid var(--outline); border-radius: var(--shape-corner-medium); background: var(--surface-container-lowest); color: var(--on-surface); cursor: pointer; }
+.equipo__opcion--marcada { border: 2px solid var(--primary); }
+.equipo__opcion input { width: 20px; height: 20px; margin-top: 2px; accent-color: var(--primary); flex: none; }
+.equipo__opcion span { display: grid; gap: 2px; }
+.equipo__opcion b { display: flex; flex-wrap: wrap; gap: var(--space-2); align-items: center; }
+.equipo__opcion small { color: var(--on-surface-variant); font: var(--text-body-small); }
+.equipo-asignado { display: flex; gap: var(--space-2); align-items: flex-start; margin: 0; padding: var(--space-2) var(--space-3); border-radius: var(--shape-corner-small); background: var(--surface-container-low); font: var(--text-body-medium); }
+
+/* Decisiones del equipo SRT y oficio de la SRT */
+.accion-banner textarea { width: 100%; padding: var(--space-3); border: 1px solid var(--on-surface-variant); border-radius: var(--shape-corner-small); font: var(--text-body-large); background: var(--surface-container-lowest); }
+.oficio-borrador { display: grid; gap: var(--space-2); padding: var(--space-3) var(--space-4); border: 1px dashed var(--outline); border-radius: var(--shape-corner-small); background: var(--surface-container-lowest); color: var(--on-surface); }
+.oficio-borrador ul { margin: 0; padding-left: var(--space-6); }
+
+/* Revisión con el copiloto (RAG) */
+.copiloto { display: grid; gap: var(--space-2); padding: var(--space-3) var(--space-4); border: 1px solid var(--outline); border-radius: var(--shape-corner-medium); background: var(--surface-container-lowest); color: var(--on-surface); }
+.copiloto__cabecera { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: var(--space-2); }
+.copiloto__cabecera h4 { margin: 0; display: flex; align-items: center; gap: var(--space-2); font: var(--text-title-small); }
+.copiloto__aviso { margin: 0; font: var(--text-body-small); color: var(--on-surface-variant); }
+.copiloto__lista { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-3); }
+.copiloto__item { display: grid; gap: var(--space-2); padding-top: var(--space-3); border-top: 1px solid var(--outline-variant); }
+.copiloto__punto { margin: 0; display: flex; flex-wrap: wrap; gap: var(--space-2); align-items: center; }
+.copiloto__cita { margin: 0; padding: var(--space-2) var(--space-3); border-left: 4px solid var(--primary); background: var(--surface-container-low); font: var(--text-body-medium); }
+.copiloto__cita footer { margin-top: var(--space-1); font: var(--text-body-small); color: var(--on-surface-variant); }
+.copiloto__motivo, .copiloto__decision { margin: 0; font: var(--text-body-small); color: var(--on-surface-variant); }
+.copiloto__decision { display: flex; align-items: center; gap: var(--space-1); color: var(--on-surface); }
+.copiloto__borrador summary { min-height: 44px; display: flex; align-items: center; cursor: pointer; color: var(--primary); font: var(--text-label-large); }
+.copiloto__borrador pre { margin: 0 0 var(--space-2); padding: var(--space-3); white-space: pre-wrap; font: var(--text-body-small); background: var(--surface-container-low); border-radius: var(--shape-corner-small); }

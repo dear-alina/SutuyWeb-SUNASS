@@ -3,11 +3,13 @@
 import { useState } from "react";
 import { FECHA_CORTE, type ExpedienteFi } from "@/demo/expedientes-demo";
 import { actualizarExpediente } from "@/demo/almacen-expedientes";
-import { NOMBRE_AREA, PASOS_FI, completarPaso, emitirResolucion, esMismaArea, notificarResolucion, obtenerPaso } from "@/demo/flujo-fi";
+import { NOMBRE_AREA, PASOS_FI, asignarEquipo, completarPaso, emitirResolucion, esMismaArea, notificarResolucion, obtenerPaso } from "@/demo/flujo-fi";
 import { ETAPAS_EPS, TEXTO_RESULTADO, obtenerHitoPendiente, obtenerInicioEtapa } from "@/demo/reglas-eps";
 import { generarNumeroDocumento, obtenerTareaArea } from "@/demo/reglas-sunass";
 import { revisarRequisitos } from "@/demo/requisitos-tupa";
+import { ESPECIALISTAS_DEMO, TEXTO_ROL, calcularCarga, sugerirEquipo } from "@/demo/especialistas-demo";
 import { contarDiasHabiles } from "@/demo/calendario-demo";
+import { EvaluarCaso, FirmarOficioPedido, VerificarRequisitos } from "./DecisionesEquipo";
 import { formatearFecha, textoDiasHabiles } from "@/utilidades/formatear-fecha";
 
 const TIPO_DOCUMENTO: Record<string, string> = {
@@ -16,12 +18,59 @@ const TIPO_DOCUMENTO: Record<string, string> = {
 };
 const NIVEL: Record<string, string> = { publico: "Público", restringido_partes: "Partes", interno: "Interno", reservado: "Reservado" };
 
+const minusculaInicial = (texto: string) => texto.charAt(0).toLowerCase() + texto.slice(1);
+
 function nombreHito(codigoHito: string) {
   return obtenerPaso(codigoHito)?.accion ?? codigoHito.replaceAll("_", " ");
 }
 
 /** Mensaje de acción del área con su botón (o aviso de que no le toca). */
-function BloqueAccion({ expediente, area }: { expediente: ExpedienteFi; area: string | null }) {
+/** Paso de asignación (SRT): elegir especialistas con su rol. Sugerencia por menor carga de trabajo. */
+function FormarEquipo({ expediente, todos, alTerminar }: { expediente: ExpedienteFi; todos: ExpedienteFi[]; alTerminar: (texto: string) => void }) {
+  const carga = calcularCarga(todos);
+  const [elegidos, setElegidos] = useState<string[]>(() => sugerirEquipo(carga));
+  const [error, setError] = useState("");
+  const sugeridos = sugerirEquipo(carga);
+
+  function formar(evento: React.FormEvent<HTMLFormElement>) {
+    evento.preventDefault();
+    const equipo = ESPECIALISTAS_DEMO.filter((e) => elegidos.includes(e.codigo)).map(({ codigo, nombre, rol }) => ({ codigo, nombre, rol }));
+    if (!equipo.some((e) => e.rol === "verifica_tupa") || !equipo.some((e) => e.rol === "evalua_informa")) {
+      setError("Elija al menos una persona que verifique el TUPA y una que evalúe e informe.");
+      return;
+    }
+    actualizarExpediente(expediente.codigoExpediente, (e) => asignarEquipo(e, FECHA_CORTE, equipo));
+    alTerminar(`Equipo formado: ${equipo.map((e) => e.nombre).join(", ")}. Pasa al equipo SRT para verificar los requisitos del TUPA.`);
+  }
+
+  return (
+    <form className="accion-banner" onSubmit={formar}>
+      <p className="accion-banner__titulo">Le toca a usted formar el equipo de especialistas</p>
+      <fieldset className="equipo">
+        <legend>Especialistas del equipo SRT · sugeridos por menor carga de trabajo</legend>
+        {ESPECIALISTAS_DEMO.map((e) => {
+          const marcado = elegidos.includes(e.codigo);
+          return (
+            <label key={e.codigo} className={marcado ? "equipo__opcion equipo__opcion--marcada" : "equipo__opcion"}>
+              <input type="checkbox" checked={marcado} onChange={() => { setError(""); setElegidos(marcado ? elegidos.filter((c) => c !== e.codigo) : [...elegidos, e.codigo]); }} />
+              <span>
+                <b>{e.nombre}</b>{sugeridos.includes(e.codigo) && <span className="chip chip--informacion">Sugerido</span>}
+                <small>{e.especialidad} · {minusculaInicial(TEXTO_ROL[e.rol])} · {carga[e.codigo] ?? 0} expediente{carga[e.codigo] === 1 ? "" : "s"} en curso</small>
+              </span>
+            </label>
+          );
+        })}
+      </fieldset>
+      {error && <p className="aviso aviso--alerta" role="alert">{error}</p>}
+      <p><small>Integrantes ficticios de la demo: la composición real de los equipos está por confirmar. Base: flujograma del FI (asignación por la SRT).</small></p>
+      <div className="ficha__botones">
+        <button type="submit" className="boton"><span className="ms" aria-hidden="true">group_add</span> Formar equipo</button>
+      </div>
+    </form>
+  );
+}
+
+function BloqueAccion({ expediente, area, todos }: { expediente: ExpedienteFi; area: string | null; todos: ExpedienteFi[] }) {
   const [hecho, setHecho] = useState("");
   const tarea = obtenerTareaArea(expediente, area);
   const codigo = expediente.codigoExpediente;
@@ -54,6 +103,14 @@ function BloqueAccion({ expediente, area }: { expediente: ExpedienteFi; area: st
   }
 
   const paso = obtenerPaso(tarea.hito.codigoHito)!;
+  if (paso.codigoHito === "asignacion") {
+    return <FormarEquipo expediente={expediente} todos={todos} alTerminar={setHecho} />;
+  }
+  if (paso.codigoHito === "verificacion_tupa") return <VerificarRequisitos expediente={expediente} alTerminar={setHecho} />;
+  if (paso.codigoHito === "evaluacion") return <EvaluarCaso expediente={expediente} alTerminar={setHecho} />;
+  if (paso.codigoHito === "oficio_subsanacion" || paso.codigoHito === "oficio_informacion") {
+    return <FirmarOficioPedido expediente={expediente} alTerminar={setHecho} />;
+  }
   const esCoautoria = paso.codigoHito === "firma_informe_dre" || paso.codigoHito === "firma_informe_oaj";
   return (
     <div className="accion-banner">
@@ -130,7 +187,7 @@ function RequisitosPresentados({ expediente }: { expediente: ExpedienteFi }) {
   );
 }
 
-export function FichaExpedienteSunass({ expediente, nombreEps, area }: { expediente: ExpedienteFi; nombreEps: string; area: string | null }) {
+export function FichaExpedienteSunass({ expediente, nombreEps, area, todos }: { expediente: ExpedienteFi; nombreEps: string; area: string | null; todos: ExpedienteFi[] }) {
   const movimientos = expediente.hitos.length + (expediente.estado !== "en_tramite" ? 1 : 0);
   return (
     <article className="ficha-dre" aria-labelledby="ficha-titulo">
@@ -139,7 +196,13 @@ export function FichaExpedienteSunass({ expediente, nombreEps, area }: { expedie
         <p className="ficha__resumen">Uso excepcional del fondo de inversiones · RGT art. 89 · presentada el {formatearFecha(expediente.fechaInicio)}{expediente.motivo ? ` · ${expediente.motivo}` : ""}</p>
       </header>
 
-      <BloqueAccion key={expediente.codigoExpediente} expediente={expediente} area={area} />
+      {expediente.equipoAsignado && expediente.equipoAsignado.length > 0 && (
+        <p className="equipo-asignado">
+          <span className="ms" aria-hidden="true">groups</span>
+          <span><b>Equipo asignado:</b> {expediente.equipoAsignado.map((e) => `${e.nombre} (${minusculaInicial(TEXTO_ROL[e.rol])})`).join(" · ")}</span>
+        </p>
+      )}
+      <BloqueAccion key={expediente.codigoExpediente} expediente={expediente} area={area} todos={todos} />
       <Etapas expediente={expediente} />
       {/* Según el flujograma, los requisitos los verifica el equipo SRT (paso verificacion_tupa); la DRE solo deriva */}
       {expediente.estado === "en_tramite" && esMismaArea("equipo_srt", area) && <RequisitosPresentados expediente={expediente} />}
@@ -152,7 +215,7 @@ export function FichaExpedienteSunass({ expediente, nombreEps, area }: { expedie
             return (
               <li key={h.numero} className={h.finalizadoEn ? "" : "recorrido__pendiente"}>
                 <span className="ms" aria-hidden="true">{h.finalizadoEn ? "check_circle" : "pending"}</span>
-                <span><b>{NOMBRE_AREA[h.area] ?? h.area}</b><small>{nombreHito(h.codigoHito)}{h.numeroDocumento ? ` · ${h.numeroDocumento}` : ""}</small></span>
+                <span><b>{NOMBRE_AREA[h.area] ?? h.area}</b><small>{nombreHito(h.codigoHito)}{h.numeroDocumento ? ` · ${h.numeroDocumento}` : ""}{h.codigoHito === "asignacion" && h.finalizadoEn && expediente.equipoAsignado?.length ? ` · ${expediente.equipoAsignado.map((e) => e.nombre).join(", ")}` : ""}</small></span>
                 <span>{formatearFecha(h.iniciadoEn)}{h.finalizadoEn ? ` → ${formatearFecha(h.finalizadoEn)}` : " · pendiente"}<small>{textoDiasHabiles(Math.max(0, dias))}{h.plazoReferencialDiasHabiles != null ? ` · meta ${h.plazoReferencialDiasHabiles} d.h.` : ""}{h.cuentaPlazo ? "" : " · no cuenta para la Sunass"}</small></span>
               </li>
             );

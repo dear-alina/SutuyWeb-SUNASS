@@ -1,6 +1,10 @@
 import type { Institucion, Perfil } from "@/servicios/api/sesiones";
 
-export type UsuarioDemo = Perfil & {
+// Campos del backend que los usuarios demo sin backend no tienen.
+type PerfilBase = Omit<Perfil, "usuarioId" | "correo" | "nombreEps" | "nombre" | "cargo"> &
+  Partial<Pick<Perfil, "usuarioId" | "correo" | "nombreEps">>;
+
+export type UsuarioDemo = PerfilBase & {
   codigo: string;
   usuario: string;
   ruc: string | null; // solo EP
@@ -10,8 +14,8 @@ export type UsuarioDemo = Perfil & {
 
 // Personas, usuarios y RUC ficticios. La clave se lee de NEXT_PUBLIC_CLAVE_DEMO (.env.local, no se sube).
 export const USUARIOS_DEMO: UsuarioDemo[] = [
-  { codigo: "eps07", usuario: "gg.eps07", ruc: "20500000007", nombre: "EPS Aguas del Valle Alto S.A.", cargo: "Gerencia General", rol: "eps", area: null, codigoEps: "EPS07", proveedor: "correo" },
-  { codigo: "eps16", usuario: "gg.eps16", ruc: "20500000016", nombre: "EPS Cascada S.A.", cargo: "Gerencia General", rol: "eps", area: null, codigoEps: "EPS16", proveedor: "correo" },
+  { codigo: "eps07", usuario: "gg.eps07", ruc: "99000000007", nombre: "EPS Aguas del Valle Alto S.A.", cargo: "Gerencia General", rol: "eps", area: null, codigoEps: "EPS07", proveedor: "correo" },
+  { codigo: "eps16", usuario: "gg.eps16", ruc: "99000000016", nombre: "EPS Cascada S.A.", cargo: "Gerencia General", rol: "eps", area: null, codigoEps: "EPS16", proveedor: "correo" },
   { codigo: "dre", usuario: "dre", ruc: null, nombre: "Dirección de Regulación Económica", cargo: "Director(a) DRE", rol: "sunass", area: "dre", codigoEps: null, proveedor: "correo" },
   { codigo: "srt", usuario: "srt", ruc: null, nombre: "Subdirección de Regulación Tarifaria", cargo: "Subdirector(a) SRT", rol: "sunass", area: "srt", codigoEps: null, proveedor: "correo" },
   { codigo: "equipo_srt", usuario: "especialista.srt", ruc: null, nombre: "Equipo SRT", cargo: "Especialista SRT", rol: "sunass", area: "equipo_srt", codigoEps: null, proveedor: "correo" },
