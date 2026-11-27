@@ -91,7 +91,7 @@ El script se ejecuta en el SQL Editor, o con `psql` si está disponible.
 
 ### D6. Datos de prueba
 - `bd/supabase/seed.sql` inserta, siempre con `on conflict do nothing`:
-  - las 20 EPS sintéticas de `ds01_catalogo_eps` (solo `codigoEps` y `nombre`);
+  - las 20 EPS sintéticas de `ds01_catalogo_eps` (`codigoEps` y `nombre`) y un RUC sintético para cada una (`99000000001`…`99000000020`; el prefijo `99` no es válido en Perú), que usa el inicio de sesión de las EPS (cambio `implementar-sesion-y-registro`);
   - los requisitos de `uso_excepcional_fondo` y `revision_periodica` (D9);
   - dos expedientes ficticios del dataset con sus documentos de `ds11`, con el estado y los documentos de la actualización al 20/11/2026: `UFI-2026-0001` (EPS07, `concluido`, 7 documentos) y `RP-2026-0002` (EPS04, `en_tramite`, 15 documentos). Entre los dos cubren los tres niveles de acceso.
 - `npx supabase db reset` lo usa en local.

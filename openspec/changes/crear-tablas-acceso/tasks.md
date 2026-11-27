@@ -94,8 +94,8 @@
 
 ## 5. Aplicación en el proyecto remoto
 
-- [ ] 5.1 Pedirle a la usuaria que ejecute `! npx supabase login` y luego `! npx supabase link --project-ref dahkomqcscgbzuxmuesz` desde `bd/`; ahí ingresa la clave de la base. Verificar que `git status` no muestra archivos de `bd/supabase/.temp/`.
-- [ ] 5.2 Ejecutar `npx supabase db push --dry-run`. Verificar que lista solo la migración `crear-tablas-acceso`.
-- [ ] 5.3 Ejecutar `npx supabase db push`. Verificar con `npx supabase migration list` que la migración aparece aplicada en local y en el remoto.
-- [ ] 5.4 Cargar `bd/supabase/seed.sql` en el SQL Editor del proyecto remoto. Verificar en Table Editor que `eps` tiene 20 filas, `expedientes` 2 y `requisitos` al menos 3, y que las seis tablas muestran RLS activado.
+- [x] 5.1 Pedirle a la usuaria que ejecute `! npx supabase login` y luego `! npx supabase link --project-ref dahkomqcscgbzuxmuesz` desde `bd/`; ahí ingresa la clave de la base. Verificar que `git status` no muestra archivos de `bd/supabase/.temp/`.
+- [x] 5.2 Ejecutar `npx supabase db push --dry-run`. Verificar que lista solo la migración `crear-tablas-acceso`.
+- [x] 5.3 Ejecutar `npx supabase db push`. Verificar con `npx supabase migration list` que la migración aparece aplicada en local y en el remoto.
+- [x] 5.4 Cargar `bd/supabase/seed.sql` en el SQL Editor del proyecto remoto. Verificar en Table Editor que `eps` tiene 20 filas, `expedientes` 2 y `requisitos` al menos 3, y que las seis tablas muestran RLS activado.
 - [ ] 5.5 Crear el primer Admin: agregar el usuario en Authentication → Users y ejecutar `bd/scripts/promover-admin.sql` con su correo. Verificar que `perfiles` tiene una fila `admin` activa.

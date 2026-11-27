@@ -19,7 +19,7 @@ El proyecto de Supabase (`dahkomqcscgbzuxmuesz`) está vacío y `bd/` todavía n
 
 **Tablas nuevas en el esquema `public`**, con nombres en camelCase entre comillas:
 - `eps`: catálogo de empresas prestadoras con código legible (`EPS01`…).
-  - Se siembra con las 20 EPS sintéticas del dataset `ds01_catalogo_eps`, solo código y nombre.
+  - Se siembra con las 20 EPS sintéticas del dataset `ds01_catalogo_eps`: código, nombre y un RUC sintético (`99000000001`…`99000000020`) para el inicio de sesión de las EPS.
 - `perfiles`: datos de negocio de cada usuario de Supabase Auth.
   - Rol: `admin`, `sunass` o `eps`.
   - Área, EPS, proveedor de acceso y si está activo.

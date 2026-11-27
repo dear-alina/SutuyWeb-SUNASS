@@ -23,6 +23,12 @@ insert into public.eps ("codigoEps", nombre) values
   ('EPS20', 'EPS Vertiente del Sur S.A.')
 on conflict ("codigoEps") do nothing;
 
+-- RUC sintéticos para el inicio de sesión de las EPS: 990000000 + número de la EPS (EPS02 -> 99000000002).
+-- El prefijo 99 no es válido en Perú, así que nunca coinciden con un RUC real.
+update public.eps
+set ruc = '990000000' || substr("codigoEps", 4, 2)
+where ruc is null;
+
 -- Requisitos por procedimiento según el Reglamento General de Tarifas (RGT, RCD 028-2021-SUNASS-CD y modificatorias).
 -- Las descripciones parafrasean la norma. esCandidato = true marcaría un texto aún no verificado en la norma vigente.
 insert into public.requisitos
