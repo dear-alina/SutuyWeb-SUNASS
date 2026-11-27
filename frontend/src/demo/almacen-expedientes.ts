@@ -52,3 +52,13 @@ export function generarCodigoDemo(): string {
   const cantidad = leerExpedientes().filter((e) => e.codigoExpediente.startsWith("UFI-2026-D")).length;
   return `UFI-2026-D${String(cantidad + 1).padStart(3, "0")}`;
 }
+
+/** Vuelve a los expedientes iniciales de la demo (borra lo creado o avanzado en este navegador). */
+export function restablecerDemo(): void {
+  try {
+    localStorage.removeItem(CLAVE_ALMACEN);
+  } catch {
+    /* sin almacenamiento: no hay nada que borrar */
+  }
+  window.dispatchEvent(new Event(EVENTO_CAMBIO));
+}
