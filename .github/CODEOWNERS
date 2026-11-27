@@ -1,0 +1,32 @@
+# Responsables de revisión. Ver CONTRIBUTING.md, «Responsabilidades».
+#
+# Las líneas están comentadas hasta confirmar el usuario de GitHub de cada responsable,
+# para no notificar a nadie por error. Para activarlas:
+#   1. Reemplazar RESPONSABLE_BACKEND, RESPONSABLE_FRONTEND y RESPONSABLE_COPILOTO
+#      por los usuarios reales, con @ delante.
+#   2. Quitar el «# » del inicio de cada regla.
+#   3. Comprobar en GitHub: Code → CODEOWNERS (o la API
+#      repos/<dueño>/<repo>/codeowners/errors) que no hay errores.
+#
+# GitHub pide la aprobación de UNO de los dueños de cada línea. Para exigir a todos los
+# responsables en archivos compartidos, activar en la protección de `main`
+# «Require review from Code Owners» y fijar el número de aprobaciones requeridas.
+# Si varias reglas coinciden, gana la última.
+
+# ---------- Partes ----------
+# /backend/    RESPONSABLE_BACKEND
+# /bd/         RESPONSABLE_BACKEND
+# /frontend/   RESPONSABLE_FRONTEND
+# /copiloto/   RESPONSABLE_COPILOTO
+
+# ---------- Compartido: aprueban los responsables ----------
+# /openspec/changes/**/specs/contrato-api/        RESPONSABLE_BACKEND RESPONSABLE_FRONTEND
+# /openspec/specs/contrato-api/                   RESPONSABLE_BACKEND RESPONSABLE_FRONTEND
+# /openspec/changes/**/specs/contrato-copiloto/   RESPONSABLE_BACKEND RESPONSABLE_COPILOTO
+# /openspec/specs/contrato-copiloto/              RESPONSABLE_BACKEND RESPONSABLE_COPILOTO
+# /openspec/config.yaml   RESPONSABLE_BACKEND RESPONSABLE_FRONTEND RESPONSABLE_COPILOTO
+# /README.md              RESPONSABLE_BACKEND RESPONSABLE_FRONTEND RESPONSABLE_COPILOTO
+# /.gitignore             RESPONSABLE_BACKEND RESPONSABLE_FRONTEND RESPONSABLE_COPILOTO
+# /CONTRIBUTING.md        RESPONSABLE_BACKEND RESPONSABLE_FRONTEND RESPONSABLE_COPILOTO
+# /docs/convenciones.md   RESPONSABLE_BACKEND RESPONSABLE_FRONTEND RESPONSABLE_COPILOTO
+# /.github/               RESPONSABLE_BACKEND RESPONSABLE_FRONTEND RESPONSABLE_COPILOTO

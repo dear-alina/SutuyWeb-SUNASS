@@ -12,8 +12,8 @@
 *.p12
 *.pfx
 # Claves privilegiadas de Supabase (service_role) o volcados de configuración local
-supabase/.temp/
-supabase/.branches/
+**/supabase/.temp/
+**/supabase/.branches/
 **/secrets/
 
 # ---------- Datos sensibles ----------
