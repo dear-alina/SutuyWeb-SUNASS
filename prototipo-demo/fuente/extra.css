@@ -1,0 +1,57 @@
+/* ===== Solo prototipo: clases que el frontend usa sin regla CSS, y el guion de la demo ===== */
+.boton--chico { min-height: 36px; padding: 0 var(--space-3); display: inline-flex; align-items: center; gap: var(--space-1); font-size: 13px; }
+.boton--chico .ms { font-size: 18px; }
+.texto-error { color: var(--error); }
+/* Corrige el solapamiento de las dos marcas de cada fila (mismo grid-area en sunass.css) */
+.lista-exp__marcas { grid-area: marca; display: grid; justify-items: end; gap: 4px; }
+.lista-exp__marcas .chip, .lista-exp__marcas .lista-exp__donde { grid-area: auto; text-align: right; }
+.lista-exp__codigo { white-space: nowrap; }
+.prototipo-ejemplo { flex: none; white-space: nowrap; justify-self: start; }
+.equipo__opcion .chip { justify-self: start; width: max-content; margin-left: var(--space-1); }
+.bandeja__ficha { display: grid; gap: var(--space-4); min-width: 0; }
+.historial__cuerpo { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: var(--space-4); padding: 0 var(--space-4) var(--space-4); }
+.historial__etapa h4 { margin: var(--space-3) 0 var(--space-1); font: var(--text-title-small); }
+.historial__etapa h4 small { color: var(--on-surface-variant); font-weight: 400; }
+.historial .historial__etapa .recorrido { padding: 0; }
+.historial__sigue { display: flex; align-items: center; gap: var(--space-2); margin: var(--space-3) 0 0; font: var(--text-label-large); color: var(--primary); }
+.recorrido__boton { display: grid; gap: 2px; text-align: left; padding: 2px var(--space-2); margin: -2px calc(var(--space-2) * -1); border: 0; border-radius: var(--shape-corner-small); background: none; color: inherit; font: inherit; cursor: pointer; }
+.recorrido__boton:hover { background: var(--surface-container); }
+.recorrido__boton[aria-pressed="true"] { background: var(--secondary-container); }
+.recorrido li > span:last-child { text-align: right; white-space: nowrap; }
+.movimiento { width: 240px; align-self: start; display: grid; gap: var(--space-2); padding: var(--space-4); border: 1px solid var(--outline-variant); border-radius: var(--shape-corner-medium); background: var(--surface-container-lowest); }
+.movimiento__cabecera { display: flex; justify-content: space-between; gap: var(--space-2); align-items: start; }
+.movimiento__cabecera h4 { margin: 0; font: var(--text-title-small); }
+.plazos-area { list-style: none; margin: 0; padding: 0 var(--space-4) var(--space-4); display: grid; gap: var(--space-2); }
+.plazos-area li { display: grid; grid-template-columns: minmax(160px, 260px) minmax(0, 1fr) auto; gap: var(--space-3); align-items: center; font: var(--text-body-medium); }
+.plazos-area__barra { height: 10px; border-radius: var(--shape-corner-full); background: var(--surface-container-high); overflow: hidden; }
+.plazos-area__barra span { display: block; height: 100%; background: var(--primary); }
+.documentos-etapa { margin-top: var(--space-2); }
+.documentos-etapa summary { min-height: 40px; display: flex; align-items: center; gap: var(--space-2); font: var(--text-title-small); cursor: pointer; }
+.ficha-dre__documentos-cabecera { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: var(--space-2); }
+.panel__controles--fila { grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 280px)); }
+.prototipo-ejemplo { margin-top: var(--space-2); }
+.banda-demo { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: var(--space-2); }
+.banda-demo__boton { min-height: 28px; padding: 0 var(--space-2); border: 1px solid currentColor; border-radius: var(--shape-corner-full); background: transparent; color: inherit; font: 600 12px/16px var(--font-sans); cursor: pointer; }
+
+.guion-abrir { position: fixed; right: 16px; bottom: 16px; z-index: 50; min-height: 48px; display: inline-flex; align-items: center; gap: var(--space-2); padding: 0 var(--space-4); border: 0; border-radius: var(--shape-corner-full); background: var(--primary); color: var(--on-primary); font: var(--text-label-large); box-shadow: var(--elevation-3); cursor: pointer; }
+.guion { position: fixed; right: 16px; bottom: 16px; z-index: 50; width: min(420px, calc(100vw - 32px)); display: grid; gap: var(--space-2); padding: var(--space-4); border-radius: var(--shape-corner-large); border-top: 4px solid #7cc242; background: var(--inverse-surface); color: var(--inverse-on-surface); box-shadow: var(--elevation-3); font: var(--text-body-medium); }
+.guion p { margin: 0; }
+.guion__cabecera { display: flex; justify-content: space-between; align-items: center; gap: var(--space-2); }
+.guion__paso { font: var(--text-label-status); letter-spacing: 0.06em; text-transform: uppercase; color: #a8d98a; }
+.guion__icono { width: 32px; height: 32px; display: inline-grid; place-items: center; border: 0; border-radius: var(--shape-corner-full); background: transparent; color: inherit; cursor: pointer; }
+.guion__icono:hover { background: rgba(255, 255, 255, 0.12); }
+.guion__titulo { font: var(--text-title-medium); }
+.guion__cuenta { display: flex; align-items: center; gap: var(--space-1); font: var(--text-label-medium); color: var(--inverse-primary); }
+.guion__cuenta .ms { font-size: 18px; }
+.guion__destacar { padding: var(--space-2) var(--space-3); border-left: 3px solid #7cc242; background: rgba(255, 255, 255, 0.06); border-radius: var(--shape-corner-small); }
+.guion__botones { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: var(--space-2); align-items: center; }
+.guion__botones select { min-width: 0; height: 36px; border-radius: var(--shape-corner-small); border: 1px solid var(--outline); background: var(--surface-container-lowest); color: var(--on-surface); font: var(--text-body-small); }
+.guion .boton--secundario { background: transparent; color: var(--inverse-on-surface); border-color: var(--inverse-on-surface); }
+.guion .boton:disabled { opacity: 0.4; cursor: default; }
+.aviso-flotante { position: fixed; left: 50%; bottom: 24px; transform: translateX(-50%); z-index: 60; max-width: min(560px, calc(100vw - 32px)); padding: var(--space-3) var(--space-4); border-radius: var(--shape-corner-medium); background: var(--inverse-surface); color: var(--inverse-on-surface); font: var(--text-body-medium); box-shadow: var(--elevation-3); }
+@media (max-width: 900px) {
+  .historial__cuerpo { grid-template-columns: minmax(0, 1fr); }
+  .movimiento { width: auto; }
+  .plazos-area li { grid-template-columns: minmax(0, 1fr) auto; }
+  .plazos-area__barra { grid-column: 1 / -1; grid-row: 2; }
+}
