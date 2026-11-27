@@ -1,0 +1,16 @@
+{
+  "aviso": "CANDIDATOS, NO ES EL TUPA OFICIAL. Salen de las observaciones recurrentes de los oficios de los expedientes ficticios UFI-2024-0001 (OF-2024-0013) y UFI-2025-0001 (OF-2025-0015) y de la solicitud. Verificar y completar contra el TUPA y el art. 89 del RGT.",
+  "tramite": "uso_excepcional_fondo",
+  "requisitos": [
+    {"id": "U1", "texto": "La solicitud está suscrita por la Gerencia General, representante legal de la empresa", "palabras_clave": ["Gerencia General"], "fuente": "carta de solicitud"},
+    {"id": "U2", "texto": "Se indica el monto solicitado del fondo de inversiones", "palabras_clave": ["uso excepcional de", "solicitamos", "monto", "fondo de inversiones"], "fuente": "carta de solicitud"},
+    {"id": "U3", "texto": "Se expone el motivo que sustenta el uso excepcional", "palabras_clave": ["motivo"], "fuente": "carta de solicitud; informe"},
+    {"id": "U4", "texto": "Se adjunta el sustento de los costos unitarios de las obras propuestas", "palabras_clave": ["costos unitarios", "presupuesto"], "fuente": "oficios OF-2024-0013 y OF-2025-0015, observación 1"},
+    {"id": "U5", "texto": "El cronograma de ejecución es coherente con el programa de inversiones vigente", "palabras_clave": ["cronograma"], "fuente": "oficios OF-2024-0013 y OF-2025-0015, observación 2"},
+    {"id": "U6", "texto": "Se adjunta el acuerdo de Directorio que aprueba la solicitud", "palabras_clave": ["acuerdo", "Directorio"], "fuente": "oficios OF-2024-0013 y OF-2025-0015, observación 3"}
+  ],
+  "reglas_de_datos_calculadas_por_codigo": [
+    "El monto solicitado no excede el saldo previo del fondo de inversiones (DS05) [regla candidata]",
+    "El uso excepcional registrado en DS05 coincide con lo autorizado en la resolución"
+  ]
+}

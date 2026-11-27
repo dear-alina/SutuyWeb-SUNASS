@@ -1,0 +1,10 @@
+{
+  "aviso": "EJEMPLO DE FORMATO, NO ES EL TUPA OFICIAL. Reemplazar 'texto' y 'palabras_clave' con los requisitos reales del TUPA de cada trámite antes de la demostración.",
+  "tramite": "cambio_programa_inversiones",
+  "requisitos": [
+    {"id": "R1", "texto": "La solicitud está firmada por el representante legal de la empresa", "palabras_clave": ["firma", "representante legal", "gerente general"]},
+    {"id": "R2", "texto": "Se sustenta técnicamente el cambio del programa de inversiones", "palabras_clave": ["sustento", "justificación", "técnico"]},
+    {"id": "R3", "texto": "Se indica el monto del cambio solicitado", "palabras_clave": ["monto", "soles", "presupuesto"]},
+    {"id": "R4", "texto": "Se adjunta el cronograma de ejecución", "palabras_clave": ["cronograma", "plazo de ejecución"]}
+  ]
+}
