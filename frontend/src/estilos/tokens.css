@@ -1,0 +1,220 @@
+/* SutuWeb — generated from tokens.json */
+:root, [data-theme="light"] {
+  --primary: #0563c1; /* M3 primary. Acción principal, pestaña activa, pasos completados del stepper, enlaces, barras del Gantt. Azul Sunass actual de la app. */
+  --on-primary: #ffffff; /* Texto e iconos sobre primary (5.9:1 claro, 7.7:1 oscuro). */
+  --primary-container: #d6e4f7; /* M3 primary-container. Fondo de elementos seleccionados de baja jerarquía, tooltips informativos, resaltado de fila. */
+  --on-primary-container: #0b3b75; /* Texto sobre primary-container (8.6:1 / 6.9:1). */
+  --secondary: #0b3b75; /* M3 secondary. Azul marino institucional: logotipo tipográfico, encabezados de gráficos, bloques de marca. */
+  --on-secondary: #ffffff; /* Texto sobre secondary (11:1 / 8.8:1). */
+  --secondary-container: #e2eaf3; /* Fondo de columnas del tablero, chips neutros rellenos, selects (campo relleno). */
+  --on-secondary-container: #14243a; /* Texto sobre secondary-container (12.9:1 / 9:1). */
+  --error: #b42318; /* Estado VENCIDO, paso con alerta del stepper, contador de vencidos. Siempre acompañado de la palabra o un icono. */
+  --on-error: #ffffff; /* Texto sobre error. */
+  --error-container: #fdecea; /* Fondo del chip VENCIDO relleno y de avisos de error. */
+  --on-error-container: #7a1a12; /* Texto sobre error-container (9.3:1 / 8.2:1). */
+  --warning: #8a5300; /* Rol propio (M3 no lo trae). Estado POR VENCER / QUEDAN N DÍAS y SIN CÓDIGO CUI. */
+  --on-warning: #ffffff; /* Texto sobre warning. */
+  --warning-container: #fff1d6; /* Fondo del chip POR VENCER relleno. */
+  --on-warning-container: #5c3700; /* Texto sobre warning-container (9.4:1 / 8.1:1). */
+  --success: #2f7d07; /* Rol propio. Estado EN PLAZO. Se distingue de error por la palabra, no solo por el tono. */
+  --on-success: #ffffff; /* Texto sobre success. */
+  --success-container: #ebf6e3; /* Fondo del chip EN PLAZO relleno. */
+  --on-success-container: #1e5104; /* Texto sobre success-container (8.4:1 / 7.5:1). */
+  --background: #f9fbfd; /* Fondo de la página (área principal de Streamlit). */
+  --surface: #f9fbfd; /* M3 surface. Igual a background; base sobre la que se apilan los surface-container. */
+  --on-surface: #14243a; /* Texto principal y títulos sobre surface y cualquier surface-container (≥12:1). */
+  --on-surface-variant: #4a5b70; /* Texto secundario: trámite, 'Lo tiene:', ejes de gráficos, ayudas. Sobre surface y surface-container-high (≥5.7:1). */
+  --surface-container-lowest: #ffffff; /* Tarjetas de expediente dentro de una columna, tooltips, menús. */
+  --surface-container-low: #f4f7fb; /* Paneles de sección (Obra vinculada, Documentos), filas alternas de tablas. */
+  --surface-container: #eef3f8; /* Contenedor por defecto: tabla de preguntas de 'Su trámite', bloques de detalle. */
+  --surface-container-high: #e2eaf3; /* Columnas del tablero (Vencidos / Por vencer / En plazo), campo relleno del select. */
+  --surface-container-highest: #d8e2ee; /* Estado hover/pressed de campos rellenos, pista de la barra de plazo. */
+  --outline: #7a8ba0; /* Bordes con significado: campos de texto, chip outlined neutro 'DATOS AL'. ≥3:1 sobre surface. */
+  --outline-variant: #cfdbe8; /* Divisores, borde de tarjetas, rejilla de gráficos. Decorativo: no usar solo para separar estados. */
+  --inverse-surface: #14243a; /* Snackbar / toast (st.toast). */
+  --inverse-on-surface: #f1f4f9; /* Texto sobre inverse-surface. */
+  --inverse-primary: #a8c8ff; /* Acción dentro de un snackbar. */
+  --nav-surface: #0b3b75; /* Fondo del navigation drawer (sidebar de Streamlit). Decisión de marca: se mantiene el azul marino en lugar del surface-container de M3. */
+  --on-nav-surface: #e8f0fa; /* Texto, iconos y anillo de foco dentro del drawer (9.6:1 / 15:1). */
+  --nav-indicator: #0563c1; /* Indicador activo del destino actual en el drawer. */
+  --on-nav-indicator: #ffffff; /* Texto del destino activo sobre nav-indicator (5.9:1 / 7.3:1). */
+  --focus-ring: #0563c1; /* Anillo de foco 2px sólido + 2px de separación sobre superficies claras/oscuras. En el drawer usar on-nav-surface. */
+  --data-blue: #0563c1; /* Serie 1 en gráficos (Gantt por área, montos). Muestreado de la app. */
+  --data-orange: #eb6834; /* Serie 2 en gráficos. Muestreado de la app (3.2:1 sobre blanco). */
+  --data-green: #1bb079; /* Serie 3 en gráficos. Valor de la app: solo 2.8:1 sobre blanco, por debajo del 3:1 para marcas; etiquetar las barras con su valor o usar #12966a. */
+  --data-red: #d03c3c; /* Línea de fecha límite y tramo vencido en el Gantt. Muestreado de la app. */
+  --elevation-0: none; /* M3 nivel 0: superficies planas. Por defecto; la jerarquía la dan los surface-container. */
+  --elevation-1: 0 1px 2px rgba(20,36,58,0.18), 0 1px 3px 1px rgba(20,36,58,0.10); /* M3 nivel 1: tarjeta de expediente en hover, select abierto. */
+  --elevation-2: 0 1px 2px rgba(20,36,58,0.18), 0 2px 6px 2px rgba(20,36,58,0.10); /* M3 nivel 2: tooltips del Gantt, menús. */
+  --elevation-3: 0 4px 8px 3px rgba(20,36,58,0.10), 0 1px 3px rgba(20,36,58,0.18); /* M3 nivel 3: diálogos, drawer modal en móvil. */
+}
+[data-theme="dark"] {
+  --primary: #a8c8ff;
+  --on-primary: #00315f;
+  --primary-container: #0e4a8c;
+  --on-primary-container: #d6e4ff;
+  --secondary: #a9c3e6;
+  --on-secondary: #0a2340;
+  --secondary-container: #263a55;
+  --on-secondary-container: #d6e4ff;
+  --error: #ffb4ab;
+  --on-error: #690005;
+  --error-container: #7a1a12;
+  --on-error-container: #ffdad6;
+  --warning: #f2be6b;
+  --on-warning: #422800;
+  --warning-container: #5c3700;
+  --on-warning-container: #ffddb0;
+  --success: #9ad67a;
+  --on-success: #0f3800;
+  --success-container: #1e5104;
+  --on-success-container: #cdefb8;
+  --background: #0f1724;
+  --surface: #0f1724;
+  --on-surface: #e3eaf3;
+  --on-surface-variant: #b4c2d3;
+  --surface-container-lowest: #0a111c;
+  --surface-container-low: #131d2b;
+  --surface-container: #172231;
+  --surface-container-high: #1f2c3d;
+  --surface-container-highest: #283648;
+  --outline: #8696aa;
+  --outline-variant: #3a4a5e;
+  --inverse-surface: #e3eaf3;
+  --inverse-on-surface: #14243a;
+  --inverse-primary: #0563c1;
+  --nav-surface: #0a1a30;
+  --on-nav-surface: #e8f0fa;
+  --nav-indicator: #1f4e8a;
+  --on-nav-indicator: #ffffff;
+  --focus-ring: #a8c8ff;
+  --data-blue: #4c93e6;
+  --data-orange: #f08a5d;
+  --data-green: #3cc890;
+  --data-red: #e86464;
+  --elevation-1: 0 1px 2px rgba(0,0,0,0.5), 0 1px 3px 1px rgba(0,0,0,0.3);
+  --elevation-2: 0 1px 2px rgba(0,0,0,0.5), 0 2px 6px 2px rgba(0,0,0,0.3);
+  --elevation-3: 0 4px 8px 3px rgba(0,0,0,0.3), 0 1px 3px rgba(0,0,0,0.5);
+}
+:root {
+  --space-1: 4px; /* Separación icono–texto, padding vertical de chips. */
+  --space-2: 8px; /* Gap entre chips y entre líneas de una tarjeta. */
+  --space-3: 12px; /* Padding de columnas del tablero, gap entre tarjetas. */
+  --space-4: 16px; /* Padding interno de tarjetas y campos. */
+  --space-6: 24px; /* Separación entre bloques de una sección. */
+  --space-8: 32px; /* Separación entre secciones (Bandeja → Expediente). */
+  --space-12: 48px; /* Margen superior de la página. */
+  --shape-corner-none: 0px; /* M3 none. Bordes del drawer contra la ventana. */
+  --shape-corner-extra-small: 4px; /* M3 extra-small. Chips de estado, sello DATOS AL, código inline. */
+  --shape-corner-small: 8px; /* M3 small. Campos de texto/select, chips M3, barras del Gantt, tooltips. */
+  --shape-corner-medium: 12px; /* M3 medium. Tarjetas de expediente y paneles. */
+  --shape-corner-large: 16px; /* M3 large. Columnas del tablero, navigation drawer (esquina derecha en modal). */
+  --shape-corner-extra-large: 28px; /* M3 extra-large. Diálogos. */
+  --shape-corner-full: 9999px; /* M3 full. Indicador activo del drawer y de pestañas, contadores, pasos del stepper. */
+  --font-sans: "Inter", "Source Sans 3", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+  --text-headline-medium: 700 28px/36px var(--font-sans); /* Título de página (st.title). M3 headline-medium con peso 700 de marca. */
+  --text-headline-small: 700 24px/32px var(--font-sans); /* Título de sección grande. */
+  --text-title-large: 700 22px/28px var(--font-sans); /* Subtítulos de sección (st.subheader). */
+  --text-title-medium: 700 16px/24px var(--font-sans); /* Nombre de la EPS en tarjetas, títulos de columna. */
+  --text-title-small: 600 14px/20px var(--font-sans); /* Título de tooltip, encabezado de tabla. */
+  --text-body-large: 400 16px/24px var(--font-sans); /* Párrafos de la vista Empresa y Ciudadanía. */
+  --text-body-medium: 400 14px/20px var(--font-sans); /* Texto secundario de tarjetas y metadatos. */
+  --text-body-small: 400 12px/16px var(--font-sans); /* Notas bajo gráficos, ayudas de campo. */
+  --text-label-large: 600 14px/20px var(--font-sans); /* Pestañas, botones, destinos del drawer. */
+  --text-label-medium: 600 12px/16px var(--font-sans); /* Eyebrow sobre el título (en mayúsculas, color primary). */
+  --text-label-status: 700 12px/16px var(--font-sans); /* Chips de estado y sello 'DATOS AL'. Valores exactos de la app (12px, 700, 0.96px). */
+  --text-code-medium: 400 13px/20px var(--font-mono); /* Códigos de expediente, oficios (OF-2026-0018), fechas dd/mm en listas. */
+  --text-code-large: 500 18px/24px var(--font-mono); /* Código del expediente abierto en su cabecera. */
+}
+.headline-medium {
+  font-family: var(--font-sans);
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+.headline-small {
+  font-family: var(--font-sans);
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+.title-large {
+  font-family: var(--font-sans);
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+.title-medium {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: 0.009em;
+}
+.title-small {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+}
+.body-large {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.body-medium {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.body-small {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.label-large {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+}
+.label-medium {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+.label-status {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+.code-medium {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.code-large {
+  font-family: var(--font-mono);
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  letter-spacing: 0;
+}
