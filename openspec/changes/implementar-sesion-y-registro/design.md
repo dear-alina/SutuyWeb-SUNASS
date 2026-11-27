@@ -93,13 +93,11 @@
 
 Se implementa en la rama `frontend`, donde vive el código, siguiendo `frontend/README.md` (kebab-case en archivos, PascalCase en componentes, dominio en español sin tildes ni ñ, WCAG 2.2 AA). Sus requisitos están en la spec: «Formulario de solicitud de acceso», «Bandeja de solicitudes del Admin», «Rutas protegidas por rol» y «Cierre de sesión visible».
 
-### D11. Protección de rutas con un componente cliente por sección
-- `src/componentes/comunes/RutaProtegida.tsx` (cliente) recibe los roles permitidos, llama a `obtenerPerfil()` y:
-  - mientras espera, muestra «Cargando…» con `role="status"`;
-  - con 401 (`ErrorDeApi` con `status` 401) hace `router.replace("/ingreso")`;
-  - si el `rol` no está permitido, hace `router.replace(obtenerRutaInicio(perfil))`;
-  - si todo está bien, entrega el perfil por un contexto (`usePerfil()`) y muestra el contenido.
-- `src/app/eps/layout.tsx`, `src/app/sunass/layout.tsx` y `src/app/admin/layout.tsx` envuelven su sección con `RutaProtegida` y el `Encabezado`.
+### D11. Protección de rutas con la sesión común del frontend
+- Se reutiliza la sesión que ya tenía el frontend: `src/servicios/sesion/ContextoSesion.tsx` (`ProveedorSesion` en el layout raíz y `usarSesion()`) y `src/componentes/comunes/RequiereRol.tsx`.
+- `ContextoSesion` carga el perfil con `obtenerPerfil()`; el ingreso lo fija con `establecerPerfil()` tras `iniciarSesion()`, y `salir()` llama a `cerrarSesion()`. El perfil de la API se adapta a la forma que usan las vistas (`nombre` = EPS o área, `cargo`).
+- `RequiereRol` muestra «Cargando…» mientras espera; sin sesión lleva a `/ingreso` y con otro rol, a `obtenerRutaInicio(perfil)`.
+- Los layouts de `eps/`, `sunass/` y `admin/` usan `RequiereRol`.
 - La protección real está en el backend (cookies `HttpOnly`, permisos por petición); el frontend solo evita mostrar pantallas a quien no corresponde.
 - *Alternativa descartada:* `middleware.ts` de Next.js. No puede leer la cookie si el backend está en otro origen y obligaría a duplicar la verificación de la sesión.
 
@@ -115,9 +113,9 @@ Se implementa en la rama `frontend`, donde vive el código, siguiendo `frontend/
 - Los mensajes de `credenciales_invalidas`, `acceso_pendiente`, `demasiados_intentos`, `solicitud_pendiente` y `correo_registrado` se definen en un solo lugar (`src/utilidades/mensajes-error.ts`) y los usan el ingreso y el registro.
 - `frontend/.env.example` con `NEXT_PUBLIC_API_URL=http://localhost:4000`.
 
-### D14. Encabezado y páginas de inicio mínimas
-- `src/componentes/comunes/Encabezado.tsx`: logo, nombre y rol del usuario (de `usePerfil()`) y botón «Cerrar sesión», que llama a `cerrarSesion()` y lleva a `/ingreso` aunque la llamada falle.
-- `/eps/tramites` y `/sunass/inicio`: título de la sección, saludo con el nombre y la EPS o el área, y el texto «Sección en construcción». Las vistas reales llegan en cambios posteriores.
+### D14. Encabezados y páginas de inicio
+- `/eps/tramites` y `/sunass/inicio` son las vistas de la EP y de Sunass que ya existen en la rama `frontend`, con sus encabezados (`EncabezadoEps`, `EncabezadoSunass`) y su botón «Salir».
+- La sección del Admin usa `src/componentes/comunes/Encabezado.tsx`: logo, usuario y «Cerrar sesión».
 - Se elimina la carpeta vacía `src/app/(publico)/ingresar/`, que duplica `ingreso/`.
 - En `/ingreso`, el enlace «solicitar acceso» se reemplaza por un botón secundario «Registrarse» bajo «Ingresar», visible en ambas pestañas.
 
@@ -129,6 +127,7 @@ Se implementa en la rama `frontend`, donde vive el código, siguiendo `frontend/
   - EPS07: `eps07@demo.sutuyweb.test`, RUC `99000000007`, dueña del expediente de demostración `UFI-2026-0001` (pestaña EPS).
 - **Clave:** una sola para todas, en `CLAVE_DEMO` (`backend/.env`) y `NEXT_PUBLIC_CLAVE_DEMO` (`frontend/.env.local`). Ninguno de los dos archivos se versiona; los `.env.example` traen el modo en `false` y la clave vacía.
 - **Activación:** el selector aparece solo si `NEXT_PUBLIC_MODO_DEMO=true` y `NEXT_PUBLIC_CLAVE_DEMO` no está vacía.
+- **Demo sin backend:** con `NEXT_PUBLIC_DEMO_SIN_BACKEND=true`, el ingreso usa los usuarios del navegador (`src/demo/usuarios-demo.ts`, con RUC `990000000NN`) y el selector los lista. Sirve para mostrar las vistas sin levantar el backend.
 - **Presentación discreta** (revelación progresiva): el formulario se muestra ya relleno con la primera cuenta, igual que en un entorno real. El selector va dentro de un `<details>` cerrado al pie, en la misma línea de texto pequeño que «Prototipo con nombres ficticios», con el resumen «Cuentas de demostración». Sin colores de aviso.
 - **Detalles de la vista de ingreso:** «Ingresar» es la única acción principal; «Registrarse» queda como acción secundaria con borde, precedida por «¿Su empresa aún no tiene acceso?»; «Ingresar» muestra «Ingresando…» y se deshabilita durante el envío; los controles del pie mantienen un área táctil de 44 px.
 - **Script:** `npm run crear-cuentas-demo` crea cada cuenta o le actualiza la clave (`auth.admin`) y hace `upsert` de su perfil (`pg`); se puede ejecutar varias veces.
