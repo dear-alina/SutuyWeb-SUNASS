@@ -4,7 +4,8 @@ import { useState } from "react";
 import { FECHA_CORTE, type ExpedienteFi } from "@/demo/expedientes-demo";
 import { actualizarExpediente } from "@/demo/almacen-expedientes";
 import { completarPaso, firmarOficioPedido, registrarPedido } from "@/demo/flujo-fi";
-import { REQUISITOS_TUPA_FI, revisarRequisitos } from "@/demo/requisitos-tupa";
+import { REQUISITOS_TUPA_FI, REVISION_CONTENIDO_CANDIDATA, revisarRequisitos } from "@/demo/requisitos-tupa";
+import { RevisionCopiloto } from "./RevisionCopiloto";
 import { generarNumeroDocumento } from "@/demo/reglas-sunass";
 import { PLAZO_INFORMACION_MAXIMO_DIAS_HABILES, PLAZO_SUBSANACION_DIAS_HABILES } from "@/demo/reglas-eps";
 
@@ -52,6 +53,14 @@ export function VerificarRequisitos({ expediente, alTerminar }: Props) {
           <span><b>No cumple</b><small>Sigue: la SRT firma el oficio de subsanación; la EP tiene {PLAZO_SUBSANACION_DIAS_HABILES} días hábiles (TUO LPAG art. 125.1)</small></span>
         </label>
       </fieldset>
+
+      <RevisionCopiloto
+        codigoExpediente={expediente.codigoExpediente}
+        titulo="Revisión con el copiloto · requisitos del TUPA"
+        requisitos={REQUISITOS_TUPA_FI.map((r) => ({ codigoRequisito: r.codigo, texto: r.texto, palabrasClave: [...r.palabrasClave] }))}
+        plazoDiasHabiles={PLAZO_SUBSANACION_DIAS_HABILES}
+        alUsarBorrador={(borrador) => { setError(""); setDecision("no_cumple"); setDetalle(borrador); }}
+      />
 
       {decision === "no_cumple" && (
         <fieldset className="equipo">
@@ -121,6 +130,13 @@ export function EvaluarCaso({ expediente, alTerminar }: Props) {
           <span><b>Falta información</b><small>Sigue: la SRT firma el oficio; la EP responde en un plazo de hasta {PLAZO_INFORMACION_MAXIMO_DIAS_HABILES} días hábiles (RGT 89.6)</small></span>
         </label>
       </fieldset>
+
+      <RevisionCopiloto
+        codigoExpediente={expediente.codigoExpediente}
+        titulo="Revisión con el copiloto · contenido de la solicitud"
+        requisitos={REVISION_CONTENIDO_CANDIDATA.map((r) => ({ codigoRequisito: r.codigo, texto: r.texto, palabrasClave: [...r.palabrasClave] }))}
+        aviso="Puntos candidatos tomados de oficios ficticios del concurso: no son el TUPA oficial."
+      />
 
       {decision === "falta" && (
         <fieldset className="equipo">
