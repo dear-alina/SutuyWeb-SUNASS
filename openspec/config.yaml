@@ -6,7 +6,7 @@ context: |
   Keep OpenSpec structural headings and SHALL/MUST keywords in English.
 
   Proyecto: SutuyWeb, plataforma colaborativa para la gestión y el seguimiento de los trámites
-  financieros de las EPS ante Sunass. Monolito modular en un solo repositorio.
+  financieros de las EPS ante Sunass. Un solo repositorio: backend monolito modular + servicio copiloto.
 
   Partes y límites (cada change indica cuáles toca):
   - frontend/: Next.js con TypeScript. Solo interfaz, navegación y validación de formularios.
@@ -27,15 +27,19 @@ context: |
     Los .env.example llevan solo valores ficticios.
   - Commits: tipo (feat, fix, chore, docs, test, refactor) + ": " + descripción en español en infinitivo.
 
-# Per-artifact rules (optional)
-# Add custom rules for specific artifacts.
-# Example:
-#   rules:
-#     proposal:
-#       - Keep proposals under 500 words
-#       - Always include a "Non-goals" section
-#     tasks:
-#       - Break tasks into chunks of max 2 hours
+  Convenciones (detalle en docs/convenciones.md):
+  - Dominio en español sin tildes ni ñ. camelCase en JS/TS, JSON, rutas (parámetros) y PostgreSQL
+    (identificadores entre comillas dobles); snake_case solo dentro de Python; PascalCase para tipos.
+  - <entidad>Id es un UUID; codigo<Entidad> es un código legible (codigoExpediente, codigoEps).
+  - Los valores de catálogo conservan el estilo del dataset oficial (en_tramite, uso_excepcional_fondo,
+    restringido_partes); solo se mapean los nombres de columna.
+  - Contratos acordados: contrato-api (backend → frontend) y contrato-copiloto (backend → copiloto).
+
+rules:
+  design:
+    - Usar los nombres de docs/convenciones.md
+  tasks:
+    - Incluir pruebas de contrato si cambia una interfaz (contrato-api o contrato-copiloto)
 
 # Per-operation guidance (optional)
 # Add advisory guidance for how apply and archive work should be conducted.
