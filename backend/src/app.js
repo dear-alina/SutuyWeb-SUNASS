@@ -6,6 +6,7 @@ import { crearBd } from "./compartido/bd.js";
 import { protegerCsrf, trazar } from "./compartido/middleware.js";
 import { Problema, manejarErrores } from "./compartido/problema.js";
 import { crearSupabase } from "./compartido/supabase.js";
+import { rutasPanelGerencial } from "./modulos/panel-gerencial/rutas.js";
 import { rutasSesiones } from "./modulos/sesiones/rutas.js";
 import { rutasSolicitudesAcceso } from "./modulos/solicitudes-acceso/rutas.js";
 
@@ -32,6 +33,7 @@ export function crearApp(config, { limites = {} } = {}) {
   const api = express.Router();
   api.use(rutasSesiones(contexto, { limiteIngresos: limites.ingresos ?? 10 }));
   api.use(rutasSolicitudesAcceso(contexto, { limiteRegistros: limites.registros ?? 5 }));
+  api.use(rutasPanelGerencial(contexto));
   app.use("/api/v1", api);
 
   app.use(() => {

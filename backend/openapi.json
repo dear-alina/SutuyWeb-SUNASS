@@ -3,7 +3,7 @@
   "info": {
     "title": "API de SutuyWeb",
     "version": "1.0.0",
-    "description": "Sesiones, perfil y solicitudes de acceso. La sesión viaja en cookies HttpOnly; los errores, en application/problem+json."
+    "description": "Sesiones, perfil, solicitudes de acceso y panel gerencial. La sesión viaja en cookies HttpOnly; los errores, en application/problem+json."
   },
   "servers": [
     {
@@ -124,6 +124,197 @@
         "required": [
           "datos",
           "paginacion"
+        ]
+      },
+      "PanelGerencial": {
+        "type": "object",
+        "properties": {
+          "fechaCorte": {
+            "type": "string",
+            "format": "date"
+          },
+          "diasAlerta": {
+            "type": "integer"
+          },
+          "tipoProcedimiento": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "enum": [
+              "cambio_programa_inversiones",
+              "reajuste_ipm",
+              "reporte_periodico",
+              "revision_periodica",
+              "uso_excepcional_fondo",
+              "verificacion_incremento",
+              null
+            ]
+          },
+          "indicadores": {
+            "type": "object",
+            "properties": {
+              "enTramite": {
+                "type": "integer"
+              },
+              "porVencer": {
+                "type": "integer"
+              },
+              "plazoVencido": {
+                "type": "integer"
+              },
+              "silencioPositivo": {
+                "type": "integer"
+              },
+              "resueltosEnPlazo": {
+                "type": "integer"
+              },
+              "resueltosConPlazo": {
+                "type": "integer"
+              },
+              "porcentajeResueltosEnPlazo": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "required": [
+              "enTramite",
+              "porVencer",
+              "plazoVencido",
+              "silencioPositivo",
+              "resueltosEnPlazo",
+              "resueltosConPlazo",
+              "porcentajeResueltosEnPlazo"
+            ]
+          },
+          "vencimientos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/VencimientoPanel"
+            }
+          },
+          "tiempoPorArea": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "area": {
+                  "type": "string",
+                  "enum": [
+                    "ep",
+                    "ep_e_interesados",
+                    "dre",
+                    "srt",
+                    "equipo_srt",
+                    "oaj",
+                    "du",
+                    "gg",
+                    "cd",
+                    "inei"
+                  ]
+                },
+                "promedioDiasHabiles": {
+                  "type": "number"
+                },
+                "maximoDiasHabiles": {
+                  "type": "integer"
+                },
+                "cantidadPasos": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "area",
+                "promedioDiasHabiles",
+                "maximoDiasHabiles",
+                "cantidadPasos"
+              ]
+            }
+          },
+          "pasosFueraDePlazo": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "codigoExpediente": {
+                  "type": "string"
+                },
+                "codigoHito": {
+                  "type": "string"
+                },
+                "responsable": {
+                  "type": "string",
+                  "enum": [
+                    "ep",
+                    "ep_e_interesados",
+                    "dre",
+                    "srt",
+                    "equipo_srt",
+                    "oaj",
+                    "du",
+                    "gg",
+                    "cd",
+                    "inei"
+                  ]
+                },
+                "diasHabiles": {
+                  "type": "integer"
+                },
+                "plazoDiasHabiles": {
+                  "type": "integer"
+                },
+                "estaEnCurso": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "codigoExpediente",
+                "codigoHito",
+                "responsable",
+                "diasHabiles",
+                "plazoDiasHabiles",
+                "estaEnCurso"
+              ]
+            }
+          },
+          "calidadDatos": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "codigoExpediente": {
+                  "type": "string"
+                },
+                "regla": {
+                  "type": "string",
+                  "enum": [
+                    "concluido_sin_fecha",
+                    "hito_termina_antes_de_iniciar"
+                  ]
+                },
+                "detalle": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "codigoExpediente",
+                "regla",
+                "detalle"
+              ]
+            }
+          }
+        },
+        "required": [
+          "fechaCorte",
+          "diasAlerta",
+          "tipoProcedimiento",
+          "indicadores",
+          "vencimientos",
+          "tiempoPorArea",
+          "pasosFueraDePlazo",
+          "calidadDatos"
         ]
       },
       "Perfil": {
@@ -351,6 +542,105 @@
           "solicitudAccesoId",
           "estado",
           "solicitadoEn"
+        ]
+      },
+      "VencimientoPanel": {
+        "type": "object",
+        "properties": {
+          "codigoExpediente": {
+            "type": "string"
+          },
+          "codigoEps": {
+            "type": "string"
+          },
+          "tipoProcedimiento": {
+            "type": "string",
+            "enum": [
+              "cambio_programa_inversiones",
+              "reajuste_ipm",
+              "reporte_periodico",
+              "revision_periodica",
+              "uso_excepcional_fondo",
+              "verificacion_incremento"
+            ]
+          },
+          "areaActual": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "enum": [
+              "ep",
+              "ep_e_interesados",
+              "dre",
+              "srt",
+              "equipo_srt",
+              "oaj",
+              "du",
+              "gg",
+              "cd",
+              "inei",
+              null
+            ]
+          },
+          "hitoActual": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "plazoMaximoDiasHabiles": {
+            "type": "integer"
+          },
+          "fechaLimite": {
+            "type": "string",
+            "format": "date"
+          },
+          "fechaLimiteNotificacion": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date",
+            "description": "Solo en procedimientos con silencio positivo."
+          },
+          "diaDelPlazo": {
+            "type": "integer"
+          },
+          "diasRestantes": {
+            "type": "integer",
+            "description": "Negativo si el plazo venció."
+          },
+          "diasSuspension": {
+            "type": "integer"
+          },
+          "semaforo": {
+            "type": "string",
+            "enum": [
+              "silencio_positivo",
+              "vencido",
+              "por_vencer",
+              "en_plazo",
+              "resuelto_en_plazo",
+              "resuelto_fuera_de_plazo",
+              "resuelto_sin_fecha",
+              "sin_plazo"
+            ]
+          }
+        },
+        "required": [
+          "codigoExpediente",
+          "codigoEps",
+          "tipoProcedimiento",
+          "areaActual",
+          "hitoActual",
+          "plazoMaximoDiasHabiles",
+          "fechaLimite",
+          "fechaLimiteNotificacion",
+          "diaDelPlazo",
+          "diasRestantes",
+          "diasSuspension",
+          "semaforo"
         ]
       }
     },
@@ -771,6 +1061,97 @@
           },
           "409": {
             "description": "solicitud_resuelta",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problema"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "validacion_fallida",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problema"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/panel-gerencial": {
+      "get": {
+        "summary": "Panel gerencial de plazos (Sunass)",
+        "description": "Indicadores, vencimientos, tiempo por área, pasos fuera de su plazo propio y calidad de datos, calculados en días hábiles a la fecha de corte. Los expedientes iniciados después de la fecha de corte no se incluyen; los concluidos después se tratan como en trámite.",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string",
+              "format": "date",
+              "example": "2026-09-30",
+              "description": "Por defecto, hoy en Lima."
+            },
+            "required": false,
+            "description": "Por defecto, hoy en Lima.",
+            "name": "fechaCorte",
+            "in": "query"
+          },
+          {
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 30,
+              "default": 5,
+              "description": "Días hábiles de anticipación para «por vencer». Criterio de gestión, no normativo."
+            },
+            "required": false,
+            "description": "Días hábiles de anticipación para «por vencer». Criterio de gestión, no normativo.",
+            "name": "diasAlerta",
+            "in": "query"
+          },
+          {
+            "schema": {
+              "type": "string",
+              "enum": [
+                "cambio_programa_inversiones",
+                "reajuste_ipm",
+                "reporte_periodico",
+                "revision_periodica",
+                "uso_excepcional_fondo",
+                "verificacion_incremento"
+              ]
+            },
+            "required": false,
+            "name": "tipoProcedimiento",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Panel calculado a la fecha de corte.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PanelGerencial"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "sesion_requerida",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problema"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "acceso_denegado",
             "content": {
               "application/problem+json": {
                 "schema": {

@@ -2,7 +2,7 @@
   "name": "sutuyweb-backend",
   "version": "0.1.0",
   "private": true,
-  "description": "API de SutuyWeb: sesiones, perfiles y solicitudes de acceso",
+  "description": "API de SutuyWeb: sesiones, perfiles, solicitudes de acceso y panel gerencial",
   "type": "module",
   "engines": {
     "node": ">=22"
@@ -13,7 +13,8 @@
     "test": "vitest run",
     "openapi": "node scripts/generar-openapi.js",
     "crear-admin": "node --env-file=.env scripts/crear-admin.js",
-    "crear-cuentas-demo": "node --env-file=.env scripts/crear-cuentas-demo.js"
+    "crear-cuentas-demo": "node --env-file=.env scripts/crear-cuentas-demo.js",
+    "cargar-datos-sprint": "node --env-file=.env scripts/cargar-datos-sprint.js"
   },
   "dependencies": {
     "@asteasolutions/zod-to-openapi": "9.1.0",

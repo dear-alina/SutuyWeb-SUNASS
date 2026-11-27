@@ -3,6 +3,7 @@ import { OpenApiGeneratorV31 } from "@asteasolutions/zod-to-openapi";
 import { registro } from "./compartido/esquemas-comunes.js";
 import "./modulos/sesiones/esquemas.js";
 import "./modulos/solicitudes-acceso/esquemas.js";
+import "./modulos/panel-gerencial/esquemas.js";
 
 export function generarDocumentoOpenApi() {
   const generador = new OpenApiGeneratorV31(registro.definitions, { sortComponents: "alphabetically" });
@@ -11,7 +12,7 @@ export function generarDocumentoOpenApi() {
     info: {
       title: "API de SutuyWeb",
       version: "1.0.0",
-      description: "Sesiones, perfil y solicitudes de acceso. La sesión viaja en cookies HttpOnly; los errores, en application/problem+json.",
+      description: "Sesiones, perfil, solicitudes de acceso y panel gerencial. La sesión viaja en cookies HttpOnly; los errores, en application/problem+json.",
     },
     servers: [{ url: "http://localhost:4000", description: "Desarrollo local" }],
   });
