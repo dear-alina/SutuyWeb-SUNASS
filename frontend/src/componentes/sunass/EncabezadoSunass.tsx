@@ -41,6 +41,9 @@ export function EncabezadoSunass() {
             <Link href="/sunass/inicio" aria-current={ruta === "/sunass/inicio" ? "page" : undefined}>
               <span className="ms" aria-hidden="true">inbox</span> Bandeja
             </Link>
+            <Link href="/sunass/expedientes" aria-current={ruta.startsWith("/sunass/expedientes") ? "page" : undefined}>
+              <span className="ms" aria-hidden="true">folder_open</span> Expedientes
+            </Link>
             <Link href="/sunass/panel" aria-current={ruta === "/sunass/panel" ? "page" : undefined}>
               <span className="ms" aria-hidden="true">monitoring</span> Panel gerencial
             </Link>

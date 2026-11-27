@@ -57,6 +57,27 @@ export function evaluarRequisitos(codigoExpediente: string, requisitos: Requisit
   return llamar<RespuestaEvaluacion>(`/expedientes/${encodeURIComponent(codigoExpediente)}/evaluaciones-requisitos`, { requisitos, plazoDiasHabiles });
 }
 
+export type PasajeCopiloto = { codigoFragmento: string; documento: string; pagina: number; texto: string; puntaje: number; rolDocumental?: string | null; nivelAcceso?: string | null };
+
+export type RespuestaPregunta = {
+  respuesta: string; cita: string; esVerificada: boolean; codigoFragmento: string | null;
+  incertidumbre: { nivel: "media" | "alta"; motivos: string[]; advertencia: string };
+  pasajes: PasajeCopiloto[];
+};
+
+export type DecisionRegistrada = {
+  codigoExpediente: string; codigoRequisito: string | null; decision: DecisionCopiloto; registradoPorId: string;
+  estadoSugerido: string | null; registradoEn: string;
+};
+
+export function preguntarAlExpediente(codigoExpediente: string, pregunta: string) {
+  return llamar<RespuestaPregunta>("/preguntas", { pregunta, codigoExpediente });
+}
+
+export function listarDecisiones(codigoExpediente: string) {
+  return llamar<DecisionRegistrada[]>(`/decisiones?codigoExpediente=${encodeURIComponent(codigoExpediente)}`);
+}
+
 export function registrarDecision(datos: {
   codigoExpediente: string; codigoRequisito: string; decision: DecisionCopiloto; registradoPorId: string;
   estadoSugerido: string; codigoFragmento: string | null; comentario?: string;

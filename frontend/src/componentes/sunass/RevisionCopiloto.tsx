@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { usarSesion } from "@/servicios/sesion/ContextoSesion";
-import { USUARIOS_DEMO } from "@/demo/usuarios-demo";
+import { obtenerIdPersona } from "@/servicios/copiloto/persona";
 import {
   ErrorCopiloto, consultarDocumentosIndexados, evaluarRequisitos, registrarDecision,
   type DecisionCopiloto, type RequisitoParaCopiloto, type RespuestaEvaluacion, type ResultadoCopiloto,
@@ -14,13 +14,6 @@ const ESTADO: Record<string, { texto: string; tono: string; icono: string }> = {
   no_hallada: { texto: "No hallada", tono: "alerta", icono: "search_off" },
   no_determinable: { texto: "No determinable", tono: "neutro", icono: "help" },
 };
-
-/** Identificador de la persona para el registro de decisiones. Con backend viene del perfil; en la demo, uno fijo por usuario ficticio. */
-function obtenerIdPersona(perfil: { usuarioId?: string; codigo: string } | null): string {
-  if (perfil?.usuarioId) return perfil.usuarioId;
-  const indice = Math.max(0, USUARIOS_DEMO.findIndex((u) => u.codigo === perfil?.codigo)) + 1;
-  return `00000000-0000-4000-8000-${String(indice).padStart(12, "0")}`;
-}
 
 type Props = {
   codigoExpediente: string;
