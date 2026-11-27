@@ -22,7 +22,7 @@ context: |
 
   Reglas:
   - No duplicar lógica de negocio entre frontend, backend y base de datos.
-  - Plazos en días hábiles según el TUO de la Ley 27444 (DS 004-2019-JUS), art. 145.1.
+  - Plazos en días hábiles según el TUO de la Ley 27444 (DS 006-2026-JUS), art. 134.1.
   - El repositorio es público: sin secretos, claves service_role, datos personales ni expedientes reales.
     Los .env.example llevan solo valores ficticios.
   - Commits: tipo (feat, fix, chore, docs, test, refactor) + ": " + descripción en español en infinitivo.
