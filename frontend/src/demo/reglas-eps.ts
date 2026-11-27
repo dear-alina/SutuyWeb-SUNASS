@@ -129,6 +129,14 @@ export function obtenerInicioEtapa(expediente: ExpedienteFi, hitosEtapa: readonl
 
 export function obtenerSituacionEps(expediente: ExpedienteFi, fechaReferencia: string): SituacionEps {
   const plazo = calcularPlazoSunass(expediente, fechaReferencia);
+  if (expediente.estado !== "en_tramite" && expediente.fechaNotificacion === null) {
+    // Resuelta por el CD pero aún no notificada: para la EP el acto todavía no surte efecto (LPAG 16.1 y 24.1)
+    return {
+      textoEstado: "Resolución por notificar", tono: "informacion",
+      queEstaPasando: "El Consejo Directivo ya resolvió. La Dirección de Regulación Económica le notificará la resolución por oficio en su casilla.",
+      accion: null, plazo,
+    };
+  }
   if (expediente.estado !== "en_tramite") {
     const textoEstado = TEXTO_RESULTADO[expediente.resultado ?? ""] ?? "Concluida";
     return {
@@ -212,8 +220,9 @@ export function generarNotificacionesEps(expedientes: ExpedienteFi[], fechaRefer
         base: "RGT art. 89.8; TUO LPAG art. 188.1",
       });
     }
-    if (expediente.fechaConclusion) {
-      const diasDesdeResolucion = contarDiasHabiles(expediente.fechaConclusion, fechaReferencia);
+    if (expediente.fechaConclusion && expediente.fechaNotificacion !== null) {
+      const desde = expediente.fechaNotificacion ?? expediente.fechaConclusion; // el plazo corre desde la notificación
+      const diasDesdeResolucion = contarDiasHabiles(desde, fechaReferencia);
       if (diasDesdeResolucion >= 0 && diasDesdeResolucion <= PLAZO_RECONSIDERACION_DIAS_HABILES) {
         notificaciones.push({
           codigo: `${codigo}-resolucion`, codigoExpediente: codigo, tono: "informacion",

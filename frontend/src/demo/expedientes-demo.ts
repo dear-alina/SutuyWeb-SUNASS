@@ -23,6 +23,7 @@ export type Documento = {
   fechaDocumento: string;
   asunto: string;
   nivelAcceso: "publico" | "restringido_partes" | "interno";
+  codigoRequisito?: string; // requisito del TUPA que cubre (requisitos-tupa.ts)
 };
 
 export type ExpedienteFi = {
@@ -38,6 +39,7 @@ export type ExpedienteFi = {
   montoSolicitado: number | null;
   hitos: Hito[];
   documentos: Documento[];
+  fechaNotificacion?: string | null; // notificación de la resolución a la EP (LPAG 24.1)
 };
 
 const h = (
@@ -65,6 +67,10 @@ export const EXPEDIENTES_DEMO: ExpedienteFi[] = [
     ],
     documentos: [
       { codigoDocumento: "DEMO-0001", tipoDocumento: "carta_ep", numeroDocumento: "Carta de solicitud", fechaDocumento: "2026-09-01", asunto: "Solicitud de uso excepcional del fondo de inversiones", nivelAcceso: "restringido_partes" },
+      // Anexos ficticios de la demo: el expediente ya pasó la verificación de requisitos del TUPA
+      { codigoDocumento: "DEMO-0001-1", tipoDocumento: "anexo", numeroDocumento: "Anexo 1", fechaDocumento: "2026-09-01", asunto: "Informe sobre la propuesta de uso excepcional (caso fortuito o de fuerza mayor)", nivelAcceso: "restringido_partes", codigoRequisito: "informe" },
+      { codigoDocumento: "DEMO-0001-2", tipoDocumento: "anexo", numeroDocumento: "Anexo 2", fechaDocumento: "2026-09-01", asunto: "Documentos que sustentan la propuesta", nivelAcceso: "restringido_partes", codigoRequisito: "sustento" },
+      { codigoDocumento: "DEMO-0001-3", tipoDocumento: "anexo", numeroDocumento: "Anexo 3", fechaDocumento: "2026-09-01", asunto: "Propuesta de devolución o de exoneración de la devolución", nivelAcceso: "restringido_partes", codigoRequisito: "propuesta" },
     ],
   },
   {

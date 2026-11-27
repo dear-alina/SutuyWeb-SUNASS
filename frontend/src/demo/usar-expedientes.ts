@@ -21,3 +21,20 @@ export function usarExpedientesEps(codigoEps: string | null | undefined) {
 
   return { expedientes, actualizadoEn };
 }
+
+/** Todos los expedientes, para las áreas de la Sunass (en el MVP, filtrados por el backend según el área). */
+export function usarExpedientesSunass() {
+  const [expedientes, setExpedientes] = useState<ExpedienteFi[]>([]);
+  const [actualizadoEn, setActualizadoEn] = useState<Date | null>(null);
+
+  useEffect(() => {
+    const cargar = () => {
+      setExpedientes(leerExpedientes());
+      setActualizadoEn(new Date());
+    };
+    cargar();
+    return suscribirseACambios(cargar);
+  }, []);
+
+  return { expedientes, actualizadoEn };
+}
