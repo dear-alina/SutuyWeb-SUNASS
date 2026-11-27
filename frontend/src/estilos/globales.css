@@ -22,7 +22,9 @@ body { margin: 0; background: var(--surface); color: var(--on-surface); font: va
   border-radius: var(--shape-corner-small);
 }
 .campo__clave:focus-within { border-color: var(--primary); outline: 2px solid var(--focus-ring); outline-offset: 2px; }
-.campo__clave input { flex: 1; height: 100%; padding: 0; border: 0; outline: none; background: transparent; }
+.campo__clave input { flex: 1; min-width: 0; height: 100%; padding: 0; border: 0; outline: none; background: transparent; }
+/* El contorno lo dibuja .campo__clave:focus-within; el campo interno no lleva el suyo */
+.campo__clave input:focus-visible { border: 0; outline: none; }
 .campo__clave .sw-iconbtn {
   width: 44px; height: 44px; min-width: 44px; min-height: 44px; flex: none;
   display: grid; place-items: center; border: 0; border-radius: var(--shape-corner-full);

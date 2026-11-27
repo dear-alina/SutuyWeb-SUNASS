@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import "@/estilos/ingreso.css";
 import { ErrorDeApi } from "@/servicios/api/cliente-api";
 import { iniciarSesion, obtenerRutaInicio, type Institucion } from "@/servicios/api/sesiones";
+import { usarSesion } from "@/servicios/sesion/ContextoSesion";
 
 const MENSAJE_CREDENCIALES = "El usuario o la clave no son correctos.";
 
@@ -19,6 +20,7 @@ function obtenerMensajeError(error: unknown): string {
 
 export default function PaginaIngreso() {
   const router = useRouter();
+  const { esModoDemo, ingresarDemo } = usarSesion();
   const [institucion, setInstitucion] = useState<Institucion>("sunass");
   const [ruc, setRuc] = useState("");
   const [usuario, setUsuario] = useState("");
@@ -35,6 +37,15 @@ export default function PaginaIngreso() {
   async function enviarFormulario(evento: FormEvent<HTMLFormElement>) {
     evento.preventDefault();
     setMensajeError("");
+    if (esModoDemo) {
+      const usuarioDemo = ingresarDemo({ institucion, ruc, usuario, clave });
+      if (!usuarioDemo) {
+        setMensajeError(MENSAJE_CREDENCIALES); // no se indica cuál dato falló
+        return;
+      }
+      router.push(obtenerRutaInicio(usuarioDemo));
+      return;
+    }
     try {
       const perfil = await iniciarSesion({ institucion, ruc: ruc.trim(), usuario: usuario.trim(), clave });
       router.push(obtenerRutaInicio(perfil));

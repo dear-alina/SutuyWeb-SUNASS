@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "@/estilos/tokens.css";
 import "@/estilos/globales.css";
+import { ProveedorSesion } from "@/servicios/sesion/ContextoSesion";
 
 export const metadata: Metadata = {
   title: "SutuyWeb · Seguimiento de trámites de las EPS",
@@ -16,7 +17,9 @@ export default function LayoutRaiz({ children }: { children: React.ReactNode }) 
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
         />
       </head>
-      <body>{children}</body>
+      <body>
+        <ProveedorSesion>{children}</ProveedorSesion>
+      </body>
     </html>
   );
 }
