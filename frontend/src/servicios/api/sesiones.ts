@@ -4,9 +4,14 @@ export type Institucion = "sunass" | "eps";
 
 // Provisional: se reemplaza por el tipo generado desde backend/openapi.json (design.md, D5)
 export type Perfil = {
+  usuarioId: string;
+  nombre: string;
+  cargo: string | null;
+  correo: string | null;
   rol: "admin" | "sunass" | "eps";
   area: string | null;
   codigoEps: string | null;
+  nombreEps: string | null;
   proveedor: "correo" | "microsoft";
 };
 
@@ -17,12 +22,15 @@ export type DatosIngreso = {
   clave: string;
 };
 
-// PENDIENTE de alinear: SDD-UX-001 pide RUC + usuario + clave, y el contrato-api
-// (POST /api/v1/sesiones) recibe correo + clave. Ajustar el cuerpo cuando se acuerde.
+// "usuario" es el correo; el RUC solo va en la pestaña EPS.
 export function iniciarSesion(datos: DatosIngreso) {
   return solicitarApi<Perfil>("/api/v1/sesiones", {
     method: "POST",
-    body: JSON.stringify(datos),
+    body: JSON.stringify(
+      datos.institucion === "eps"
+        ? datos
+        : { institucion: datos.institucion, usuario: datos.usuario, clave: datos.clave },
+    ),
   });
 }
 
@@ -34,7 +42,7 @@ export function cerrarSesion() {
   return solicitarApi<void>("/api/v1/sesiones/actual", { method: "DELETE" });
 }
 
-export function obtenerRutaInicio(perfil: Perfil): string {
+export function obtenerRutaInicio(perfil: Pick<Perfil, "rol">): string {
   if (perfil.rol === "eps") return "/eps/tramites";
   if (perfil.rol === "admin") return "/admin/solicitudes-acceso";
   return "/sunass/inicio";

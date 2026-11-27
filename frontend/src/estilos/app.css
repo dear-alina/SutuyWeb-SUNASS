@@ -1,0 +1,92 @@
+/* ---------- Vistas autenticadas y formularios de sesión ---------- */
+
+.saltar-contenido { position: absolute; left: var(--space-4); top: -100px; z-index: 10; padding: var(--space-2) var(--space-4); background: var(--surface-container-lowest); color: var(--primary); border-radius: var(--shape-corner-small); }
+.saltar-contenido:focus { top: var(--space-2); }
+
+.encabezado {
+  display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-3) var(--space-4);
+  padding: var(--space-2) var(--space-4); background: var(--surface-container-lowest);
+  border-bottom: 1px solid var(--outline-variant);
+}
+.encabezado__marca { display: flex; flex: none; }
+.encabezado__marca img { display: block; width: 84px; height: auto; mix-blend-mode: multiply; }
+.encabezado__usuario { margin: 0 0 0 auto; display: grid; text-align: right; min-width: 0; }
+.encabezado__nombre { font: var(--text-title-small); color: var(--on-surface); overflow-wrap: anywhere; }
+.encabezado__detalle { font: var(--text-body-small); color: var(--on-surface-variant); overflow-wrap: anywhere; }
+
+.boton { display: inline-flex; align-items: center; justify-content: center; gap: var(--space-2); }
+.boton--secundario { background: transparent; color: var(--primary); }
+.boton--secundario:hover:not(:disabled) { background: var(--primary-container); }
+.boton--peligro { background: transparent; color: var(--error); border-color: var(--error); }
+.boton--peligro:hover:not(:disabled) { background: var(--error-container); }
+
+.contenido { width: 100%; max-width: 960px; margin: 0 auto; padding: var(--space-6) var(--space-4) var(--space-12); display: grid; gap: var(--space-4); }
+.contenido:focus { outline: none; }
+.contenido h1 { margin: 0; font: var(--text-headline-small); color: var(--on-surface); }
+.contenido p { margin: 0; }
+.texto-secundario { color: var(--on-surface-variant); font: var(--text-body-medium); }
+
+.estado { min-height: 50vh; display: grid; place-items: center; padding: var(--space-6) var(--space-4); }
+
+/* Avisos */
+.aviso { margin: 0; padding: var(--space-3) var(--space-4); border-radius: var(--shape-corner-small); font: var(--text-body-medium); }
+.aviso--exito { background: var(--success-container); color: var(--on-success-container); }
+.aviso--error { background: var(--error-container); color: var(--on-error-container); }
+.aviso--info { background: var(--surface-container); color: var(--on-surface); }
+
+/* Campos: errores y área de texto */
+.campo__ayuda { font: var(--text-body-small); color: var(--on-surface-variant); }
+.campo__error { font: var(--text-body-small); color: var(--error); }
+.campo textarea {
+  width: 100%; min-width: 0; min-height: 96px; padding: var(--space-3) var(--space-4); resize: vertical;
+  font: var(--text-body-large); font-size: max(1rem, 16px); color: var(--on-surface);
+  background: var(--surface-container-lowest); border: 1px solid var(--on-surface-variant);
+  border-radius: var(--shape-corner-small);
+}
+.campo textarea:focus-visible { border-color: var(--primary); outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+.campo textarea[aria-invalid="true"], .campo__clave:has(input[aria-invalid="true"]) { border-color: var(--error); }
+
+/* Solicitudes de acceso (Admin) */
+.lista-solicitudes { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-3); }
+.tarjeta { padding: var(--space-4); background: var(--surface-container-lowest); border: 1px solid var(--outline-variant); border-radius: var(--shape-corner-medium); display: grid; gap: var(--space-3); }
+.tarjeta h2 { margin: 0; font: var(--text-title-medium); overflow-wrap: anywhere; }
+.datos { margin: 0; display: grid; grid-template-columns: max-content 1fr; gap: var(--space-1) var(--space-4); font: var(--text-body-medium); }
+.datos dt { color: var(--on-surface-variant); }
+.datos dd { margin: 0; overflow-wrap: anywhere; }
+.acciones { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+.form-rechazo { display: grid; gap: var(--space-3); padding-top: var(--space-2); border-top: 1px solid var(--outline-variant); }
+.paginacion { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--space-2); }
+
+@media (max-width: 480px) {
+  .datos { grid-template-columns: 1fr; }
+  .datos dd { margin-bottom: var(--space-2); }
+  .acciones .boton { flex: 1; }
+}
+
+/* Título del formulario de solicitud de acceso, sobre el diseño de ingreso */
+.login__titulo { margin: 0; text-align: center; font: var(--text-title-large); color: var(--on-surface); }
+.login__entrar { text-decoration: none; }
+
+/* Vista de ingreso: registro como acción secundaria y pie discreto (design.md D15) */
+.login__registro { display: grid; gap: var(--space-2); padding-top: var(--space-4); border-top: 1px solid var(--outline-variant); }
+.login__registro p { margin: 0; text-align: center; font: var(--text-body-medium); color: var(--on-surface-variant); }
+.login__pie { display: grid; justify-items: center; gap: var(--space-1); text-align: center; }
+.login__pie .login__linea { text-align: center; }
+
+.login__demo { width: 100%; font: var(--text-body-small); color: var(--on-surface-variant); }
+.login__demo summary {
+  display: inline-flex; align-items: center; min-height: 44px; padding: 0 var(--space-2);
+  cursor: pointer; color: var(--on-surface-variant); text-decoration: underline; text-underline-offset: 2px;
+  border-radius: var(--shape-corner-small); list-style: none;
+}
+.login__demo summary::-webkit-details-marker { display: none; }
+.login__demo summary:hover { color: var(--primary); }
+.login__demo[open] summary { color: var(--on-surface); }
+.login__demo .campo { margin-top: var(--space-1); text-align: left; }
+.campo select {
+  width: 100%; min-width: 0; height: 44px; padding: 0 var(--space-3);
+  font: var(--text-body-medium); font-size: max(1rem, 16px); color: var(--on-surface);
+  background: var(--surface-container-lowest); border: 1px solid var(--outline);
+  border-radius: var(--shape-corner-small);
+}
+.campo select:focus-visible { border-color: var(--primary); outline: 2px solid var(--focus-ring); outline-offset: 2px; }
