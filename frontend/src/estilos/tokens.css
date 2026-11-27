@@ -1,0 +1,406 @@
+/* SutuWeb — Sistema de Diseño Unificado (Tokens + Header) */
+:root,
+[data-theme="light"] {
+  --primary: #0b3b75;
+  --on-primary: #ffffff;
+  --primary-container: #d6e4f7;
+  --on-primary-container: #0b3b75;
+  --secondary: #1f4e8a;
+  --on-secondary: #ffffff;
+  --secondary-container: #e2eaf3;
+  --on-secondary-container: #14243a;
+  --error: #b42318;
+  --on-error: #ffffff;
+  --error-container: #fdecea;
+  --on-error-container: #7a1a12;
+  --warning: #8a5300;
+  --on-warning: #ffffff;
+  --warning-container: #fff1d6;
+  --on-warning-container: #5c3700;
+  --success: #2f7d07;
+  --on-success: #ffffff;
+  --success-container: #ebf6e3;
+  --on-success-container: #1e5104;
+  --background: #f9fbfd;
+  --surface: #f9fbfd;
+  --on-surface: #14243a;
+  --on-surface-variant: #4a5b70;
+  --surface-container-lowest: #ffffff;
+  --surface-container-low: #f4f7fb;
+  --surface-container: #eef3f8;
+  --surface-container-high: #e2eaf3;
+  --surface-container-highest: #d8e2ee;
+  --outline: #7a8ba0;
+  --outline-variant: #cfdbe8;
+  --inverse-surface: #14243a;
+  --inverse-on-surface: #f1f4f9;
+  --inverse-primary: #a8c8ff;
+  --nav-surface: #0b3b75;
+  --nav-surface-dark: #072852;
+  --on-nav-surface: #e8f0fa;
+  --on-nav-surface-muted: rgba(232, 240, 250, 0.75);
+  --nav-indicator: #4fa3e0;
+  --on-nav-indicator: #ffffff;
+  --focus-ring: #0563c1;
+  --data-blue: #0563c1;
+  --data-orange: #eb6834;
+  --data-green: #1bb079;
+  --data-red: #d03c3c;
+  --elevation-0: none;
+  --elevation-1: 0 1px 2px rgba(20, 36, 58, 0.18), 0 1px 3px 1px rgba(20, 36, 58, 0.10);
+  --elevation-2: 0 1px 2px rgba(20, 36, 58, 0.18), 0 2px 6px 2px rgba(20, 36, 58, 0.10);
+  --elevation-3: 0 4px 8px 3px rgba(20, 36, 58, 0.10), 0 1px 3px rgba(20, 36, 58, 0.18);
+}
+
+[data-theme="dark"] {
+  --primary: #a8c8ff;
+  --on-primary: #00315f;
+  --primary-container: #0e4a8c;
+  --on-primary-container: #d6e4ff;
+  --secondary: #a9c3e6;
+  --on-secondary: #0a2340;
+  --secondary-container: #263a55;
+  --on-secondary-container: #d6e4ff;
+  --error: #ffb4ab;
+  --on-error: #690005;
+  --error-container: #7a1a12;
+  --on-error-container: #ffdad6;
+  --warning: #f2be6b;
+  --on-warning: #422800;
+  --warning-container: #5c3700;
+  --on-warning-container: #ffddb0;
+  --success: #9ad67a;
+  --on-success: #0f3800;
+  --success-container: #1e5104;
+  --on-success-container: #cdefb8;
+  --background: #0f1724;
+  --surface: #0f1724;
+  --on-surface: #e3eaf3;
+  --on-surface-variant: #b4c2d3;
+  --surface-container-lowest: #0a111c;
+  --surface-container-low: #131d2b;
+  --surface-container: #172231;
+  --surface-container-high: #1f2c3d;
+  --surface-container-highest: #283648;
+  --outline: #8696aa;
+  --outline-variant: #3a4a5e;
+  --inverse-surface: #e3eaf3;
+  --inverse-on-surface: #14243a;
+  --inverse-primary: #0563c1;
+  --nav-surface: #0a1a30;
+  --nav-surface-dark: #06101f;
+  --on-nav-surface: #e8f0fa;
+  --on-nav-surface-muted: rgba(232, 240, 250, 0.72);
+  --nav-indicator: #1f4e8a;
+  --on-nav-indicator: #ffffff;
+  --focus-ring: #a8c8ff;
+  --data-blue: #4c93e6;
+  --data-orange: #f08a5d;
+  --data-green: #3cc890;
+  --data-red: #e86464;
+  --elevation-1: 0 1px 2px rgba(0, 0, 0, 0.5), 0 1px 3px 1px rgba(0, 0, 0, 0.3);
+  --elevation-2: 0 1px 2px rgba(0, 0, 0, 0.5), 0 2px 6px 2px rgba(0, 0, 0, 0.3);
+  --elevation-3: 0 4px 8px 3px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+:root {
+  --header-h: 64px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --shape-corner-none: 0px;
+  --shape-corner-extra-small: 4px;
+  --shape-corner-small: 8px;
+  --shape-corner-medium: 12px;
+  --shape-corner-large: 16px;
+  --shape-corner-extra-large: 28px;
+  --shape-corner-full: 9999px;
+  --font-sans: "Inter", "Source Sans 3", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+  --text-headline-medium: 700 28px/36px var(--font-sans);
+  --text-headline-small: 700 24px/32px var(--font-sans);
+  --text-title-large: 700 22px/28px var(--font-sans);
+  --text-title-medium: 700 16px/24px var(--font-sans);
+  --text-title-small: 600 14px/20px var(--font-sans);
+  --text-body-large: 400 16px/24px var(--font-sans);
+  --text-body-medium: 400 14px/20px var(--font-sans);
+  --text-body-small: 400 12px/16px var(--font-sans);
+  --text-label-large: 600 14px/20px var(--font-sans);
+  --text-label-medium: 600 12px/16px var(--font-sans);
+  --text-label-status: 700 12px/16px var(--font-sans);
+  --text-code-medium: 400 13px/20px var(--font-mono);
+  --text-code-large: 500 18px/24px var(--font-mono);
+}
+
+/* ===== CLASES TIPOGRÁFICAS ===== */
+.headline-medium {
+  font: var(--text-headline-medium);
+  letter-spacing: -0.01em;
+}
+
+.headline-small {
+  font: var(--text-headline-small);
+}
+
+.title-large {
+  font: var(--text-title-large);
+}
+
+.title-medium {
+  font: var(--text-title-medium);
+  letter-spacing: 0.009em;
+}
+
+.title-small {
+  font: var(--text-title-small);
+  letter-spacing: 0.007em;
+}
+
+.body-large {
+  font: var(--text-body-large);
+}
+
+.body-medium {
+  font: var(--text-body-medium);
+}
+
+.body-small {
+  font: var(--text-body-small);
+}
+
+.label-large {
+  font: var(--text-label-large);
+  letter-spacing: 0.007em;
+}
+
+.label-medium {
+  font: var(--text-label-medium);
+  letter-spacing: 0.04em;
+}
+
+.label-status {
+  font: var(--text-label-status);
+  letter-spacing: 0.08em;
+}
+
+.code-medium {
+  font: var(--text-code-medium);
+}
+
+.code-large {
+  font: var(--text-code-large);
+}
+
+/* ===== HEADER INSTITUCIONAL (SUTUYWEB) ===== */
+.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: var(--header-h);
+  font-family: var(--font-sans);
+  background: linear-gradient(90deg, var(--nav-surface-dark), var(--nav-surface));
+  box-shadow: var(--elevation-2);
+}
+
+.app-header__inner {
+  height: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 var(--space-6);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  min-width: 0;
+  height: 100%;
+  text-decoration: none;
+  color: var(--on-nav-surface);
+}
+
+/* Placa blanca pegada a la izquierda con corte diagonal */
+.brand__plate {
+  position: relative;
+  flex-shrink: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 44px 0 var(--space-6);
+  margin-left: calc(var(--space-6) * -1);
+  background: #ffffff;
+  clip-path: polygon(0 0, 100% 0, calc(100% - 28px) 100%, 0 100%);
+}
+
+/* Franja celeste de acento en el borde diagonal */
+.brand__plate::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent calc(100% - 34px), var(--nav-indicator) calc(100% - 34px));
+  clip-path: polygon(calc(100% - 6px) 0, 100% 0, calc(100% - 28px) 100%, calc(100% - 34px) 100%);
+}
+
+.brand__logo {
+  height: 48px;
+  width: auto;
+  max-width: 150px;
+  object-fit: contain;
+  display: block;
+}
+
+.brand__text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  line-height: 1.2;
+}
+
+.brand__app {
+  font: var(--text-label-medium);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--on-nav-surface-muted);
+}
+
+.brand__company {
+  font: var(--text-title-medium);
+  color: var(--on-nav-surface);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Botones de acción (Notificaciones y Salir) */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  flex-shrink: 0;
+}
+
+.icon-btn,
+.logout-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  height: 40px;
+  border: 0;
+  border-radius: var(--shape-corner-small);
+  background: transparent;
+  color: var(--on-nav-surface);
+  font: var(--text-label-large);
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.icon-btn {
+  width: 40px;
+}
+
+.logout-btn {
+  padding: 0 14px;
+}
+
+.icon-btn:hover,
+.logout-btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.icon-btn:focus-visible,
+.logout-btn:focus-visible {
+  outline: 2px solid var(--on-nav-surface);
+  outline-offset: 2px;
+}
+
+.icon-btn svg,
+.logout-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+.badge {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  min-width: 16px;
+  height: 16px;
+  padding: 0 4px;
+  border-radius: var(--shape-corner-small);
+  background: var(--data-red);
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: center;
+  box-shadow: 0 0 0 2px var(--nav-surface);
+}
+
+.actions__sep {
+  width: 1px;
+  height: 24px;
+  background: rgba(255, 255, 255, 0.25);
+  margin: 0 var(--space-2);
+}
+
+/* Adaptación móvil del Header */
+@media (max-width: 640px) {
+  .app-header__inner {
+    padding: 0 var(--space-3);
+  }
+
+  .brand__app {
+    display: none;
+  }
+
+  .brand__plate {
+    margin-left: calc(var(--space-3) * -1);
+    padding: 0 30px 0 var(--space-3);
+    clip-path: polygon(0 0, 100% 0, calc(100% - 18px) 100%, 0 100%);
+  }
+
+  .brand__plate::after {
+    display: none;
+  }
+
+  .brand__logo {
+    height: 40px;
+    max-width: 96px;
+  }
+
+  .brand__company {
+    font-size: 14px;
+  }
+
+  .logout-btn {
+    width: 40px;
+    padding: 0;
+  }
+
+  .logout-btn span {
+    display: none;
+  }
+
+  .actions__sep {
+    display: none;
+  }
+}
+
+/* ===== AJUSTE PARA STREAMLIT (Ocultar barra nativa si usas el header propio) ===== */
+[data-testid="stHeader"] {
+  display: none !important;
+}
+
+.block-container {
+  padding-top: 0 !important;
+}
