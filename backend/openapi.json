@@ -1,0 +1,797 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "API de SutuyWeb",
+    "version": "1.0.0",
+    "description": "Sesiones, perfil y solicitudes de acceso. La sesión viaja en cookies HttpOnly; los errores, en application/problem+json."
+  },
+  "servers": [
+    {
+      "url": "http://localhost:4000",
+      "description": "Desarrollo local"
+    }
+  ],
+  "components": {
+    "schemas": {
+      "Ingreso": {
+        "type": "object",
+        "properties": {
+          "institucion": {
+            "type": "string",
+            "enum": [
+              "sunass",
+              "eps"
+            ]
+          },
+          "usuario": {
+            "type": "string",
+            "format": "email",
+            "description": "Correo de la cuenta.",
+            "example": "persona@eps.example"
+          },
+          "clave": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 72
+          },
+          "ruc": {
+            "type": "string",
+            "description": "Obligatorio si institucion es eps.",
+            "example": "99000000002"
+          }
+        },
+        "required": [
+          "institucion",
+          "usuario",
+          "clave"
+        ],
+        "additionalProperties": false
+      },
+      "NuevaSolicitudAcceso": {
+        "type": "object",
+        "properties": {
+          "ruc": {
+            "type": "string",
+            "pattern": "^[0-9]{11}$",
+            "example": "99000000002"
+          },
+          "nombre": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 120
+          },
+          "cargo": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "maxLength": 120
+          },
+          "correo": {
+            "type": "string",
+            "format": "email"
+          },
+          "clave": {
+            "type": "string",
+            "minLength": 8,
+            "maxLength": 72
+          }
+        },
+        "required": [
+          "ruc",
+          "nombre",
+          "correo",
+          "clave"
+        ],
+        "additionalProperties": false
+      },
+      "Paginacion": {
+        "type": "object",
+        "properties": {
+          "pagina": {
+            "type": "integer"
+          },
+          "tamanoPagina": {
+            "type": "integer"
+          },
+          "total": {
+            "type": "integer"
+          },
+          "totalPaginas": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "pagina",
+          "tamanoPagina",
+          "total",
+          "totalPaginas"
+        ]
+      },
+      "PaginaSolicitudesAcceso": {
+        "type": "object",
+        "properties": {
+          "datos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SolicitudAcceso"
+            }
+          },
+          "paginacion": {
+            "$ref": "#/components/schemas/Paginacion"
+          }
+        },
+        "required": [
+          "datos",
+          "paginacion"
+        ]
+      },
+      "Perfil": {
+        "type": "object",
+        "properties": {
+          "usuarioId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "nombre": {
+            "type": "string"
+          },
+          "cargo": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "correo": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "rol": {
+            "type": "string",
+            "enum": [
+              "admin",
+              "sunass",
+              "eps"
+            ]
+          },
+          "area": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "codigoEps": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "example": "EPS02"
+          },
+          "nombreEps": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "proveedor": {
+            "type": "string",
+            "enum": [
+              "correo",
+              "microsoft"
+            ]
+          }
+        },
+        "required": [
+          "usuarioId",
+          "nombre",
+          "cargo",
+          "correo",
+          "rol",
+          "area",
+          "codigoEps",
+          "nombreEps",
+          "proveedor"
+        ]
+      },
+      "Problema": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "status": {
+            "type": "integer"
+          },
+          "detail": {
+            "type": "string"
+          },
+          "instance": {
+            "type": "string"
+          },
+          "codigo": {
+            "type": "string",
+            "example": "validacion_fallida"
+          },
+          "trazaId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "errores": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "campo": {
+                  "type": "string"
+                },
+                "mensaje": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "campo",
+                "mensaje"
+              ]
+            }
+          }
+        },
+        "required": [
+          "type",
+          "title",
+          "status",
+          "detail",
+          "instance",
+          "codigo",
+          "trazaId"
+        ],
+        "description": "Error en formato RFC 9457 (application/problem+json)."
+      },
+      "RechazoSolicitud": {
+        "type": "object",
+        "properties": {
+          "motivoRechazo": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 500
+          }
+        },
+        "required": [
+          "motivoRechazo"
+        ],
+        "additionalProperties": false
+      },
+      "SolicitudAcceso": {
+        "type": "object",
+        "properties": {
+          "solicitudAccesoId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "nombre": {
+            "type": "string"
+          },
+          "cargo": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "correo": {
+            "type": "string"
+          },
+          "estado": {
+            "type": "string",
+            "enum": [
+              "pendiente",
+              "aprobada",
+              "rechazada"
+            ]
+          },
+          "codigoEps": {
+            "type": "string"
+          },
+          "nombreEps": {
+            "type": "string"
+          },
+          "motivoRechazo": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "solicitadoEn": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "resueltoEn": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date-time"
+          }
+        },
+        "required": [
+          "solicitudAccesoId",
+          "nombre",
+          "cargo",
+          "correo",
+          "estado",
+          "codigoEps",
+          "nombreEps",
+          "motivoRechazo",
+          "solicitadoEn",
+          "resueltoEn"
+        ]
+      },
+      "SolicitudAccesoCreada": {
+        "type": "object",
+        "properties": {
+          "solicitudAccesoId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "estado": {
+            "type": "string",
+            "enum": [
+              "pendiente"
+            ]
+          },
+          "solicitadoEn": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "required": [
+          "solicitudAccesoId",
+          "estado",
+          "solicitadoEn"
+        ]
+      }
+    },
+    "parameters": {}
+  },
+  "paths": {
+    "/api/v1/sesiones": {
+      "post": {
+        "summary": "Iniciar sesión con correo y clave",
+        "description": "Fija las cookies de sesión HttpOnly. El cuerpo de la respuesta nunca contiene tokens.",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Ingreso"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Perfil del usuario; la sesión queda en cookies.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Perfil"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "credenciales_invalidas",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problema"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "acceso_pendiente u origen_no_permitido",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problema"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "validacion_fallida",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problema"
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "demasiados_intentos",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problema"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/sesiones/actual": {
+      "delete": {
+        "summary": "Cerrar la sesión actual",
+        "responses": {
+          "204": {
+            "description": "Sesión cerrada y cookies borradas."
+          },
+          "401": {
+            "description": "sesion_requerida",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problema"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/sesiones/microsoft": {
+      "get": {
+        "summary": "Reservado para Microsoft Entra ID",
+        "responses": {
+          "503": {
+            "description": "proveedor_no_configurado",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problema"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/sesiones/microsoft/retorno": {
+      "get": {
+        "summary": "Reservado para Microsoft Entra ID",
+        "responses": {
+          "503": {
+            "description": "proveedor_no_configurado",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problema"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/perfil": {
+      "get": {
+        "summary": "Perfil del usuario autenticado",
+        "responses": {
+          "200": {
+            "description": "Perfil del usuario.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Perfil"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "sesion_requerida",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problema"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/solicitudes-acceso": {
+      "post": {
+        "summary": "Solicitar acceso como EPS (público)",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NuevaSolicitudAcceso"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Solicitud creada, pendiente de aprobación.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SolicitudAccesoCreada"
+                }
+              }
+            }
+          },
+          "409": {
+            "description": "solicitud_pendiente o correo_registrado",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problema"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "validacion_fallida",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problema"
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "demasiados_intentos",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problema"
+                }
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "summary": "Listar solicitudes de acceso (Admin)",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string",
+              "enum": [
+                "pendiente",
+                "aprobada",
+                "rechazada"
+              ]
+            },
+            "required": false,
+            "name": "estado",
+            "in": "query"
+          },
+          {
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "default": 1
+            },
+            "required": false,
+            "name": "pagina",
+            "in": "query"
+          },
+          {
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 100,
+              "default": 20
+            },
+            "required": false,
+            "name": "tamanoPagina",
+            "in": "query"
+          },
+          {
+            "schema": {
+              "type": "string",
+              "enum": [
+                "solicitadoEn",
+                "-solicitadoEn",
+                "nombre",
+                "-nombre"
+              ],
+              "default": "-solicitadoEn"
+            },
+            "required": false,
+            "name": "orden",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Página de solicitudes.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PaginaSolicitudesAcceso"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "sesion_requerida",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problema"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "acceso_denegado",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problema"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "validacion_fallida",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problema"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/solicitudes-acceso/{solicitudAccesoId}/aprobacion": {
+      "post": {
+        "summary": "Aprobar una solicitud (Admin)",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "required": true,
+            "name": "solicitudAccesoId",
+            "in": "path"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Solicitud aprobada; se creó el perfil eps.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SolicitudAcceso"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "acceso_denegado",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problema"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "solicitud_no_encontrada",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problema"
+                }
+              }
+            }
+          },
+          "409": {
+            "description": "solicitud_resuelta",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problema"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/solicitudes-acceso/{solicitudAccesoId}/rechazo": {
+      "post": {
+        "summary": "Rechazar una solicitud (Admin)",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "required": true,
+            "name": "solicitudAccesoId",
+            "in": "path"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RechazoSolicitud"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Solicitud rechazada; se eliminó la cuenta de Auth.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SolicitudAcceso"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "acceso_denegado",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problema"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "solicitud_no_encontrada",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problema"
+                }
+              }
+            }
+          },
+          "409": {
+            "description": "solicitud_resuelta",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problema"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "validacion_fallida",
+            "content": {
+              "application/problem+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Problema"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "webhooks": {}
+}
